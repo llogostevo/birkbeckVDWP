@@ -1,0 +1,658 @@
+
+/* ******************* */
+/* sitewide CSS        */
+/* ******************* */
+
+/* setup body on all pages */
+body {
+    margin: 5px 0;
+    border:0;
+    /* google font */
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ******* logo styling *********/
+
+/* remove the browser default link decoration from the logo */
+#banner a {
+    text-decoration: none;
+    color: black; 
+}
+
+/* set logo styling */
+#logo {
+    font-family: 'Courier New', Courier, monospace;
+    /* reduce thickness of font */
+    font-weight: lighter;
+    font-size: 5em;
+    /* make sure link is only over the text */
+    display: inline;
+}
+
+/* target the span tags to color the relevent letters green */
+.greenletter {
+    color:green;  
+}
+/* ******* end of logo styling *********/
+
+/* space paragraphs on all pages */
+p {
+    line-height: 1.8;
+}
+
+/* all sections to have a bottom border for seperation */
+section {
+    border-bottom-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+/* active link signifer */
+#active {
+    text-decoration: underline;
+}
+
+/* ******************* */
+/* header              */
+/* ******************* */
+
+/* spacing of the logo to be middle vertical in its container and centred in the page */
+#banner {
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+/* ******************* */
+/* General Navigiation */
+/* ******************* */
+
+
+/* set the navigation styling */
+nav{
+/*    background-color: white;*/
+    /* caps on first letter of each word */
+    font-variant-caps:titling-caps;
+    font-size:1em;
+    
+}
+/* remove the browser default text decoration */
+nav a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+/* remove any default values of margin */
+nav ul {
+/*    background-color: white;*/
+    margin:0;
+}
+
+/* set the navigation to appear on the same line */
+nav ul li {
+     text-align: center;
+     display: inline;
+}
+
+/* provide cursor and underline when hovering navigation, this only covers the text as there is no representative button for the navigation */
+nav ul li a:hover {
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+/* *********************** */
+/* Current User navigation */
+/* *********************** */
+
+/* slightly smaller navigation and set to the right for user */
+#currentuser {
+    text-align: right;
+    font-size:0.9em;
+}
+/* padding to match each part of the list and link */
+#currentuser ul, #currentuser ul li, #currentuser a {
+    padding: 5px;
+}
+
+
+/* ******************* */
+/* Site Navigation     */
+/* ******************* */
+
+/* padding applied to ensure the link matches size of roll over area */
+#sitenav ul, #sitenav ul li {
+    padding: 15px;
+}
+
+/*setup grid for navigation */
+#sitenav {
+    display: grid;
+    /* adds a thicker border to seperate from main content */
+    border-bottom: 5px solid black;
+    grid-template-columns: 4fr 1fr; /* two columns */
+}
+
+#apply-nav {
+    text-align: right;
+}
+
+/* button to get user to action something */
+.call-to-action-button {
+    background-image:linear-gradient(-45deg, #0575E6, #43C6AC); /* top left to bottom right, light to dark aqua styled colour */
+    background-color: #0575E6;/* if linear-gradient doesn't work */
+    color: white; /* font */
+    padding: 10px;
+    border-radius:5px;
+    text-decoration: none; /* remove browser default */
+    display: inline-block; /* force other content to a new line */
+}
+
+/* signifer when hover button */
+.call-to-action-button:hover {
+    text-decoration: underline;
+}
+
+/* ******************* */
+/* siteintro section   */
+/* ******************* */
+
+#siteintro {
+    background-color: black;
+    /* image owned by the school */
+    background-image: url(images/oldstreetroundabout.png);
+    background-size: cover; /* ensure it covers container */
+    background-position: top; /* starts at top */
+    color: white; /* font */
+    height:60vh; /* 60% vertical height of screen */
+    text-align: center; /* centre all text */
+}
+
+/* force new line for the site intros, apply spacing */
+#siteintro strong, #siteintro em, #about-title strong, #about-title em {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+ 
+/* site intro heading */
+#siteintro h1 {
+    font-size: 3em;
+    padding: 30px;
+    margin: 0;
+    text-align:left;
+}
+
+
+/* ********************* */
+/* footer                */
+/* ********************* */
+
+/* slightly smaller text for footer navigation */
+footer {
+    font-size: 0.9em;
+}
+
+footer ul {
+    padding: 10px;
+    list-style: none;
+}
+
+/* display list on same line, force other content to new line  */
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a{
+    /* remove browser default */
+    text-decoration: none;
+    color: #54595e;
+    margin: 10px;
+}
+
+/* signifer for footer links hover */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ************************************** */
+/* computing education section home page  */
+/* ************************************** */
+
+
+#computing-education{
+    border: 1px solid black;
+    padding: 40px;
+}
+
+/* space the heading out for the section */
+#computing-education h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 0;
+    
+}
+
+/* style the list to make it more readable */
+#computing-education ul li {
+    line-height: 1.8;
+   
+}
+
+/* ******************* */
+/* news section        */
+/* ******************* */
+
+#news-section{
+    background-color: black;
+}
+
+/* google logo size and layout */
+#news img {
+    width: 200px;
+    margin: 0 0 10px;
+}
+
+/* setup grid for news */
+#news {
+    
+    display: grid;
+    /* no space between items */
+    grid-gap: 0;
+    /* set 4 columns */
+    grid-template-columns: repeat(4, minmax(200px, 1fr ));
+    /* 4 rows */
+    grid-template-rows: 145px repeat(3,  200px);
+}
+
+/* select the grid items to add borders to ignoring the first item which has the heading*/
+#news>div:not(#item0){
+    border:black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* allows the colour to change on hover, will ignore the heading which is item0 */
+
+#news>div:hover:not(#item0) {
+    background:black none; /* remove image, bacground color black */
+    color:white; 
+}
+
+/* states that item one will be across whole row */
+#item0{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+/* layout and styling of the news heading */
+#item0 h1 {
+    text-align: right;
+    font-size: 3em;
+    padding:50px;
+    color:white;
+    margin: 0;
+}
+
+/* styling for first news item in grid */
+#item1 {
+    /* image taken by L stevens on trip, primary source */
+    background-image: url(images/Salesforce.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: lightslategrey;
+    background-blend-mode: screen;
+}
+
+/* styling for second news item in grid */
+
+#item2 {
+    /* placeholder image, taken from strikingly that is free to use, it will be replaced with own images */
+    background-image: url(images/imac.png);
+    background-size: cover;
+    background-position: center;
+    background-color: lightslategrey;
+    background-blend-mode: screen;
+}
+/* styling for third news item in grid */
+
+#item3 {
+    /* placeholder image, taken from strikingly that is free to use, it will be replaced with own images */
+    background-image: url(images/imac.png);
+    background-size: cover;
+    background-position: center;
+    background-color: lightslategrey;
+    background-blend-mode: screen;
+}
+/* styling for fourth news item in grid */
+#item4 {
+    /* placeholder image, taken by LS */
+    background-image: url(images/NLA.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: lightslategrey;
+    background-blend-mode: screen;
+}
+
+/* this represents the main news item, in this case a trip to google. It wraps across the full page using the grid column start and end notation. */
+
+#item5 {
+    grid-column: 1 / 5;
+    /* the link here is used to apply a placeholder image, in the real site this would be a photo taken on the day of the trip (see salesforce trip) */
+    background-image: url(http://static2.businessinsider.com/image/54b66a4fdd089537298b4604/google-is-moving-2500-staff-into-a-new-london-office-with-a-running-track.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: lightslategrey;
+    background-blend-mode: screen;
+}
+
+/* styling for sixth news item in grid */
+#item6 {
+    /* placeholder image, taken from strikingly that is free to use, it will be replaced with own images */
+    background-image: url(images/darktolightimage.png);
+    background-size: cover;
+    background-position: center;
+    background-color: lightslategrey;
+    background-blend-mode: screen;
+}
+
+/* styling for seventh news item in grid, this would be another important news item that wraps two columns */
+#item7 {
+    grid-column: 2 / 4;
+    /* this is an image of amazons logo, it would need permission to use, however assuming a trip had taken place it is unlikely to cause issue */
+    background-image: url(http://media.corporate-ir.net/media_files/IROL/17/176060/img/logos/amazon_logo_RGB.jpg);
+    background-color: lightslategrey;
+    background-blend-mode: screen;
+}
+
+/* styling for 8th news item in grid */
+#item8 {
+    /* placeholder image, taken from strikingly that is free to use, it will be replaced with own images */
+    background-image: url(images/imac.png);
+    background-size: cover;
+    background-color: lightslategrey;
+    background-blend-mode: screen;
+}
+
+/* nested grid inside each news item to layout the content */
+.newsgrid {
+    display:grid;
+    /* two rows 2/3 and 1/3 split */ 
+    grid-template-rows: 2fr 1fr;
+    /* 8 columns of equal size */
+    grid-template-columns: repeat(8, 1fr);
+}
+
+/* position the content of the heading and news label */
+.newsitem {
+    grid-column: 1 / 7;
+    align-self: center;
+    margin: 0 25px;
+}
+
+/* positioning of the google image grid container */
+#google {
+    grid-column: 4 / 6;
+    grid-row: 2;
+}
+
+/* positioning of the news button in each grid item */
+.newsbutton {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: flex-end;
+    margin: 0 0 10px 10px;
+}
+
+/* the size of the link and so the button */
+.newsbutton a {
+    width:120px;
+}
+
+/* **************************** */
+/*  news section labels design  */
+/* **************************** */
+
+/* design of the right hand part of the label */
+.newslabel {
+    position:relative;  /* allows the label tag to work */
+    margin-left:15px; /* from left of its grid container */
+    display:inline-block; /* force new content to next line, only take up width needed */
+    border-radius: 0 25px 25px 0; /*rounded right border */
+    padding: 0 25px 0 22px; /* space the text in centre */
+    background-color: yellow;
+    color:black; /* font color */
+    line-height:26px; 
+}
+
+/* design of the tag, triangle, for the label */
+.newslabel::before{
+    position:absolute;
+    content:""; /* provide empty content to fake a tag */
+   left:-15px;  /* position on edge of newslabel */
+    /* these create the tag appearance */
+    border-right:24px solid yellow;
+    /* see through border forces the triangle shape */
+    border-top:  12px solid transparent;
+    border-bottom:  12px solid transparent;
+}
+
+/* ********************* */
+/* sign up form          */
+/* ********************* */
+
+/* setup the grid for the sign up section */
+#sign-up {
+    display: grid;
+    /* two columns spread equally */
+    grid-template-columns: repeat(2, 1fr);
+    /* two rows on to be 145px other to fill remainder of space */
+    grid-template-rows: 145px 1fr;    
+}
+
+/* setup signup heading to be across the page */
+#sign-up-heading {
+    grid-column: 1/3;
+    background-color: black; /*changed to background-color*/
+    color: white;
+}
+
+/* setup the heading for the section */
+#sign-up-heading h1 {
+    font-size: 3em;
+    padding: 50px;
+    margin: 0;
+    text-align:left;
+}
+
+/* setup grid in left hand side */
+.left {
+    display: grid;
+    /* automatically set the number of rows dependent on number of divs */
+    grid-template-rows: auto;
+    padding: 20px;
+    border-right: 2px solid black;
+}
+
+/* left side paragraph padding */
+.left p {
+    padding-right: 20px;
+}
+
+/* setup grid on right hand side for the form */
+#sign-up-form {
+    display: grid;
+    /* two columns 1 third and 2 thirds */
+    grid-template-columns: 1fr 2fr;
+    /* slight radius on the borders */
+    border-radius: 5px;
+    padding: 25px;
+}
+
+/* setup the form elements size and spacing */
+form div *:not(label):not(#submit)  {
+    color: #54595e;
+    border-radius: 5px; /* rounded corners */
+    border: 2px solid lightslategray;
+    padding: 5px;
+    margin: 10px;
+    text-align: left;
+    width: 60%;
+}
+
+/* form submit button position */
+#submit-button {
+    grid-column: 2/3;
+    margin-left:10px;
+}
+
+/* hover over submit button on form */
+#submit:hover {
+    cursor:pointer;
+}
+
+/* text alignment and spacing for form labels */
+.form-label {
+    text-align: right;
+    margin: auto 5px;
+}
+
+/* set the styling for the form labels */
+/* given a class in case a search form item is placed in future that might not follow label style */
+.form-label label {
+    background-color: #54595e;
+    padding: 5px;
+    border-radius:5px;
+    color: white;
+}
+
+/* format styling of the text area field */
+textarea {
+    height: 100px;
+    color:darkgrey;
+    font-style: italic;
+}
+
+/* form side of the grid layout */
+#sign-up .right {
+    /* image background for form */
+    background-image: url(images/register-2819608_1920.jpg);
+    background-color: #54595e; /* overlap colour */
+    background-blend-mode: screen; /*blend colour over image */
+    background-size: cover;
+    
+}
+/* ************************************************************* *************************************************************
+************************************************************* */
+
+/* ********************* */
+/* About Us page         */
+/* ********************* */
+
+/* sizes and spacing of headings */
+#staff h1, #about-on-about-page h1, #who-are-we h1 {
+    font-size: 3em;
+    padding: 30px 30px 20px 30px;
+    margin: 0;
+    text-align:left;
+}
+
+
+/* ********************* */
+/* About Us intro        */
+/* ********************* */
+
+#about-title {
+    /* image taken from strikingly stock free images
+    placeholder for image to be sourced */
+    background-image: url(images/creativemac.png);
+    background-color: black; /* force black if broswer doesn't accept background image */
+    background-size: cover; /* cover whole area */
+    background-position: top;
+    color: white;
+    height:60vh; /* 60 pixel vertical height */
+    text-align: center;
+}
+
+/* allow text to wrap logo */
+#central-logo {
+    float: right;
+}
+
+/* provide padding spacing for items but ignore link, list items and heading */
+#who-are-we *:not(a):not(li):not(h1) {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* spacing of the section */
+#who-are-we {
+    padding-bottom: 20px;   
+}
+
+/* spacing of the image in section */
+#who-are-we img {
+    margin: 20px;
+}
+
+/* line height to space text veritcally */
+#who-are-we li, #who-are-we blockquote {
+    line-height: 1.8;
+}
+
+/* *************************** */
+/* staff section about us page */
+/* *************************** */
+
+/* setup grid for staff section */
+#staff {
+    
+    display: grid;
+    grid-template-columns: repeat(3,minmax(300px, 1fr)); /* 3 columns min 300px max width possible */
+    grid-gap: 50px; /* space between grid boxes */
+    margin: 50px;
+}
+
+/* set the staff heading to 4 columns across */
+#staff h1, #staff-intro {
+    grid-column:1 / 4;
+}
+
+/* remove margin and padding from staff heading */
+#staff h1 {
+    margin-top:0;
+    padding-top:0;
+}
+
+/* styling of the google map */
+#map iframe {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%; /* make a circle */
+    margin: 0 auto;
+}
+
+/* positioning and size of the content in the grid */
+.staff-image, #map {
+    display:grid;
+    grid-template-rows: 205px 40px;
+    grid-gap: 20px;
+}
+
+/* style the staff images */
+.staff-image img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%; /* make a circle */
+    margin: 0 auto; /* position centre of the div */
+}
+
+/* position centre of the div */
+.staff-text, #map-iframe {
+    margin: 0 auto;
+}
+
