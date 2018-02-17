@@ -1,11 +1,28 @@
 <!-- declare the doctype as HTML5 -->
-<!-- testing git and branches -->
 <!DOCTYPE html>
 <!-- set the language as english -->
 <html lang="en">
 <head>
    <!-- set the character set as unicode 8  -->
     <meta charset="UTF-8">
+   
+    <!-- Bootstrap Style Sheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    
+<!--    
+   
+   Need to make a carousell that creates a pop up with the videos in
+    - can do this, but need to ensure each one is the same size
+   Need to create the adding data to the database
+   - watch mongodb tutorial
+   - create simple mongodb database
+   Find out how the modal works for a pop up
+   
+   
+   
+   -->
+    
     <!-- link the CSS stylesheet  -->
     <link rel="stylesheet" href="main.css">
     <!-- link the google font stylesheet  -->
@@ -13,6 +30,7 @@
     <!-- icon in browser tab -->
     <link rel="shortcut icon" type="image/x-icon" href="logoicon.ico"> 
     <!-- title in browser window -->
+
     <title>Silicon Hack | Home Page</title> 
 </head>
 <body>
@@ -48,9 +66,12 @@
                 <!-- div for the apply now button -->
                 <div id="apply-nav">
                     <ul>
-                        <li><a class="call-to-action-button" href="#">Apply Now</a></li>
+                        <li><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                  Apply Now
+                </button></li>
                     </ul>
                     </div>
+
             </nav>
         </header>
 
@@ -62,6 +83,8 @@
             <a class="call-to-action-button" href="#computing-education">Find Out More</a>
         </section>
         <!-- detail about the offering, this is not set as a grid -->
+        
+           
         <section id="computing-education">
             <div>
                 <h1>Computing Education</h1>
@@ -91,184 +114,21 @@
  
        <!-- news-section is not a grid, means you can add in other divs and not impact on styling -->
         <section id="news-section">
-              <!-- news  is set as a grid in the css as complicated layout -->
-               <div id="news">
-               <!-- todo - remove the heading and put outside the grid layout -->
-                <div id="item0">
-                   <h1>Latest News</h1>
-                </div>
-                <!--first news item, top row coloumn 1 -->
-                <div id="item1" class="newsgrid">
-                   <div class="newsitem" >
-                       <h2>Salesforce Trip</h2>
-                       <div class="newslabel">Trip</div>
-                    </div>
-                    <div class="newsbutton" >
-                        <a class="call-to-action-button" href="#">Find out more</a>
-                    </div> 
-                </div>
-                 <!--second news item, top row column 2-->
-                <div id="item2" class="newsgrid">
-                   <div class="newsitem">
-                       <h2>Student Mobile Apps</h2>
-                       <div class="newslabel">Student Showcase</div>
-                    </div>
-                    <div class="newsbutton">
-                        <a class="call-to-action-button" href="#">Find out more</a>
-                    </div> 
-                </div>
-                 <!-- third news item, top row column 3-->
-                <div id="item3" class="newsgrid">
-                   <div class="newsitem">
-                       <h2>Student Web Apps</h2>
-                       <div class="newslabel">Student Showcase</div>
-                    </div>
-                    <div class="newsbutton">
-                        <a class="call-to-action-button" href="#">Find out more</a>
-                    </div> 
-                </div>
-                 <!-- fourth news item, top row column 4-->
-                <div id="item4" class="newsgrid">
-                   <div class="newsitem">
-                       <h2>New London Architecture Trip</h2>
-                        <div class="newslabel">Trip</div>
-                    </div>
-                    <div class="newsbutton">
-                        <a class="call-to-action-button" href="#">Find out more</a>
-                    </div> 
-                </div>
-
-                <!-- 5th news item, main item, middle row, width of page --> 
-                <div id="item5" class="newsgrid">
-                    <div class="newsitem">
-                        <h2>Trip to Google</h2>
-                        <div class="newslabel">Trip</div>
-                    </div>
-                    <img id="google" src="images/Google_2015_logo.svg" alt="google logo">
-                    <div class="newsbutton">
-                        <a class="call-to-action-button" href="#">Find out more</a>
-                    </div> 
-                </div>
-                 <!-- 6th news item, bottom row column 1-->
-                <div id="item6" class="newsgrid">
-                   <div class="newsitem">
-                       <h2>Hopster Trip</h2>
-                       <div class="newslabel">Trip</div>
-                    </div>
-                    <div class="newsbutton">
-                        <a class="call-to-action-button" href="#">Find out more</a>
-                    </div> 
-                </div>
-                 <!-- 7th news item, second most important item middle bottom row, wrapping two grid items columns 2 and 3-->
-                <div id="item7" class="newsgrid">
-                   <div class="newsitem">
-                       <h2>Amazon Trip</h2>
-                       <div class="newslabel">Trip</div>
-                    </div>
-                    <div class="newsbutton">
-                        <a class="call-to-action-button" href="#">Find out more</a>
-                    </div> 
-                </div>
-                <!-- 8th news item, bottom row, column 4 -->
-                <div id="item8" class="newsgrid">
-                   <div class="newsitem">
-                       <h2>Mentoring</h2>
-                       <div class="newslabel">Activities</div>
-                    </div>
-                    <div class="newsbutton">
-                        <a class="call-to-action-button" href="#">Find out more</a>
-                    </div> 
-                    </div>   
-                </div>
-               
+        <div class="row">
+              <div class="col-sm">
+                  <a class="hover" data-toggle="modal" data-target="#newsModal">
+                  <img src="https://img.youtube.com/vi/-p1IUVSzgAI/0.jpg" data-toggle="tooltip" data-placement="top" title="School Play Macbeth">
+                </a>
+              </div>
+              <div class="col-sm">col-sm</div>
+              <div class="col-sm">col-sm</div>
+        </div>    
+            
+             
         </section>
         <!-- sign up section, set as a grid with two columns to split the screen left and right -->
         <section id="sign-up">
-           <!-- heading for section -->
-           <!-- todo remove from the grid layout -->
-           <div id="sign-up-heading">
-                <h1>Contact us</h1>
-           </div>
-           <!-- left side of the grid, provides detail of the use of form -->
-            <div class="left">
-                <div>
-                    <h2>Applications for entry in September 2018</h2>
-
-                    <p>Applications for students wishing to join Silicon Hack in September 2018 are open. Contact us via this form to register your interest.</p>
-                </div>
-                <div>
-                    <h2> Just want to find out more?</h2>
-
-                    <p>If you are interested but need more information, or perhaps you are a local business and you would like to offer our young people some support then please don't be afraid to reach out.</p>
-                </div>
-            </div>
-            
-            <!-- right side of the grid, provides the form for data entry -->
-            <!-- this is a placeholder for a contact form. There would be more fields in the actual form allowing contact. The form fields would adjust based upon the drop down descisions made. -->
-            <div class="right">
-                    <!-- todo: action needs updating when a script is completed -->
-                    <!-- form is setup as a grid to layout in CSS, so each item is listed as a div -->
-                     <form id="sign-up-form" action="#">
-                         <div class="form-label">
-                             <label for="signuplist">Contact Type:</label>
-                         </div>
-                         <!-- drop down menu of options for the type of contact the user requires -->
-                          <div>
-                              <input id="signuplist" list="options">
-                              <datalist id="options">
-                                <option value="Sign up for the mailing list">
-                                <option value="Sign up for an Event">
-                                <option value="Register Enrolment interest">
-                                <option value="Another Query">
-                              </datalist>
-                          </div>
-                        
-                        <!-- first name -->
-                          <div class="form-label">
-                              <label for="firstname">First name:</label>
-                          </div>
-                          <div>
-                              <input id="firstname" type="text" name="firstname">
-                          </div>
-
-                          <div class="form-label">
-                              <label for="lastname">Last name:</label>
-                          </div>
-                            <!-- last name -->
-                          <div>
-                              <input id="lastname" type="text" name="lastname">
-                          </div>
-                          <!-- email  -->
-                          <div class="form-label">
-                              <label for="contact-email">Email:</label>
-                          </div>
-                          <div>
-                              <input id="contact-email" type="email" name="contact-email">
-                          </div>
-                         <!-- date of birth -->
-                          <div class="form-label">
-                              <label for="dob">DOB:</label>
-                          </div>
-
-                          <div>
-                              <input id="dob" type="date" name="dob">
-                          </div>
-                          <!-- the message from the user -->
-                          <div class="form-label">
-                              <label for="message">Message:</label>
-                          </div>
-
-                          <div>
-                              <textarea id="message" name="message">Please leave us a message and we will get back to you 
-                                </textarea>
-                          </div>
-                          <!-- submit form -->
-                          <div id="submit-button" >
-                              <input class="call-to-action-button" id="submit" type="submit" name="submit" value="Submit">
-                          </div>
-
-                        </form>
-                    </div>
+          
         </section>
        
             <!-- footer section -->
@@ -285,5 +145,116 @@
                 </ul>
             </div>
         </footer>
+
+
+<!-- Off screen content -->
+<!-- Modal Sign Up-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Submit an Application</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Let us know briefly why you want to apply?</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>        
+
+
+<!-- Modal News Modal -->               
+<div class="modal fade" id="newsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">News Story</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  
+   <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container-fluid">
+      <div class="row">
+    <div class="card" >
+  <img class="card-img-top" src="https://img.youtube.com/vi/-p1IUVSzgAI/0.jpg" alt="Macbeth Thumbnail">
+  <div class="card-body">
+    <h5 class="card-title">Macbeth</h5>
+    <ul class="card-text">
+          <li>Macbeth involved 15 year 11 and 5 year 10 students</li>
+          <li>A great success infront of a sell out 150 strong crowd</li>
+          <li>Both audience and actors had a great day</li>
+      </ul>
+  </div>
+</div>
+      </div>
+    </div>
+      </div>
+    <div class="carousel-item">
+      <div class="card" >
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-p1IUVSzgAI?rel=0" frameborder="0" allow="autoplay; encrypted-media" class="d-block w-100" allowfullscreen></iframe>
+  <div class="card-body">
+    <h5 class="card-title">Macbeth</h5>
+    <ul class="card-text">
+          <li>Macbeth involved 15 year 11 and 5 year 10 students</li>
+          <li>A great success infront of a sell out 150 strong crowd</li>
+          <li>Both audience and actors had a great day</li>
+      </ul>
+  </div>
+    </div>
+     </div>
+     
+    <div class="carousel-item">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/5Bf70ewrQlM?rel=0" frameborder="0" allow="autoplay; encrypted-media" class="d-block w-100" allowfullscreen></iframe>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close News</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+              
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>        
 </body>
 </html>
