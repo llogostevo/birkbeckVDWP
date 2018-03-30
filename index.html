@@ -1,10 +1,10 @@
-<!-- declare the doctype as HTML5 -->
 <!DOCTYPE html>
-<!-- set the language as english -->
 <html lang="en">
+<!-- declare the doctype as HTML5 -->
+<!-- set the language as english -->
 <head>
    <!-- set the character set as unicode 8  -->
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     <!-- link the CSS stylesheet  -->
     <link rel="stylesheet" href="main.css">
     <!-- link the google font stylesheet  -->
@@ -14,275 +14,146 @@
     <!-- title in browser window -->
     <title>Silicon Hack | Home Page</title> 
 </head>
-<body>
-       <!-- header section, css is set as a grid so each div / dav will be positioned as a new grid item so not add more divs without considering the css grid setup code -->
-        <header> 
-          <!-- navigation for current users on the site -->
-           <nav id="currentuser"> 
-               <ul>
-                  <!--there is an issue with having the li's on different lines, it causes a slight gap with the content  -->
-                       <!-- technique in place after guidance from ian, will remove to one line for deployment -->
-                   <li><a href="currentstudent.html">Current Students</a></li><!--
-                   --><li><a href="currentstaff.html">Current Staff</a></li>
-               </ul>
-           </nav>
-           <!-- link to home page using logo -->
-           <!-- logo styled in CSS -->
+<body>  
+<!--    NEED TO
+     Resize font for mobile
+    Tidy up CSS layout
+    Complete mobile design of buttons
+          GO TO INDEX PAGE ONLY
+          Mak adjustments
+           -->
+      
+       <div class="wrapper">
+        <header class="main-head">
+            <nav id="currentuser"> 
+                   <ul>
+                       <li><a href="login.html">Login</a></li>
+                   </ul>
+               </nav>
             <div id="banner">
-               <a href="index.html">
-                <h1 id="logo">s<span class="greenletter">i</span>l<span class="greenletter">i</span>c<span class="greenletter">o</span>n {hack}</h1></a>
+                   <a href="index.html">
+                    <h1 id="logo">s<span class="greenletter">i</span>l<span class="greenletter">i</span>c<span class="greenletter">o</span>n {hack}</h1></a>
             </div>
-            
-            <nav id="sitenav"> <!-- general site navigation-->
-                <div>
-                    <ul>
-                      <!--there is an issue with having the li's on different lines, it causes a slight gap with the content  -->
-                       <!-- technique in place after guidance from ian, will remove to one line for deployment -->
-                        <li><a href="#" id="active">Home</a></li><!--
-                        --><li><a href="#news">News &amp; Events</a></li><!--
-                        --><li><a href="curriculum.html">Curriculum</a></li><!--
-                        --><li><a href="about_us.html">About Us</a></li>
-                    </ul>
-                </div>
-                <!-- div for the apply now button -->
-                <div id="apply-nav">
-                    <ul>
-                        <li><a class="call-to-action-button" href="#">Apply Now</a></li>
-                    </ul>
-                    </div>
-            </nav>
         </header>
 
-        <section id="siteintro"> <!-- section to intro the site, this is not styled as a grid -->
-            <h1>Silicon Hack</h1>
-            <strong>No Ordinary Provision</strong>
-            <em>---- Here you will learn how to thrive in the Tech Industry ----</em>
+        <nav class="main-nav" >
+            <ul>
+                <li><a href="#" id="active">Home</a></li>
+                <li><a href="#news">News &amp; Events</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+        
+        <nav id="apply-nav">
+            <ul>
+                <li><a class="call-to-action-button" role="button" href="#">Apply Now</a></li>
+            </ul>
+        </nav> 
+        
+            <section id="siteintro"> <!-- section to intro the site, this is not styled as a grid -->
+            <div class="flex-columns">
+                <div><h1>Silicon Hack</h1></div>
+                <strong>No Ordinary School Provision</strong>
+                <div class="content-desktop"><em>---- Here you will learn how to thrive in the Tech Industry ----</em></div>
+                <a class="call-to-action-button" href="#computing-education">Find Out More</a>
+            </div>
+            </section>
             
-            <a class="call-to-action-button" href="#computing-education">Find Out More</a>
-        </section>
-        <!-- detail about the offering, this is not set as a grid -->
-        <section id="computing-education">
-            <div>
-                <h1>Computing Education</h1>
-            </div>
-            <div>
-                <p>The current method of computing education is flawed when it comes to post 16 study and getting you into job roles within the IT sector.</p>
+            <section id="comp-education">
+             <div class="wrapper">
+                <div>
+                    <p>The current method of computing education is flawed when it comes to post 16 study and getting you into job roles within the IT sector.</p>
+                </div>
                 
-                <img id="central-logo" src="images/cfbslogo.png" alt="central foundation boys school logo">
-                
-                <p>Our aim at Silicon Hack is to fix it.</p>
-                
-                <ul>
-                    <li>Do you want to work in the Tech Sector?</li>
-                    <li>Are you aged between 16 and 18?</li>
-                    <li>Are you about to choose subjects for 6th form?</li>
-                    <li>Are you based in London?</li>
-                    <li>Would you prefer to study as if you were in a business rather than the classroom?</li>
-                    <li>If you answered yes to most of the questions above then READ ON!</li>
-                </ul>
-                <p>At Silicon Hack you will learn in a Bootcamp style approach before embarking on assignments related to the field of study. A subsidiary of the computing department @ Central Foundation Boys' School we are based in the heart of Tech City. This means we are in a prime location to give you the best possible chance of progressing into a career within the Tech Sector after your studies.</p>
-                <p>At the end of KS5 you generally have two options - go to university, or go into employment. As a student who is interested in the IT sector you may choose to study a Computer Science degree. Computer Science however has the biggest drop out rate of all degrees within the UK. According to the Complete University Guide, 11 percent of students fail to complete their degree.</p>
-                <p>Even if you do complete a Computer Science course you may think that you have a better chance of finding employment? The Sutton Trust Report - Earning by Degrees, 2014 outlines that Computer Science graduates "...were at relatively high risks of unemployment."</p>
-            </div>
+                <div>
+                    <img id="central-logo" src="images/logos/cfbslogo.png" alt="central foundation boys school logo">
+                </div>
+                <div>
+                    <p>Our aim at Silicon Hack is to fix it.</p>
+                </div>
+                <div>
+                    <ul>
+                        <li>Do you want to work in the Tech Sector?</li>
+                        <li>Are you aged between 16 and 18?</li>
+                        <li>Are you about to choose subjects for 6th form?</li>
+                        <li>Are you based in London?</li>
+                        <li>Would you prefer to study as if you were in a business rather than the classroom?</li>
+                        <li>If you answered yes to most of the questions above then READ ON!</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>At Silicon Hack you will learn in a Bootcamp style approach before embarking on assignments related to the field of study. A subsidiary of the computing department @ Central Foundation Boys' School we are based in the heart of Tech City. This means we are in a prime location to give you the best possible chance of progressing into a career within the Tech Sector after your studies.</p>
+                </div>
+                <div>
+                    <p>At the end of KS5 you generally have two options - go to university, or go into employment. As a student who is interested in the IT sector you may choose to study a Computer Science degree. Computer Science however has the biggest drop out rate of all degrees within the UK. According to the Complete University Guide, 11 percent of students fail to complete their degree.</p>
+                 </div>
+                <div>
+                    <p>Even if you do complete a Computer Science course you may think that you have a better chance of finding employment? The Sutton Trust Report - Earning by Degrees, 2014 outlines that Computer Science graduates "...were at relatively high risks of unemployment."</p>
+                </div>
+            
             <!-- take to the about us page for more detail -->
-            <a class="call-to-action-button" href="about_us.html">More about us</a>
+            <div>
+                <a class="call-to-action-button" href="about_us.html">More about us</a>
+            </div>
+            </div>
        </section> 
- 
-       <!-- news-section is not a grid, means you can add in other divs and not impact on styling -->
-        <section id="news-section">
-              <!-- news  is set as a grid in the css as complicated layout -->
-               <div id="news">
-               <!-- todo - remove the heading and put outside the grid layout -->
-                <div id="item0">
-                   <h1>Latest News</h1>
+            
+<!--    SECTION FOR THE CONTACT LINKS        -->
+        <section id="contact">
+            <div class="wrapper">
+                <h1>Are you interested?</h1>
+                <div id="contact-us" class="centre-item">
+    <!--               NEED TO FIX THE LINKS TO THE VARIOUS IMAGES HERE!!!!!    -->
+                    <a href="http://www.bbc.co.uk" class="svg">
+                        <object  type="image/svg+xml" data="images/icons/contact-us.svg"></object>
+                        <h2>Contact Us</h2>
+                     </a>
                 </div>
-                <!--first news item, top row coloumn 1 -->
-                <div id="item1" class="newsgrid">
-                   <div class="newsitem" >
-                       <h2>Salesforce Trip</h2>
-                       <div class="newslabel">Trip</div>
-                    </div>
-                    <div class="newsbutton" >
-                        <a class="call-to-action-button" href="#">Find out more</a>
-                    </div> 
+                <div id="event-signup" class="centre-item">
+                   <a href="http://www.bbc.co.uk" class="svg">
+                    <object type="image/svg+xml" data="images/icons/event-signup.svg"></object>
+                     <h2>Event Sign Up</h2>
+                    </a>
                 </div>
-                 <!--second news item, top row column 2-->
-                <div id="item2" class="newsgrid">
-                   <div class="newsitem">
-                       <h2>Student Mobile Apps</h2>
-                       <div class="newslabel">Student Showcase</div>
-                    </div>
-                    <div class="newsbutton">
-                        <a class="call-to-action-button" href="#">Find out more</a>
-                    </div> 
+                <div id="live-chat" class="centre-item">
+                     <a href="http://www.bbc.co.uk" class="svg">
+                     <object type="image/svg+xml" data="images/icons/live-chat.svg"></object>
+                    <h2>Live Chat</h2>
+                    </a>
                 </div>
-                 <!-- third news item, top row column 3-->
-                <div id="item3" class="newsgrid">
-                   <div class="newsitem">
-                       <h2>Student Web Apps</h2>
-                       <div class="newslabel">Student Showcase</div>
-                    </div>
-                    <div class="newsbutton">
-                        <a class="call-to-action-button" href="#">Find out more</a>
-                    </div> 
+                <div id="apply-now" class="centre-item">
+                    <a href="http://www.bbc.co.uk" class="svg">
+                    <object type="image/svg+xml" data="images/icons/apply-now.svg"></object>
+                    <h2>Apply Now</h2>
+                    </a>   
                 </div>
-                 <!-- fourth news item, top row column 4-->
-                <div id="item4" class="newsgrid">
-                   <div class="newsitem">
-                       <h2>New London Architecture Trip</h2>
-                        <div class="newslabel">Trip</div>
-                    </div>
-                    <div class="newsbutton">
-                        <a class="call-to-action-button" href="#">Find out more</a>
-                    </div> 
-                </div>
-
-                <!-- 5th news item, main item, middle row, width of page --> 
-                <div id="item5" class="newsgrid">
-                    <div class="newsitem">
-                        <h2>Trip to Google</h2>
-                        <div class="newslabel">Trip</div>
-                    </div>
-                    <img id="google" src="images/Google_2015_logo.svg" alt="google logo">
-                    <div class="newsbutton">
-                        <a class="call-to-action-button" href="#">Find out more</a>
-                    </div> 
-                </div>
-                 <!-- 6th news item, bottom row column 1-->
-                <div id="item6" class="newsgrid">
-                   <div class="newsitem">
-                       <h2>Hopster Trip</h2>
-                       <div class="newslabel">Trip</div>
-                    </div>
-                    <div class="newsbutton">
-                        <a class="call-to-action-button" href="#">Find out more</a>
-                    </div> 
-                </div>
-                 <!-- 7th news item, second most important item middle bottom row, wrapping two grid items columns 2 and 3-->
-                <div id="item7" class="newsgrid">
-                   <div class="newsitem">
-                       <h2>Amazon Trip</h2>
-                       <div class="newslabel">Trip</div>
-                    </div>
-                    <div class="newsbutton">
-                        <a class="call-to-action-button" href="#">Find out more</a>
-                    </div> 
-                </div>
-                <!-- 8th news item, bottom row, column 4 -->
-                <div id="item8" class="newsgrid">
-                   <div class="newsitem">
-                       <h2>Mentoring</h2>
-                       <div class="newslabel">Activities</div>
-                    </div>
-                    <div class="newsbutton">
-                        <a class="call-to-action-button" href="#">Find out more</a>
-                    </div> 
-                    </div>   
-                </div>
-               
-        </section>
-        <!-- sign up section, set as a grid with two columns to split the screen left and right -->
-        <section id="sign-up">
-           <!-- heading for section -->
-           <!-- todo remove from the grid layout -->
-           <div id="sign-up-heading">
-                <h1>Contact us</h1>
-           </div>
-           <!-- left side of the grid, provides detail of the use of form -->
-            <div class="left">
-                <div>
-                    <h2>Applications for entry in September 2018</h2>
-
-                    <p>Applications for students wishing to join Silicon Hack in September 2018 are open. Contact us via this form to register your interest.</p>
-                </div>
-                <div>
-                    <h2> Just want to find out more?</h2>
-
-                    <p>If you are interested but need more information, or perhaps you are a local business and you would like to offer our young people some support then please don't be afraid to reach out.</p>
+                <div id="employers" class="centre-item">
+                    <a href="http://www.bbc.co.uk" class="svg">
+                    <object type="image/svg+xml" data="images/icons/employer.svg"></object>
+                    <h2>Employer</h2>
+                    </a>
                 </div>
             </div>
+        </section>    
             
-            <!-- right side of the grid, provides the form for data entry -->
-            <!-- this is a placeholder for a contact form. There would be more fields in the actual form allowing contact. The form fields would adjust based upon the drop down descisions made. -->
-            <div class="right">
-                    <!-- todo: action needs updating when a script is completed -->
-                    <!-- form is setup as a grid to layout in CSS, so each item is listed as a div -->
-                     <form id="sign-up-form" action="#">
-                         <div class="form-label">
-                             <label for="signuplist">Contact Type:</label>
-                         </div>
-                         <!-- drop down menu of options for the type of contact the user requires -->
-                          <div>
-                              <input id="signuplist" list="options">
-                              <datalist id="options">
-                                <option value="Sign up for the mailing list">
-                                <option value="Sign up for an Event">
-                                <option value="Register Enrolment interest">
-                                <option value="Another Query">
-                              </datalist>
-                          </div>
-                        
-                        <!-- first name -->
-                          <div class="form-label">
-                              <label for="firstname">First name:</label>
-                          </div>
-                          <div>
-                              <input id="firstname" type="text" name="firstname">
-                          </div>
-
-                          <div class="form-label">
-                              <label for="lastname">Last name:</label>
-                          </div>
-                            <!-- last name -->
-                          <div>
-                              <input id="lastname" type="text" name="lastname">
-                          </div>
-                          <!-- email  -->
-                          <div class="form-label">
-                              <label for="contact-email">Email:</label>
-                          </div>
-                          <div>
-                              <input id="contact-email" type="email" name="contact-email">
-                          </div>
-                         <!-- date of birth -->
-                          <div class="form-label">
-                              <label for="dob">DOB:</label>
-                          </div>
-
-                          <div>
-                              <input id="dob" type="date" name="dob">
-                          </div>
-                          <!-- the message from the user -->
-                          <div class="form-label">
-                              <label for="message">Message:</label>
-                          </div>
-
-                          <div>
-                              <textarea id="message" name="message">Please leave us a message and we will get back to you 
-                                </textarea>
-                          </div>
-                          <!-- submit form -->
-                          <div id="submit-button" >
-                              <input class="call-to-action-button" id="submit" type="submit" name="submit" value="Submit">
-                          </div>
-
-                        </form>
-                    </div>
-        </section>
-       
-            <!-- footer section -->
-            <footer>
-            <div id="sitemap">
+            
+            
+            
+ 
+<!--       THELINKS -->
+        <footer class="main-footer">
                 <ul>
                     <!-- link to main school site -->
                    <!-- &copy; is copyright symbol -->
-                    <li><a href="www.centralfoundationboys.co.uk"> &copy; Central Foundation Boys School</a></li>
+                    <li><a href="http://www.centralfoundationboys.co.uk"> &copy; Central Foundation Boys School</a></li>
                     <!-- link to relevent policies -->
                     <li><a href="policies.html">Policies</a></li>
                     <!-- link to site map -->
                     <li><a href="sitemap.html">Site Map</a></li>
                 </ul>
-            </div>
         </footer>
+    
+</div>
 </body>
 </html>
