@@ -42,6 +42,7 @@ body {
 h1 { 
 /* size of the font on each device, relative em value   */
     font-size: 3rem;
+    margin: 0px;
 }
 
 /* *************************** Call to Action *********************************** */
@@ -138,14 +139,47 @@ nav .main-nav {
 }
 
 /* remove the browser default text decoration */
-nav a {
+
+#contact a, nav a {
     text-decoration: none;
     color: #006060;
 }
+
+/* change colour for roll over signifier of links except for the buttons */
+#contact a:hover, nav a:hover:not(.call-to-action-button) {
+    text-decoration: underline;
+    color: #e08337;
+}
+
 /* active link signifer */
 #active {
     text-decoration: underline;
 }
+
+/* *********************** Current User navigation ********************* */
+/* ********************************************************************* */
+
+/* slightly smaller navigation and set to the right for user */    
+#currentuser {
+    font-size:0.9em;
+}
+
+/* position current user navigation */
+#currentuser ul {
+    flex-direction: row;
+    justify-content: flex-end;
+ 
+}
+    
+/* padding to match each part of the list and link */
+#currentuser ul, #currentuser ul li, #currentuser a {
+    padding: 5px;
+}
+
+
+#currentuser a:hover {
+    text-decoration: underline;
+    }
 
 /* ************************ Apply Nav Button Positioning ******************* */
 /* ************************************************************************* */
@@ -217,31 +251,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* *********************** Current User navigation ********************* */
-/* ********************************************************************* */
-
-/* slightly smaller navigation and set to the right for user */    
-#currentuser {
-    font-size:0.9em;
-}
-
-/* position current user navigation */
-#currentuser ul {
-    flex-direction: row;
-    justify-content: flex-end;
- 
-}
-    
-/* padding to match each part of the list and link */
-#currentuser ul, #currentuser ul li, #currentuser a {
-    padding: 5px;
-}
-
-
-#currentuser a:hover {
-    text-decoration: underline;
-    }
-
 /* @!@£!@£!@£@!@!£?!@?!@?!@£?!@£@!?£!@?£ */
 /* ************************************* */
 /* NOT SURE THIS IS REQUIRED CHECK LATER */
@@ -302,23 +311,60 @@ nav ul li a:hover {
         margin: 0px auto;
     }
 
+iframe {
+    height: 60vh;
+    width: 100%;
+}
+
 /* *************************** */
 /*   MAIN NEWS SECTION         */
 /* *************************** */
 
+/* see comp education section for iframe */
 
 /* *************************** */
 /*      CONTACT SECTION        */
 /* *************************** */
+
 #contact a {
     text-align:center;
     display:block;    
 }
 
+/* set the size of the images */
 #contact img {
     width: 70px;
     height: auto;
 }
+
+/* styling to tidy up the layout of the images */
+
+#apply-now img {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#contact-us img {
+    padding-top: 12px;
+    padding-bottom: 1px;
+}
+/*
+#event-signup img {
+    padding-top: 8px;
+    padding-bottom: 16px;
+}
+*/
+#live-chat img {
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
+#employers img {
+    padding-top: 8px;
+    padding-bottom: 13px;
+}
+
+
 
 /* padding to tidy up the appearance of the icon when centred in mobile design due to the pencil making it appear off centre */
 #apply-now img {
