@@ -1,13 +1,25 @@
+/* ******************************************************************* */
+/* ************* TESTING PURPOSES ONLY ******************************* */
+/* ******************************************************************* */
+
+/* selects all elements where parent is wrapper, used for testing purposes only to colour grid and borders */
+.wrapper > * {
+        border: 2px solid #f08c00;
+        background-color: #ffec99;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+
 /* ****************************************************************************** */
 /* ****************************************************************************** */
 /* ************* MOBILE FIRST - GRID LAYOUT SETUP ******************************* */
 /* ****************************************************************************** */
 /* ****************************************************************************** */
 /* ****************************************************************************** */
+            /* ****************************************************** */
 
-            /* ********************************************* */
 
-/* ****************************************************************************** */
 /* ***************************Site Wide Styling ********************************* */
 /* ****************************************************************************** */
 
@@ -26,109 +38,8 @@ h1 {
     font-size: 3rem;
 }
 
-
+/* *************************** Call to Action *********************************** */
 /* ****************************************************************************** */
-/* ***************** Setup standard grid CSS ************************************ */
-/* ****************************************************************************** */
-
-.wrapper {
-    margin: 0 auto;
-    }
-
-/* selects all elements where parent is wrapper, used for testing purposes only to colour grid and borders */
-.wrapper > * {
-/*
-        border: 2px solid #f08c00;
-        background-color: #ffec99;
-        border-radius: 5px;
-        padding: 5px;
-*/
-    }
-
-/* setup grid layout */
-.wrapper {
-  display: grid;
-/* col-start can be used as first line to make code more readable */
-  grid-template-columns: repeat(12, [col-start] 1fr);
-/* gap between grid items */
-  grid-gap: 20px;
-}
-
-/* intialise all grid items to span the columns */
-/* setups mobile design approach where majority of items will be one column */
-.wrapper > * {
-  grid-column: col-start / span 12;
-}
-
-.content, .main-footer, .main-head, #siteintro, #comp-education, #contact {
-    grid-column: col-start / span 12;
-  }
-
-
-/* setup flex box items to manipulate inside grids */
-nav ul {
-        display: flex;
-        flex-direction:column;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-
-#currentuser ul {
-    flex-direction: row;
-    justify-content: space-between;
- 
-}
-
-#apply-nav {
-    grid-row:4;
-}
-#apply-nav ul {
-    flex-direction: row;
-    justify-content: center;
-}
-
-#banner {
-    display:flex;
-    justify-content: center;
-}
-
-
-footer ul {
-        display: flex;
-        list-style: none;
-        flex-direction:column;
-        justify-content: center;
-        align-content: center;
-}
-
-.flex-columns {
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-}
-
-.centre-item {
-    margin: 0 auto;
-}
-
-#contact a {
-    text-align:center;
-    display:block;    
-}
-
-/* padding to tidy up the appearnce of the icon when centred in mobile design due to the pencil making it appear off centre */
-#apply-now object {
-    padding-left: 30px;
-}
-/*******************************/
-/*******************************/
-/*******************************/
-/*******************************/
-/*******************************/
-/*******************************/
 
 /* button to get user to action something */
 .call-to-action-button {
@@ -146,33 +57,101 @@ footer ul {
     text-decoration: underline;
 }
 
+/* ***************** Setup standard grid CSS ************************************ */
+/* ****************************************************************************** */
 
-/* *********************** */
-/* Current User navigation */
-/* *********************** */
-
-/* slightly smaller navigation and set to the right for user */    
-#currentuser {
-    font-size:0.9em;
+/* setup grid layout */
+.wrapper {
+  margin: 0 auto;
+  display: grid;
+/* col-start can be used as first line to make code more readable */
+  grid-template-columns: repeat(12, [col-start] 1fr);
+/* gap between grid items */
+  grid-gap: 20px;
 }
 
-#currentuser a:hover {
-    text-decoration: underline;
+/* intialise all grid items to span the columns */
+/* setups mobile design approach where majority of items will be one column */
+
+/* main wrapper (seperation of CSS for readibility) */
+.wrapper > * {
+  grid-column: col-start / span 12;
+}
+
+/* *********** HIDE CONTENT For Mobile ************* */
+/*************************************************** */
+
+.content-desktop {
+    display: none;
+}
+
+.content-mobile {
+    display: inline;
+}
+
+/* *********** Sitewide Positioning **************** */
+/*************************************************** */
+
+.flex-columns {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.centre-item {
+    margin: 0 auto;
+}
+
+/* ***************** Navigation ************************************************* */
+/* ****************************************************************************** */
+
+/* setup flex box items to manipulate inside grids */
+nav ul {
+        display: flex;
+        flex-direction:column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
     }
-    
-/* padding to match each part of the list and link */
-#currentuser ul, #currentuser ul li, #currentuser a {
-    padding: 5px;
+
+/* set the navigation styling */
+nav .main-nav {
+    /* caps on first letter of each word */
+    font-variant-caps:titling-caps;
+    font-size:1em;
 }
 
-nav ul li a:hover {
-    cursor:pointer;
+/* remove the browser default text decoration */
+nav a {
+    text-decoration: none;
+    color: #006060;
+}
+/* active link signifer */
+#active {
     text-decoration: underline;
 }
 
-/* ******************* */
-/* Logo Styling        */
-/* ******************* */  
+/* ************************ Apply Nav Button Positioning ******************* */
+/* ************************************************************************* */
+#apply-nav {
+    grid-row:4;
+}
+#apply-nav ul {
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* ************************* Banner Positioning **************************** */
+/* ************************************************************************* */
+
+#banner {
+    display:flex;
+    justify-content: center;
+}
+
+/* *********************** Logo Styling ********************** */
+/* *********************************************************** */  
     
     /* remove the browser default link decoration from the logo */
         #banner a {
@@ -195,80 +174,21 @@ nav ul li a:hover {
             color:#006060;  
         }
 
-    /* ******* end of logo styling *********/
+/* ************************** Footer ******************************************** */
+/* ****************************************************************************** */
 
-
-
-/* ******************* */
-/* siteintro section   */
-/* ******************* */
-
-#siteintro {
-    background-color: black;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(images/intro/book_laptop_intro.jpg);
-    background-size:cover; /* ensure it covers container */
-    background-position: top; /* starts at top */
-    color: white; /* font */
-    height:60vh;  /* 60% vertical height of screen */
-    text-align: center; /* centre all text */
+footer ul {
+        display: flex;
+        list-style: none;
+        flex-direction:column;
+        justify-content: center;
+        align-content: center;
 }
-
-/* force new line for the site intros, apply spacing */
-#siteintro strong, #siteintro em, #about-title strong, #about-title em {
-    display: block;
-    margin-top: 10px;
-    margin-bottom: 20px;
-
-}
- 
-/* site intro heading */
-#siteintro h1 {
-    padding: 30px;
-}
-
-/* ******************* */
-/* navigation          */
-/* ******************* */
-
-/* set the navigation styling */
-nav .main-nav {
-    /* caps on first letter of each word */
-    font-variant-caps:titling-caps;
-    font-size:1em;
-}
-
-/* remove the browser default text decoration */
-nav a {
-    text-decoration: none;
-    color: #006060;
-}
-/* active link signifer */
-#active {
-    text-decoration: underline;
-}
-
-/* ********************* */
-/* footer                */
-/* ********************* */
 
 /* slightly smaller text for footer navigation */
 footer {
     font-size: 0.9em;
 }
-
-/*
-footer ul {
-    padding: 10px;
-    list-style: none;
-}
-*/
-
-/* display list on same line, force other content to new line  */
-/*
-footer ul li {
-    display: inline-block;
-}
-*/
 
 footer ul li a{
     /* remove browser default */
@@ -282,29 +202,101 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/*******************************/
-/* COMP EDUCATION SECTION      */
-/*******************************/
+/* *********************** Current User navigation ********************* */
+/* ********************************************************************* */
 
-
-
-
-
-
-/*******************************/
-/* HIDE CONTENT                */
-/*******************************/
-
-
-.content-desktop {
-    display: none;
+/* slightly smaller navigation and set to the right for user */    
+#currentuser {
+    font-size:0.9em;
 }
 
-.content-mobile {
-    display: inline;
+/* position current user navigation */
+#currentuser ul {
+    flex-direction: row;
+    justify-content: flex-end;
+ 
+}
+    
+/* padding to match each part of the list and link */
+#currentuser ul, #currentuser ul li, #currentuser a {
+    padding: 5px;
 }
 
 
+#currentuser a:hover {
+    text-decoration: underline;
+    }
+
+/* @!@£!@£!@£@!@!£?!@?!@?!@£?!@£@!?£!@?£ */
+/* ************************************* */
+/* NOT SURE THIS IS REQUIRED CHECK LATER */
+/* ************************************* */
+
+nav ul li a:hover {
+    cursor:pointer;
+    text-decoration: underline;
+}
+
+/* ******************* Page intro section ******************* */
+/* ********************************************************* */
+
+.page-intro {
+    background-color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(images/intro/book_laptop_intro.jpg);
+    background-size:cover; /* ensure it covers container */
+    background-position: top; /* starts at top */
+    color: white; /* font */
+    height:60vh;  /* 60% vertical height of screen */
+    text-align: center; /* centre all text */
+}
+ 
+/* site intro heading */
+.page-intro h1 {
+    padding: 30px;
+}
+/* ****************************************************** */
+/* ****************************************************** */
+/*                                                        */
+/* **************** Home Page Styling ******************* */
+/*                                                        */
+/* ****************************************************** */
+/* ****************************************************** */
+
+
+/* *************************** */
+/*   HOME INTRO SECTION    */
+/* *************************** */
+
+/* force new line for the site intros, apply spacing */
+#home-intro strong, #home-intro em, #about-title strong, #about-title em {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+/* *************************** */
+/*   COMP EDUCATION SECTION    */
+/* *************************** */
+
+
+/* *************************** */
+/*   MAIN NEWS SECTION         */
+/* *************************** */
+
+
+/* *************************** */
+/*      CONTACT SECTION        */
+/* *************************** */
+#contact a {
+    text-align:center;
+    display:block;    
+}
+
+/* padding to tidy up the appearnce of the icon when centred in mobile design due to the pencil making it appear off centre */
+#apply-now object {
+    padding-left: 30px;
+}
 
 /* ******************************************************* */
 /*                     MEDIA QUERIES                       */
@@ -315,29 +307,36 @@ footer a:hover {
 /* ******************************************************* */
 /* ******************************************************* */
 
-
-/*******************************/
-/* MEDIA QUERY FOR 500PX SITE */
-/*******************************/
+/* ****************************  */
+/* ****************************  */
+/*  MEDIA QUERY FOR 500PX SITE   */
+/* ****************************  */
+/* ****************************  */
 
 @media (min-width: 500px) {
 
+/* Positioning of site navigation as row */
     nav ul {
         flex-direction:row;
         justify-content: space-around;
-
     }
-    
+
+/* Positioning of apply button */
     #apply-nav {
         grid-row:3;
     }
 }
-/*******************************/
-/* MEDIA QUERY FOR 700PX SITE */
-/*******************************/
 
-@media (min-width: 700px) {
-  
+/* ****************************  */
+/* ****************************  */
+/*  MEDIA QUERY FOR 700PX SITE   */
+/* ****************************  */
+/* ****************************  */
+
+@media (min-width: 1200px) {
+
+/* display content on desktop */
+
     .content-desktop {
     display: inline;
     }
@@ -346,49 +345,60 @@ footer a:hover {
     display: none;
     }
 
-    #currentuser ul {
-            justify-content: flex-end;
-        }
-
+/* layout page with a column border from right and left */
+    .wrapper {
+        grid-column: col-start 2 / span 10;
+    }
+    
     .main-nav {
         grid-row: 2;    
-        grid-column: col-start 1 / span 8;
-        
+        grid-column: col-start 2 / span 8;
         }
 
     #apply-nav {
         grid-row: 2;
-        grid-column: col-start 9 / span 4;
+        grid-column: col-start 10 / span 3;
         }
+
     
-   
-    /* ********************************************** */
+/* ********************************************** */
 /* used to space the navigation equally across page */
     .main-nav ul {
         display:flex;
         flex-direction:row;
 /* to centre vertically */
         margin-top: 10px;
-/* gives equal space either side of last items also */
-        justify-content: space-around;
-    }
+/* gives equal space between items */
+        justify-content: space-between;
+    } 
+
+/* ************************ Apply Nav Button Positioning ******************* */
+/* ************************************************************************* */
     
 /* position the apply now button to the right */
+/*
     #apply-nav ul {
         justify-content: flex-end;
     }
+*/
 
-/* ********************************************** */
-    
+/* ************************ Logo ******************* */
+/* ************************************************* */    
     
      #logo {
             font-size: 5rem;
         }
+
+/* ************************ Footer ******************* */
+/* *************************************************** */
     
+    /* only to span half the page on desktop */
+    /* start in second column for spacing */
     .main-footer{
-        grid-column: col-start / span 6;
+        grid-column: col-start 2 / span 6;
     }
    
+    /* space between links and from edge of start point */
     footer ul {
         flex-direction:row;
         justify-content: space-around;
@@ -405,27 +415,32 @@ footer a:hover {
     }
     
     #main-news h1, #main-news #news-item{
-        grid-column: 1/12;
+        grid-column: col-start / 12;
     }
     
+/* testing purposes */
     #news-item {
         background-color:black;
         height:60vh;
     }
+*/
+    
     
 /* ***************************************************** */
 /*      What is Silicon Hack - comp-education section    */
 /* ***************************************************** */
 
 #central-logo {
-    grid-column: col-start 1 / span 5;        
+    grid-column: col-start 1 / span 1;        
 }
 
+/*
     #central-logo img {
         width:100%;
         height:auto;
         padding-top: 80px;
     }
+*/
 
 #intro-video{
     grid-column: col-start 6 / span 7;    
