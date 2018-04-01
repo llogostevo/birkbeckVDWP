@@ -4,9 +4,11 @@
 
 /* selects all elements where parent is wrapper, used for testing purposes only to colour grid and borders */
 .wrapper > * {
+/*
         border: 2px solid #f08c00;
         background-color: #ffec99;
         border-radius: 5px;
+*/
         padding: 5px;
     }
 
@@ -24,13 +26,17 @@
 /* ****************************************************************************** */
 
 body {
-/*    top and bottom margin */
-    margin: 5px 0;
+/*    top and bottom margin of 5px */
+/*    auto makes equal left and right margins */
+    margin: 5px auto;
     border:0;
     /* google font */
     font-family: 'Montserrat', sans-serif;
 /*    site wide font colour to match logo */
     color: #004b4b;
+    text-align: center;
+    max-width: 1300px;
+    
 }
 
 h1 { 
@@ -77,6 +83,15 @@ h1 {
 .wrapper > * {
   grid-column: col-start / span 12;
 }
+
+/* setup seperate grid of 5 for the contact section of links */
+
+#contact {
+        display: grid;
+    /*  one grid section for each image */
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: auto;
+    }
 
 /* *********** HIDE CONTENT For Mobile ************* */
 /*************************************************** */
@@ -135,7 +150,7 @@ nav a {
 /* ************************ Apply Nav Button Positioning ******************* */
 /* ************************************************************************* */
 #apply-nav {
-    grid-row:4;
+    grid-row: 2;
 }
 #apply-nav ul {
     flex-direction: row;
@@ -241,7 +256,9 @@ nav ul li a:hover {
 /* ********************************************************* */
 
 .page-intro {
+    /* fall back in gradient and image doesn't work */
     background-color: black;
+    /* gradient over image to provide contrast of foreground text */
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(images/intro/book_laptop_intro.jpg);
     background-size:cover; /* ensure it covers container */
     background-position: top; /* starts at top */
@@ -279,6 +296,11 @@ nav ul li a:hover {
 /*   COMP EDUCATION SECTION    */
 /* *************************** */
 
+    #central-logo img {
+        width:50%;
+        height:auto;
+        margin: 0px auto;
+    }
 
 /* *************************** */
 /*   MAIN NEWS SECTION         */
@@ -293,11 +315,60 @@ nav ul li a:hover {
     display:block;    
 }
 
-/* padding to tidy up the appearnce of the icon when centred in mobile design due to the pencil making it appear off centre */
-#apply-now object {
-    padding-left: 30px;
+#contact img {
+    width: 70px;
+    height: auto;
 }
 
+/* padding to tidy up the appearance of the icon when centred in mobile design due to the pencil making it appear off centre */
+#apply-now img {
+    padding-left: 10px;  
+}
+
+/* positioning of the various icons in the grid */
+ 
+    
+    #contact-header {
+        grid-row: 1;
+        grid-column: 1 / 6;
+
+    }
+    
+    #apply-now {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    
+    #contact-us {
+        grid-row: 2;
+        grid-column: 4;
+    }
+    
+     #event-signup{
+        grid-row: 3;
+        grid-column: 2;
+    }
+    
+     #live-chat {
+        grid-row: 3;
+        grid-column: 4;
+    }
+    
+     #employers {
+        grid-row: 4;
+        grid-column: 3;
+    }
+
+
+
+
+
+/* ******************************************************* */
+/* ******************************************************* */
+/* ******************************************************* */
+/* ******************************************************* */
+/* ******************************************************* */
+/* ******************************************************* */
 /* ******************************************************* */
 /*                     MEDIA QUERIES                       */
 /* ******************************************************* */
@@ -309,11 +380,11 @@ nav ul li a:hover {
 
 /* ****************************  */
 /* ****************************  */
-/*  MEDIA QUERY FOR 500PX SITE   */
+/*  MEDIA QUERY FOR 900PX SITE   */
 /* ****************************  */
 /* ****************************  */
 
-@media (min-width: 500px) {
+@media (min-width: 900px) {
 
 /* Positioning of site navigation as row */
     nav ul {
@@ -325,15 +396,37 @@ nav ul li a:hover {
     #apply-nav {
         grid-row:3;
     }
+    
+/* ***************************************************** */
+/*      What is Silicon Hack - comp-education section    */
+/* ***************************************************** */
+    
+#central-logo {
+    grid-column: col-start 1 / span 4;
 }
 
+#intro-video{
+    grid-column: col-start 5 / span 8;
+}
+
+#intro-video iframe {
+    width: 100%;
+    height: 315px;
+    
+}
+    
+#central-logo img {
+        height:auto;
+        width: 100%;
+    }
+
 /* ****************************  */
 /* ****************************  */
-/*  MEDIA QUERY FOR 700PX SITE   */
+/*  MEDIA QUERY FOR 1000PX SITE   */
 /* ****************************  */
 /* ****************************  */
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
 
 /* display content on desktop */
 
@@ -343,11 +436,6 @@ nav ul li a:hover {
 
     .content-mobile {
     display: none;
-    }
-
-/* layout page with a column border from right and left */
-    .wrapper {
-        grid-column: col-start 2 / span 10;
     }
     
     .main-nav {
@@ -375,12 +463,9 @@ nav ul li a:hover {
 /* ************************ Apply Nav Button Positioning ******************* */
 /* ************************************************************************* */
     
-/* position the apply now button to the right */
-/*
-    #apply-nav ul {
-        justify-content: flex-end;
-    }
-*/
+    
+    /* none for now */
+    
 
 /* ************************ Logo ******************* */
 /* ************************************************* */    
@@ -410,40 +495,29 @@ nav ul li a:hover {
 /* ***************************************************** */
 /* ***************************************************** */
 
+/* layout page with a column border from right and left */
     #main-news {
-        background-color:black;
-    }
-    
-    #main-news h1, #main-news #news-item{
-        grid-column: col-start / 12;
-    }
-    
-/* testing purposes */
-    #news-item {
-        background-color:black;
-        height:60vh;
-    }
-*/
-    
+        grid-column: col-start 2 / span 10;
+    }    
     
 /* ***************************************************** */
 /*      What is Silicon Hack - comp-education section    */
 /* ***************************************************** */
 
-#central-logo {
-    grid-column: col-start 1 / span 1;        
-}
-
-/*
-    #central-logo img {
-        width:100%;
-        height:auto;
-        padding-top: 80px;
+    /* layout page with a column border from right and left */
+#comp-education  {
+        grid-column: col-start 2 / span 10;
     }
-*/
 
+#central-logo img {
+        height:auto;
+        width: 250px;
+        margin-top: 35px;
+    }
+
+    
 #intro-video{
-    grid-column: col-start 6 / span 7;    
+    grid-column: col-start 5 / span 8;
 }
 
 #intro-video iframe {
@@ -455,19 +529,20 @@ nav ul li a:hover {
 /*                     Contact Section                   */
 /* ***************************************************** */
 /* ***************************************************** */
-    
+   
+/* a border of 1 grid column either side of the contact section */    
     #contact {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 1fr, 1fr;
-    }
-    
+        grid-column: col-start 2 / span 10;
+    }  
+
+    /* position the header across the page, all 6 columns */
     #contact-header {
         grid-row: 1;
         grid-column: 1 / 6;
 
     }
-    
+
+    /* position each of the icons on the same row next to each other */
     #apply-now {
         grid-row: 2;
         grid-column: 1;
