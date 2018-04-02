@@ -28,15 +28,14 @@
 body {
 /*    top and bottom margin of 5px */
 /*    auto makes equal left and right margins */
-    margin: 5px auto;
+/*    margin: 5px auto;*/
     border:0;
     /* google font */
     font-family: 'Montserrat', sans-serif;
 /*    site wide font colour to match logo */
     color: #004b4b;
     text-align: center;
-    max-width: 1300px;
-    
+    max-width: 1300px;   
 }
 
 h1 { 
@@ -108,16 +107,20 @@ h1 {
 /* *********** Sitewide Positioning **************** */
 /*************************************************** */
 
+/*
 .flex-columns {
     display: flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
 }
+*/
 
+/*
 .centre-item {
     margin: 0 auto;
 }
+*/
 
 /* ***************** Navigation ************************************************* */
 /* ****************************************************************************** */
@@ -232,6 +235,7 @@ footer ul {
         flex-direction:column;
         justify-content: center;
         align-content: center;
+        padding: 0;
 }
 
 /* slightly smaller text for footer navigation */
@@ -243,12 +247,56 @@ footer ul li a{
     /* remove browser default */
     text-decoration: none;
     color: #54595e;
-/*    margin: 10px;*/
 }
 
 /* signifer for footer links hover */
 footer a:hover {
     text-decoration: underline;
+}
+
+
+/* *********** Image Sprite ************** */
+/* *************************************** */
+
+/*Image sprite CSS*/
+.social {
+    display:inline-block;
+    
+}
+
+#facebook {
+    background: url(images/icons/social_imagesprite_SH_Extra_Small.gif);
+    width: 39px;
+    height: 39px;
+    background-position: 0 0;
+}
+
+#snapchat{
+    background: url(images/icons/social_imagesprite_SH_Extra_Small.gif);
+    width: 40px;
+    height: 39px;
+    background-position:182px 0;
+}
+
+#twitter {
+    background: url(images/icons/social_imagesprite_SH_Extra_Small.gif);
+    width: 44px;
+    height: 39px;
+    background-position:142px 0;
+}
+
+#youtube {
+    background: url(images/icons/social_imagesprite_SH_Extra_Small.gif);
+    width: 59px;
+    height: 39px;
+    background-position: 98px 0;
+}
+
+#instagram{
+    background: url(images/icons/social_imagesprite_SH_Extra_Small.gif);
+    width: 40px;
+    height: 39px;
+    background-position:40px 0;
 }
 
 /* @!@£!@£!@£@!@!£?!@?!@?!@£?!@£@!?£!@?£ */
@@ -493,6 +541,16 @@ iframe {
         grid-row: 2;
         grid-column: col-start 10 / span 3;
         }
+    
+/*    p:not(a>p)*/
+    
+    p{
+        text-align: left;
+    }
+/*    align the text on buttons to centre */
+    a>p{
+        text-align: center;
+    }
 
     
 /* ********************************************** */
@@ -525,8 +583,8 @@ iframe {
     
     /* only to span half the page on desktop */
     /* start in second column for spacing */
-    .main-footer{
-        grid-column: col-start 2 / span 6;
+    #main-footer{
+        grid-column: col-start 1 / span 12;
     }
    
     /* space between links and from edge of start point */
@@ -543,7 +601,7 @@ iframe {
 
 /* layout page with a column border from right and left */
     #main-news {
-        grid-column: col-start 2 / span 10;
+        grid-column: col-start 1 / span 12;
     }    
     
 /* ***************************************************** */
