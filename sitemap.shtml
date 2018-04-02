@@ -1,0 +1,68 @@
+<!--#include virtual="/ssi/documentinfo.shtml" -->
+<title>Silicon Hack | Site Map</title>
+</head>
+
+<!--#include virtual="/ssi/header.shtml" -->
+<!--       THE MENU AND BUTTONS    -->
+           <nav class="main-nav" id="burger">
+            <ul>
+                <li><a href="index.shtml">Home</a></li>
+                <li><a href="news_events.shtml">News &amp; Events</a></li>
+                <li><a href="curriculum.shtml">Curriculum</a></li>
+                <li><a href="employer_engagement.shtml">Employer Engagement</a></li>
+                <li><a href="about_us.shtml">About Us</a></li>
+                
+            </ul>
+        </nav>
+        
+        <nav id="apply-nav">
+            <ul>
+                <li><a class="call-to-action-button" role="button" href="#">Apply Now</a></li>
+            </ul>
+        </nav>
+           
+<!--    PAGE INTRO IMAGE AND TAG LINES       -->
+            <section id="sitemap-intro" class="page-intro"> <!-- section to intro the site, this is not styled as a grid -->
+            <div class="flex-columns">
+                <div><h1>Site Map</h1></div>
+                <strong>Last updated: 2018, April 2</strong>
+<!--                <div class="content-desktop"><em>Not currently with us?</em></div>-->
+            </div>
+            </section>
+            
+<!-- ######################################################################################################### -->
+<!--    START OF THE MAIN CONTENT OF PAGE       -->
+
+
+<div id="sitemap">
+		<h1>8 pages</h1>
+        <ul>
+            <li><a href="http://lsteve07.wdux1718.bbkweb.org/index.shtml" title="Silicon Hack | Home Page">Silicon Hack | Home Page</a></li>
+            <li><a href="http://lsteve07.wdux1718.bbkweb.org/news_events.shtml" title="Silicon Hack | News &amp; Events">Silicon Hack | News & Events</a></li>
+            <li><a href="http://lsteve07.wdux1718.bbkweb.org/curriculum.shtml" title="Silicon Hack | Curriculum">Silicon Hack | Curriculum</a></li>
+            <li><a href="http://lsteve07.wdux1718.bbkweb.org/employer_engagement.shtml" title="Silicon Hack | Employer Engagement">Silicon Hack | Employer Engagement</a></li>
+            <li><a href="http://lsteve07.wdux1718.bbkweb.org/about_us.shtml" title="Silicon Hack | About Us">Silicon Hack | About Us</a></li>
+            <li><a href="http://lsteve07.wdux1718.bbkweb.org/sitemap.shtml" title="Silicon Hack | Site Map">Silicon Hack | Site Map</a></li>
+            <li><a href="http://lsteve07.wdux1718.bbkweb.org/sitemap.shtml" title="Silicon Hack | Site Map">Silicon Hack | PAGE??</a></li>
+            <li><a href="http://lsteve07.wdux1718.bbkweb.org/sitemap.shtml" title="Silicon Hack | Site Map">Silicon Hack | PAGE??</a></li>
+            <li><a href="http://lsteve07.wdux1718.bbkweb.org/sitemap.shtml" title="Silicon Hack | Site Map">Silicon Hack | PAGE??</a></li>
+        </ul>
+		<!--
+Please note:
+You are not allowed to remove the copyright notice below.
+Thank you!
+www.xml-sitemaps.com
+-->
+	</div>
+	<div id="footer">
+		Page created with <a target="_blank" href="https://www.xml-sitemaps.com">Google XML sitemap and html sitemaps generator</a> | Copyright &copy; 2005-2017 XML-Sitemaps.com
+	</div>
+<!-- END OF THE CONTENT OF PAGE -->
+<!-- ######################################################################################################### -->
+
+
+<!--#include virtual="ssi/footer.shtml" -->
+
+
+</body>
+</html>

@@ -22,7 +22,7 @@
            
  
 <!--    PAGE INTRO IMAGE AND TAG LINES       -->
-            <section id="employer-intro" class="page-intro"> <!-- section to intro the site, this is not styled as a grid -->
+            <section id="login-intro" class="page-intro"> <!-- section to intro the site, this is not styled as a grid -->
             <div class="flex-columns">
                 <div><h1>Current User Area</h1></div>
                 <strong>Use the form below to login</strong>

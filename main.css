@@ -398,6 +398,30 @@ nav ul li a:hover {
     text-align: center; /* centre all text */
 }
 
+#login-intro {
+    /* fall back in gradient and image doesn't work */
+    background-color: black;
+    /* gradient over image to provide contrast of foreground text */
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(images/intro/pencils_wireframes_intro.jpg);
+    background-size:cover; /* ensure it covers container */
+    background-position: top; /* starts at top */
+    color: white; /* font */
+    height:60vh;  /* 60% vertical height of screen */
+    text-align: center; /* centre all text */
+}
+
+#sitemap-intro {
+    /* fall back in gradient and image doesn't work */
+    background-color: black;
+    /* gradient over image to provide contrast of foreground text */
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(images/intro/book_laptop_intro.jpg);
+    background-size:cover; /* ensure it covers container */
+    background-position: top; /* starts at top */
+    color: white; /* font */
+    height:60vh;  /* 60% vertical height of screen */
+    text-align: center; /* centre all text */
+}
+
  
 /* site intro heading */
 .page-intro h1 {
@@ -529,8 +553,22 @@ iframe {
     }
 
 
+/* ****************************************************** */
+/* ****************************************************** */
+/*                                                        */
+/* **************** Site Map Styling ******************* */
+/*                                                        */
+/* ****************************************************** */
+/* ****************************************************** */
 
+#sitemap ul {
+    list-style:lower-roman;
+    
+}
 
+#sitemap {
+    text-align: left;
+}
 
 /* ******************************************************* */
 /* ******************************************************* */
