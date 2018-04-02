@@ -16,12 +16,58 @@
 </head>
 <body>  
 <!--    NEED TO
-     Resize font for mobile
-    Tidy up CSS layout
-    Complete mobile design of buttons
-          GO TO INDEX PAGE ONLY
-          Mak adjustments
-           -->
+     
+       Monday
+        create burger menu for mobile version
+        - insert burger menu
+        - layout in mobile
+        - hide in wider screens
+        - find code to implement
+        
+        
+        Setup template (SSI??)
+        _____________________
+        TUESDAY
+        ____________________
+        Create basic about page
+         - staff photos
+         - staff blurb underneath
+         - google map
+        Create basic Curriculum Page
+         - links to external PDF documents
+         - Simple picture 
+        
+        Create basic Sign up Forms etc.
+         - apply now
+         - contact us
+         
+        Create basic employer engagment
+        - introduction
+        - picture
+        - form to sign up as employer
+        - link to news page
+        
+        Create basic news page
+         - latest news section
+         - events sign up section 
+        
+         LATER
+         Google API map
+         Hide / Reveal Staff Detail
+         
+          Add google sign in
+          Intergrate google chat
+          Create News page filter feature
+            
+        !!Finalise!! 
+        - tidy up code
+        - add in normalise CSS
+        - write up pages and sections of code (print all code and complete write up over a number of days)
+        - write up VDWP
+        - put VDWP write up into web page. 
+            
+            
+             -->
       
 <div class="wrapper">
         <header class="main-head">
@@ -35,8 +81,13 @@
                     <h1 id="logo">s<span class="greenletter">i</span>l<span class="greenletter">i</span>c<span class="greenletter">o</span>n {hack}</h1></a>
             </div>
         </header>
-
-        <nav class="main-nav" >
+        
+        <!--  class content mobile means it won't display on desktop or tablet      -->
+        <nav class="content-mobile" id="burger-container">
+            <a id="burger-button" role="button" href="#"><img src="images/icons/png/burger_menu%20v2.png"></a>
+        </nav>
+        
+        <nav class="main-nav" id="burger">
             <ul>
                 <li><a href="#" id="active">Home</a></li>
                 <li><a href="#news">News &amp; Events</a></li>
@@ -51,7 +102,7 @@
             <ul>
                 <li><a class="call-to-action-button" role="button" href="#">Apply Now</a></li>
             </ul>
-        </nav> 
+        </nav>
         
             <section id="home-intro" class="page-intro"> <!-- section to intro the site, this is not styled as a grid -->
             <div class="flex-columns">
@@ -105,13 +156,13 @@
                 <h1  class="centre-item">Are you interested?</h1>
             </div>                  
                 <div id="contact-us" class="centre-item">
-                    <a href="http://www.bbc.co.uk" class="svg">
+                    <a href="contact-us" class="svg">
                     <img src="images/icons/png/021-email_v2.png">
                     <p>Contact Us</p>
                     </a> 
                 </div>
                 <div id="event-signup" class="centre-item">
-                   <a href="http://www.bbc.co.uk" class="svg">
+                   <a href="news_events.html" class="svg">
                     <img src="images/icons/png/035-calendar.png">
                     <p>Event Sign Up</p>
                     </a> 
@@ -123,13 +174,13 @@
                     </a> 
                 </div>
                 <div id="apply-now" class="centre-item">
-                    <a href="http://www.bbc.co.uk" class="svg">
+                    <a href="apply_now.html" class="svg">
                     <img src="images/icons/png/010-contract.png">
                     <p>Apply Now</p>
                     </a>   
                 </div>
                 <div id="employers" class="centre-item">
-                    <a href="http://www.bbc.co.uk" class="svg">
+                    <a href="Employer_Engagement.html" class="svg">
                     <img src="images/icons/png/employer_v2.png" alt="Employer Sign Up">
                     <p>Employer Sign Up</p>
                     </a> 
@@ -152,15 +203,23 @@
                 </ul>
             </div>
             <div>
-<!--                image sprite used in CSS-->
-                    <div id="facebook" class="social"></div>
-                    <div id="snapchat" class="social"> </div>
-                    <div id="twitter" class="social"> </div>
-                    <div id="youtube" class="social"> </div>
-                    <div id="instagram" class="social"> </div>
+        <!--image sprite used in CSS-->
+<!-- NB. Do not tidy code with indents on seperate lines. This causes issues with the sprite display -->
+                   
+                   
+                    <a href="www.facebook.com"><div id="facebook" class="social"></div></a>
+                    <a href="www.snapchat.com"><div id="snapchat" class="social"></div></a>
+                    <a href="www.twitter.com"><div id="twitter" class="social"></div></a>
+                    <a href="www.youtube.com"><div id="youtube" class="social"></div></a>
+                    <a href="www.instagram.com"><div id="instagram" class="social"></div></a>
             </div>
         </footer>
     
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+src= "js/burger.js">
+</script>
 </body>
 </html>

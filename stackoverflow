@@ -1,0 +1,34 @@
+HTML
+
+
+        <nav>
+            <a id="burger-button" role="button" href="#"><img src="images/icons/png/burger_menu%20v2.png"></a>
+        </nav>
+        
+        <nav class="main-nav" id="burger">
+            <ul>
+                <li><a href="#" id="active">Home</a></li>
+                <li><a href="#news">News &amp; Events</a></li>
+                <li><a href="curriculum.html">Curriculum</a></li>
+                <li><a href="Employer_Engagement.html">Employer Engagement</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                
+            </ul>
+        </nav>
+
+
+BURGER JS
+
+// only run the following code if the viewport is less than 900
+if (document.documentElement.clientWidth < 900) {
+
+    $(document).ready(function(){
+        //set nav to hide
+        $("#burger").hide();
+        //when clicked set nav to show
+        $("#burger-button").click(function(){
+            $("#burger").toggle(300);
+        });
+    });
+    
+}
