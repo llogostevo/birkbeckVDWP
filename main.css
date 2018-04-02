@@ -335,20 +335,69 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* ******************* Page intro section ******************* */
+/* ******************* Page intro sections ******************* */
 /* ********************************************************* */
 
-.page-intro {
+#home-intro {
     /* fall back in gradient and image doesn't work */
     background-color: black;
     /* gradient over image to provide contrast of foreground text */
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(images/intro/book_laptop_intro.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(images/intro/book_laptop_intro.jpg);
     background-size:cover; /* ensure it covers container */
     background-position: top; /* starts at top */
     color: white; /* font */
     height:60vh;  /* 60% vertical height of screen */
     text-align: center; /* centre all text */
 }
+
+#news-intro {
+    /* fall back in gradient and image doesn't work */
+    background-color: black;
+    /* gradient over image to provide contrast of foreground text */
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(images/intro/macbook_pro_female_export.jpg);
+    background-size:cover; /* ensure it covers container */
+    background-position: top; /* starts at top */
+    color: white; /* font */
+    height:60vh;  /* 60% vertical height of screen */
+    text-align: center; /* centre all text */
+}
+
+#curriculum-intro {
+    /* fall back in gradient and image doesn't work */
+    background-color: black;
+    /* gradient over image to provide contrast of foreground text */
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(images/intro/pen_wireframes_intro.jpg);
+    background-size:cover; /* ensure it covers container */
+    background-position: top; /* starts at top */
+    color: white; /* font */
+    height:60vh;  /* 60% vertical height of screen */
+    text-align: center; /* centre all text */
+}
+
+#employer-intro {
+    /* fall back in gradient and image doesn't work */
+    background-color: black;
+    /* gradient over image to provide contrast of foreground text */
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(images/intro/macbook_photoshop_intro.jpg);
+    background-size:cover; /* ensure it covers container */
+    background-position: top; /* starts at top */
+    color: white; /* font */
+    height:60vh;  /* 60% vertical height of screen */
+    text-align: center; /* centre all text */
+}
+
+#about-intro {
+    /* fall back in gradient and image doesn't work */
+    background-color: black;
+    /* gradient over image to provide contrast of foreground text */
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(images/intro/oldstreetroundabout.png);
+    background-size:cover; /* ensure it covers container */
+    background-position: top; /* starts at top */
+    color: white; /* font */
+    height:60vh;  /* 60% vertical height of screen */
+    text-align: center; /* centre all text */
+}
+
  
 /* site intro heading */
 .page-intro h1 {
@@ -368,7 +417,7 @@ nav ul li a:hover {
 /* *************************** */
 
 /* force new line for the site intros, apply spacing */
-#home-intro strong, #home-intro em, #about-title strong, #about-title em {
+.page-intro strong, .page-intro em, #about-title strong, #about-title em {
     display: block;
     margin-top: 10px;
     margin-bottom: 20px;

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- declare the doctype as HTML5 -->
+<!-- set the language as english -->
+<head>
+   <!-- set the character set as unicode 8  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <!-- link the CSS stylesheet  -->
+    <link rel="stylesheet" href="../main.css">
+    <!-- link the google font stylesheet  -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- icon in browser tab -->
+    <link rel="shortcut icon" type="image/x-icon" href="logoicon.ico">

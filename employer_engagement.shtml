@@ -1,0 +1,51 @@
+<!--#include virtual="/ssi/documentinfo.shtml" -->
+<title>Silicon Hack | Employer Engagement</title>
+</head>
+
+<!--#include virtual="/ssi/header.shtml" -->
+<!--       THE MENU AND BUTTONS    -->
+           <nav class="main-nav" id="burger">
+            <ul>
+                <li><a href="index.shtml">Home</a></li>
+                <li><a href="news_events.shtml">News &amp; Events</a></li>
+                <li><a href="curriculum.shtml">Curriculum</a></li>
+                <li><a href="#" id="active">Employer Engagement</a></li>
+                <li><a href="about_us.shtml">About Us</a></li>
+                
+            </ul>
+        </nav>
+        
+        <nav id="apply-nav">
+            <ul>
+                <li><a class="call-to-action-button" role="button" href="#">Apply Now</a></li>
+            </ul>
+        </nav>
+           
+ 
+<!--    PAGE INTRO IMAGE AND TAG LINES       -->
+            <section id="employer-intro" class="page-intro"> <!-- section to intro the site, this is not styled as a grid -->
+            <div class="flex-columns">
+                <div><h1>Employer Engagement</h1></div>
+                <strong>They are creating the future</strong>
+                <div class="content-desktop"><em>Will you watch them, or will you join them?</em></div>
+                <a class="call-to-action-button" href="#comp-education">Employer? Join Us</a>
+            </div>
+            </section>
+                      
+<!--    START OF THE MAIN CONTENT OF PAGE       -->
+<!-- ######################################################################################################### -->
+
+
+
+
+
+<!-- ######################################################################################################### -->
+
+<!-- END OF THE CONTENT OF PAGE -->
+
+
+<!--#include virtual="ssi/footer.shtml" -->
+
+
+</body>
+</html>

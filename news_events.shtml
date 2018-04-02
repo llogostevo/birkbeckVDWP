@@ -1,0 +1,48 @@
+<!--#include virtual="/ssi/documentinfo.shtml" -->
+<title>Silicon Hack | News & Events</title>
+</head>
+<!--#include virtual="/ssi/header.shtml" -->
+
+<!--       THE MENU AND BUTTONS    -->
+           <nav class="main-nav" id="burger">
+            <ul>
+                <li><a href="index.shtml" >Home</a></li>
+                <li><a href="#" id="active">News &amp; Events</a></li>
+                <li><a href="curriculum.shtml">Curriculum</a></li>
+                <li><a href="employer_engagement.shtml">Employer Engagement</a></li>
+                <li><a href="about_us.shtml">About Us</a></li>
+                
+            </ul>
+        </nav>
+        
+        <nav id="apply-nav">
+            <ul>
+                <li><a class="call-to-action-button" role="button" href="#">Apply Now</a></li>
+            </ul>
+        </nav>
+           
+<!--    PAGE INTRO IMAGE AND TAG LINES       -->
+            <section id="news-intro" class="page-intro"> <!-- section to intro the site, this is not styled as a grid -->
+            <div class="flex-columns">
+                <div><h1>News and Events</h1></div>
+                <strong>We went To Google!!</strong>
+                <div class="content-desktop"><em>Our year 12s were thouroughly entertained</em></div>
+                <a class="call-to-action-button" href="#">Find Out More</a>
+            </div>
+            </section>
+            
+<!-- ######################################################################################################### -->
+<!--    START OF THE MAIN CONTENT OF PAGE       -->
+
+
+
+
+<!-- END OF THE CONTENT OF PAGE -->
+<!-- ######################################################################################################### -->
+
+
+<!--#include virtual="ssi/footer.shtml" -->
+
+
+</body>
+</html>

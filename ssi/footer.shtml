@@ -1,0 +1,32 @@
+        <footer id="main-footer" class="wrapper">
+            <div>                
+                <ul>
+                    <!-- link to main school site -->
+                   <!-- &copy; is copyright symbol -->
+                    <li><a href="http://www.centralfoundationboys.co.uk"> &copy; Central Foundation Boys School</a></li>
+                    <!-- link to relevent policies -->
+                    <li><a href="http://www.centralfoundationboys.co.uk/about/policies">Policies</a></li>
+                    <!-- link to site map -->
+                    <li><a href="sitemap.html">Site Map</a></li>
+                </ul>
+            </div>
+            <div>
+        <!--image sprite used in CSS-->
+<!-- NB. Do not tidy code with indents on seperate lines. This causes issues with the sprite display -->
+                   
+                   
+                    <a href="http://www.facebook.com"><div id="facebook" class="social"></div></a>
+                    <a href="http://www.snapchat.com"><div id="snapchat" class="social"></div></a>
+                    <a href="http://www.twitter.com"><div id="twitter" class="social"></div></a>
+                    <a href="http://www.youtube.com"><div id="youtube" class="social"></div></a>
+                    <a href="http://www.instagram.com"><div id="instagram" class="social"></div></a>
+            </div>
+        </footer>
+    
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script
+src= "js/burger.js">
+</script>

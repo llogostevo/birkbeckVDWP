@@ -1,0 +1,20 @@
+
+<body>  
+      
+<div class="wrapper">
+        <header class="main-head">
+            <nav id="currentuser"> 
+                   <ul>
+                       <li><a href="login.html">Login</a></li>
+                   </ul>
+               </nav>
+            <div id="banner">
+                   <a href="../index.shtml">
+                    <h1 id="logo">s<span class="greenletter">i</span>l<span class="greenletter">i</span>c<span class="greenletter">o</span>n {hack}</h1></a>
+            </div>
+        </header>
+        
+        <!--  class content mobile means it won't display on desktop or tablet      -->
+        <nav class="content-mobile" id="burger-container">
+            <a id="burger-button" role="button" href="#"><img src="images/icons/png/burger_menu%20v2.png"></a>
+        </nav>
