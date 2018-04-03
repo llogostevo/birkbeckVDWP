@@ -3,7 +3,7 @@
 </head>
 <!--#include virtual="/ssi/header.shtml" -->
 <!--       THE MENU AND BUTTONS    -->
-           <nav class="main-nav" id="burger">
+           <nav id="main-nav">
             <ul>
                 <li><a href="index.shtml">Home</a></li>
                 <li><a href="news_events.shtml">News &amp; Events</a></li>

@@ -4,7 +4,7 @@
 <!--#include virtual="/ssi/header.shtml" -->
 
 <!--       THE MENU AND BUTTONS    -->
-           <nav class="main-nav" id="burger">
+           <nav id="main-nav">
             <ul>
                 <li><a href="index.shtml" >Home</a></li>
                 <li><a href="#" id="active">News &amp; Events</a></li>

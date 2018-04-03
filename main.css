@@ -39,11 +39,9 @@
     display: none;
 }
 
-/*
 #main-nav {
     display:none;
 }
-*/
 
 
 /* ***************************Site Wide Styling ********************************* */
@@ -571,7 +569,7 @@ iframe {
 /* ****************************************************** */
 /* ****************************************************** */
 
-
+/* selector looks for all input elements with the designated types*/
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -583,17 +581,20 @@ input[type=text], select, textarea {
     resize: vertical;
 }
 
+/* styled in same way as call to action button */
 input[type=submit] {
-    background-color: #4CAF50;
+    background-image:linear-gradient(-45deg, #218686, #004b4b); 
+    background-color: #006060;
     color: white;
-    padding: 12px 20px;
+    font-family: 'Montserrat', sans-serif;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
+    padding: 10px;
+    border-radius:5px;
+    font-size: 1em;
 }
-
 input[type=submit]:hover {
-    background-color: #45a049;
+    text-decoration: underline;
 }
 
 .form-container {
@@ -640,7 +641,7 @@ input[type=submit]:hover {
 }
 */
 
- set the staff heading to 4 columns across 
+/* set the staff heading to 4 columns across */
 #staff h1, #staff-intro {
     grid-column:1 / 4;
 }
@@ -719,11 +720,9 @@ input[type=submit]:hover {
         display: inline;
     }  
     
-/*
     #main-nav {
         display:block;
     }
-*/
 /* ********************************* */
     
 /* Positioning of site navigation as row */
@@ -789,11 +788,9 @@ input[type=submit]:hover {
     display: inline;
 }
     
-/*
-#main-nav {
-        display:block;
-    }
-*/
+    #main-nav {
+            display:block;
+        }
 /* ********************************* */
     
 /* Align text to left in the paragraphs
@@ -833,8 +830,6 @@ input[type=submit]:hover {
         grid-row: 2;
         grid-column: col-start 10 / span 3;
         }
-    
-    
 
 /* ************************ Logo ******************* */
 /* ************************************************* */    

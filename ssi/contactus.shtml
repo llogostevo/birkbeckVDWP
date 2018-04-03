@@ -1,0 +1,57 @@
+<section id="general-contact">
+    <div class="form-container">
+            <form action="/action_page.php">
+                <select name="form-menu" id="form-menu">
+                    <option value="apply-now">Apply Now</option>
+                    <option value="Contact-Us">General Inquiry</option>
+                    <option value="event-signup">Sign up for Event</option>
+                    <option value="employers">Help as an Employer</option>
+                </select>
+<!-- consistent details that would go at top of each form -->
+                <div class="all-form-details">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required />
+                    
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                    <label for="email_addr">Email Address <span>*</span></label>
+                    <input type="email" required id="email_addr" />
+                    <label for="email_addr_confirm">Confirm Email Address <span>*</span></label>
+                    <input type="email" required id="email_addr_confirm" />
+                </div>
+
+<!-- Apply Now                -->
+                <div class="apply-now">
+                
+                </div>    
+<!-- General Inquiry -->
+                <div class="Contact-Us">
+                
+                </div>
+<!-- Sign up for event -->
+                <div class="event-signup">
+                
+                
+                <label for="date">Date <span>*</span></label>
+                <input type="date"id="date" min="1" max="4" step="1" />
+                
+                <label for="qty">Number of People <span>*</span></label>
+                <input type="number"id="qty" value="1" min="1" max="4" step="1" />
+                </div>
+<!-- Employer             -->
+                <div class="employers">
+                <progress id="p" max=100>0% </progress>
+ 
+<meter min=0 max=20 value=12 optimum=10>12cm </meter>
+                </div>
+                
+<div class="all-form-details">
+    <label for="subject">Any other details you would like to write to us?</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+</div>
+                
+                <input type="submit" value="Submit">
+              </form>
+        </div>
+</section>
