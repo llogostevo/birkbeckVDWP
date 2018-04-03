@@ -34,7 +34,154 @@
 <!--    START OF THE MAIN CONTENT OF PAGE       -->
 <!-- ######################################################################################################### -->
 
+<section id=#more-about-us>
+    <div>
+       <h1>Who Are We?</h1>
 
+       <p>An offshoot of the Computing Department @ Central Foundation Boys School. Located next door to the world famous Silicon Roundabout Central Foundation Boys' School aims to provide:</p>
+       
+       <blockquote>...a world class curriculum for the students: whilst based around traditional subjects it must reflect the world as it is today and prepare the students for the future</blockquote>
+       
+       <p>This part of the mission statement led to the formation of Silicon Hack. Working under the umbrella of Central Foundation Boys' Schools sixth form provision we have developed a course that moves away from the traditional classroom based approach.</p>
+       <p>Here you will learn technical skills that include:</p>
+       
+       <ul>
+           <li>HTML</li>
+           <li>CSS</li>
+           <li>Intro to JavaScript</li>
+           <li>Intro to Python</li>
+       </ul>
+
+<p>More importantly you will learn the soft skills required to progress either into University, an Apprenticeship or the workplace. Skills such as:</p>
+
+    <ul>
+           <li>Teamwork</li>
+           <li>Confidence</li>
+           <li>Integrity</li>
+           <li>Leadership</li>
+           <li>Independence</li>
+       </ul>
+    </div>
+    <div>
+        <a class="call-to-action-button" href="curriculum.shtml">Check out the Curriculum</a>
+    </div>
+</section>
+
+
+<section id=#our-staff>
+    <div>
+       <h1>Our Staff</h1>
+       <p>We have a strong team who have all achieved some form of University Qualification in Computer Science. Click on their faces to reveal some more...</p>
+    </div>
+    
+    <div id="staff">
+       <!-- all images are property of the school -->
+        <div class="staff-image" id="stevens-image">
+             <img src="images/staff/lloyd.png" alt="Mr Stevens">
+              <div ><h2>Mr Stevens - Assistant Principal</h2>
+              <p id="stevens-text">A computer science graduate with a masters in e-business and strategy. Mr Stevens has taught in secondary schools for 12 years and is strong advocate of project based learning and vocational education. Mr Stevens felt a new approach was required for post 16 study in Computing after seeing so many of his former students struggle their progression route in the industry when leaving school. Outside of school Mr Stevens is a keen sportsman with an addiction for exploring.</p>
+        </div>
+         </div>
+        <div class="staff-image" id="vega-image">
+        <img src="images/staff/jaime.png" alt="Mr Vega">
+        <div><h2>Mr Vega - Classroom Teacher</h2>
+
+            <p id="vega-text">Mr Vega is a graphic/multimedia designer with more than 10 years of commercial experience. He has a passion for multimedia design and game development. He has developed a wide variety of interactive websites and apps for commercial use. He has a strong interest in music and is now learning to play the guitar (currently at level 4, aiming to level 8+). He is a fluent French and Spanish speaker, graduating as a designer in Chile and England and furthering his studies through an MSC in computer science.</p>
+        </div>
+ </div>
+        <div class="staff-image" id="lau-image">
+        <!-- placeholder, need image of Mr Lau -->
+        <img src="images/staff/leila.png" alt="Mr Lau">
+        <div><h2>Mr Lau - Lead KS4</h2>
+        <p id="lau-text">Mr Lau is a computer science teacher with more than 10 years of experience. He has a passion for teaching and has recently published his own book. A CAS master teacher, Mr Lau has also won international recognition for his teaching. Why not google him and see?</p>
+        </div>
+         </div>
+        <div class="staff-image" id="lassami-image"><img src="images/staff/leila.png" alt="Miss Lassami">
+        <div><h2>Ms Lassami - 2ic ICT</h2>
+            <p id="lassami-text">A computer science graduate from Queen Mary, Miss Lassami joined the teaching profession to make a difference in the world. An enthusiastic programmer, Miss Lassami enjoys improving her skills in web design in her own time. A speaker of Arabic, Miss Lassami is also a keen traveller and a self professed foodie, she loves to sample dishes from all over the world on her travels.</p>
+        </div>
+        </div>
+       <div class="staff-image" id="tong-image">
+         <img src="images/staff/gavin.png" alt="Mr Tong">
+         <div>
+           <h2>Mr Tong - HoY 10</h2>
+            <p id="tong-text">Another Computer Science graduate this time from King's College London, Mr Tong is a self confessed geek who has a love for both teaching and computing. Outside of school, Mr Tong is a keen online gamer. He has even built his own gaming PC! He is not only a geeky gamer but a very active and outdoorsy person; his favourite sports include football and swimming. Oh one more thing...don't challenge him to a dance off!</p>
+           </div>
+        </div>
+    </div>   
+</section>
+
+<section #id="map" class="wrapper">
+   <div>
+       <h1>Where Are We?</h1>
+
+       <p>We are based right at the heart of Tech City.Located next door to the world famous Silicon Roundabout we are in a prime location in and around the tech sector. Plus there are some good take-aways around here also ;) Why not contact us to arrange a visit?</p>
+
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.340448971678!2d-0.0879529845538814!3d51.525315217214654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761caf7fc3b1a3%3A0xa694993aa28565fa!2sCentral+Foundation+Boys%E2%80%99+School!5e0!3m2!1sen!2suk!4v1522704499211" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+    </div>
+</section>
+    <section id="contact" class="wrapper">
+            <div id="contact-header">
+                <h1  class="centre-item">Are you interested?</h1>
+            </div>                  
+                <div id="contact-us" class="centre-item">
+                    <a href="contact-us" class="svg">
+                    <img src="images/icons/png/021-email_v2.png">
+                    <p>Contact Us</p>
+                    </a> 
+                </div>
+                <div id="event-signup" class="centre-item">
+                   <a href="news_events.html" class="svg">
+                    <img src="images/icons/png/035-calendar.png">
+                    <p>Event Sign Up</p>
+                    </a> 
+                </div>
+                <div id="live-chat" class="centre-item">
+                     <a href="http://www.bbc.co.uk" class="svg">
+                    <img src="images/icons/png/033-chat.png">
+                    <p>Live Chat</p>
+                    </a> 
+                </div>
+                <div id="apply-now" class="centre-item">
+                    <a href="apply_now.html" class="svg">
+                    <img src="images/icons/png/010-contract.png">
+                    <p>Apply Now</p>
+                    </a>   
+                </div>
+                <div id="employers" class="centre-item">
+                    <a href="Employer_Engagement.html/#employer-form" class="svg">
+                    <img src="images/icons/png/employer_v2.png" alt="Employer Sign Up">
+                    <p>Employer Sign Up</p>
+                    </a> 
+    
+                </div>
+        </section>
+
+<section id="general-contact">
+    <div class="form-container">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+              </form>
+        </div>
+</section>
 
 
 
@@ -47,6 +194,6 @@
 
 <!--#include virtual="ssi/footer.shtml" -->
 
-
+<script src="/js/staff-toggle.js"></script>
 </body>
 </html>

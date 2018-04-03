@@ -28,14 +28,64 @@
                 <div><h1>Employer Engagement</h1></div>
                 <strong>They are creating the future</strong>
                 <div class="content-desktop"><em>Will you watch them, or will you join them?</em></div>
-                <a class="call-to-action-button" href="#comp-education">Employer? Join Us</a>
+                <a class="call-to-action-button" href="#join-us">Employer? Join Us</a>
             </div>
             </section>
                       
 <!--    START OF THE MAIN CONTENT OF PAGE       -->
 <!-- ######################################################################################################### -->
 
+<section id=#employers>
+    <div>
+       <h1>Our Employers</h1>
 
+       <p>We have links with a variety of companies in the local area who support our young people in various ways. Please check out how they support below</p>
+    </div>
+    
+    <div id="#inspire">
+       <h2>Inspire</h2>
+        <p>Inspire have supported setting up vocational links with a variety of companies and supported the planning of workplace visits and mentoring workshops</p>
+    </div>
+</section>
+
+<section #id="join-us" class="wrapper">
+   <div>
+       <h1>Join Us</h1>
+
+       <p>We are always looking for employers to support us in the a variety of ways:</p>
+
+       <ul>
+           <li>Mentoring</li>
+           <li>Curriculum Planning and Guidance</li>
+           <li>Lesson Support</li>
+           <li>Workplace Visits</li>
+           <li>Work Placements</li>
+       </ul>
+
+        <p>Contact us via the form below</p>
+    </div>
+    <div class="form-container" id="employer-form">
+            <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+              </form>
+        </div>
+</section>
 
 
 

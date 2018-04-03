@@ -4,7 +4,7 @@
 
 <!--#include virtual="/ssi/header.shtml" -->
 <!--       THE MENU AND BUTTONS    -->
-           <nav class="main-nav" id="burger">
+           <nav id="main-nav">
             <ul>
                 <li><a href="#" id="active">Home</a></li>
                 <li><a href="news_events.shtml">News &amp; Events</a></li>
@@ -72,43 +72,8 @@
         </div>
     </section>
             
-<!--    SECTION FOR THE CONTACT LINKS        -->
-        <section id="contact" class="wrapper">
-            <div id="contact-header">
-                <h1  class="centre-item">Are you interested?</h1>
-            </div>                  
-                <div id="contact-us" class="centre-item">
-                    <a href="contact-us" class="svg">
-                    <img src="images/icons/png/021-email_v2.png">
-                    <p>Contact Us</p>
-                    </a> 
-                </div>
-                <div id="event-signup" class="centre-item">
-                   <a href="news_events.html" class="svg">
-                    <img src="images/icons/png/035-calendar.png">
-                    <p>Event Sign Up</p>
-                    </a> 
-                </div>
-                <div id="live-chat" class="centre-item">
-                     <a href="http://www.bbc.co.uk" class="svg">
-                    <img src="images/icons/png/033-chat.png">
-                    <p>Live Chat</p>
-                    </a> 
-                </div>
-                <div id="apply-now" class="centre-item">
-                    <a href="apply_now.html" class="svg">
-                    <img src="images/icons/png/010-contract.png">
-                    <p>Apply Now</p>
-                    </a>   
-                </div>
-                <div id="employers" class="centre-item">
-                    <a href="Employer_Engagement.html" class="svg">
-                    <img src="images/icons/png/employer_v2.png" alt="Employer Sign Up">
-                    <p>Employer Sign Up</p>
-                    </a> 
-    
-                </div>
-        </section>
+
+<!--#include virtual="ssi/contactlinkssection.shtml" -->
 
 <!-- End of Page Content -->
 <!-- ######################################################################################################### -->

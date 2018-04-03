@@ -4,11 +4,9 @@
 
 /* selects all elements where parent is wrapper, used for testing purposes only to colour grid and borders */
 .wrapper > * {
-/*
         border: 2px solid #f08c00;
         background-color: #ffec99;
         border-radius: 5px;
-*/
         padding: 5px;
     }
 
@@ -20,6 +18,32 @@
 /* ****************************************************************************** */
 /* ****************************************************************************** */
             /* ****************************************************** */
+
+/* ****************************************************************************** */
+/* *********** HIDE CERTAIN CONTENT For Mobile ************* */
+/*************************************************** */
+
+.content-desktop {
+    display: none;
+}
+
+.content-mobile {
+    display: inline-block;
+}
+
+.content-tablet {
+    display: none;
+}
+
+.content-desktop-tablet {
+    display: none;
+}
+
+/*
+#main-nav {
+    display:none;
+}
+*/
 
 
 /* ***************************Site Wide Styling ********************************* */
@@ -93,20 +117,6 @@ h1 {
         grid-template-rows: auto;
     }
 
-/* *********** HIDE CONTENT For Mobile ************* */
-/*************************************************** */
-
-.content-desktop {
-    display: none;
-}
-
-.content-mobile {
-    display: inline;
-}
-
-.content-tablet {
-    display: none;
-}
 
 /* *********** Sitewide Positioning **************** */
 /*************************************************** */
@@ -161,7 +171,7 @@ nav ul {
     }
 
 /* set the navigation styling */
-nav .main-nav {
+#main-nav {
     /* caps on first letter of each word */
     font-variant-caps:titling-caps;
     font-size:1em;
@@ -556,6 +566,44 @@ iframe {
 /* ****************************************************** */
 /* ****************************************************** */
 /*                                                        */
+/* **************** form Styling ************************ */
+/*                                                        */
+/* ****************************************************** */
+/* ****************************************************** */
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.form-container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+/* ****************************************************** */
+/* ****************************************************** */
+/*                                                        */
 /* **************** Site Map Styling ******************* */
 /*                                                        */
 /* ****************************************************** */
@@ -569,6 +617,66 @@ iframe {
 #sitemap {
     text-align: left;
 }
+
+/* ****************************************************** */
+/* ****************************************************** */
+/*                                                        */
+/* **************** About Us Styling *******************  */
+/*                                                        */
+/* ****************************************************** */
+/* ****************************************************** */
+
+/* *************************** */
+/* staff section about us page */
+/* *************************** */
+
+/* setup grid for staff section */
+/*
+#staff {
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr));
+    grid-gap: 20px;  space between grid boxes 
+}
+*/
+
+ set the staff heading to 4 columns across 
+#staff h1, #staff-intro {
+    grid-column:1 / 4;
+}
+
+/* remove margin and padding from staff heading */
+#staff h1 {
+    margin-top:0;
+    padding-top:0;
+}
+
+/* positioning and size of the content in the grid */
+/*
+.staff-image {
+    display:grid;
+    grid-template-rows: 205px 40px;
+    grid-gap: 20px;
+}
+*/
+
+/* style the staff images */
+.staff-image img {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%; /* make a circle */
+    margin: 0 auto; /* position centre of the div */
+}
+
+/* position centre of the div */
+/*
+.staff-text {
+    margin: 0 auto;
+}
+*/
+
+
 
 /* ******************************************************* */
 /* ******************************************************* */
@@ -592,7 +700,32 @@ iframe {
 /* ****************************  */
 
 @media (min-width: 900px) {
+ 
+ /* display content on tablet landscape /small desktop, hide other content*/
+   
+   .content-desktop {
+    display: none;
+    }
 
+    .content-mobile {
+            display: none;
+        }
+
+    .content-tablet {
+            display: inline;
+        }
+
+    .content-desktop-tablet {
+        display: inline;
+    }  
+    
+/*
+    #main-nav {
+        display:block;
+    }
+*/
+/* ********************************* */
+    
 /* Positioning of site navigation as row */
     nav ul {
         flex-direction:row;
@@ -626,18 +759,9 @@ iframe {
         height:auto;
         width: 100%;
     }
-    
-.content-desktop {
-    display: none;
+
 }
 
-.content-mobile {
-        display: none;
-    }
-
-.content-tablet {
-        display: inline;
-    }
 
 /* ****************************  */
 /* ****************************  */
@@ -647,7 +771,7 @@ iframe {
 
 @media (min-width: 1000px) {
 
-/* display content on desktop */
+/* hide certain content, display content on desktop */
 
     .content-desktop {
     display: inline;
@@ -657,15 +781,20 @@ iframe {
     display: none;
     }
     
-    .main-nav {
-        grid-row: 2;    
-        grid-column: col-start 2 / span 8;
+    .content-tablet {
+            display: none;
         }
 
-    #apply-nav {
-        grid-row: 2;
-        grid-column: col-start 10 / span 3;
-        }
+    .content-desktop-tablet {
+    display: inline;
+}
+    
+/*
+#main-nav {
+        display:block;
+    }
+*/
+/* ********************************* */
     
 /* Align text to left in the paragraphs
   for some reason this doesn't work?  p:not(a>p) */
@@ -681,7 +810,7 @@ iframe {
     
 /* ********************************************** */
 /* used to space the navigation equally across page */
-    .main-nav ul {
+    #main-nav ul {
         display:flex;
         flex-direction:row;
 /* to centre vertically */
@@ -690,11 +819,21 @@ iframe {
         justify-content: space-between;
     } 
 
-/* ************************ Apply Nav Button Positioning ******************* */
+/* ************************ Nav Positioning ******************* */
 /* ************************************************************************* */
     
     
-    /* none for now */
+   /* set layout for navigation on desktop */
+    #main-nav {
+        grid-row: 2;    
+        grid-column: col-start 2 / span 8;
+        }
+
+    #apply-nav {
+        grid-row: 2;
+        grid-column: col-start 10 / span 3;
+        }
+    
     
 
 /* ************************ Logo ******************* */
