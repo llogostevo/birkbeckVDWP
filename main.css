@@ -570,7 +570,7 @@ iframe {
 /* ****************************************************** */
 
 /* selector looks for all input elements with the designated types*/
-input[type=text], select, textarea {
+input[type=text], input[type=tel], input[type=email], input[list], select, textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -580,6 +580,8 @@ input[type=text], select, textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
+
+
 
 /* styled in same way as call to action button */
 input[type=submit] {
@@ -593,6 +595,8 @@ input[type=submit] {
     border-radius:5px;
     font-size: 1em;
 }
+
+
 input[type=submit]:hover {
     text-decoration: underline;
 }
@@ -601,7 +605,23 @@ input[type=submit]:hover {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+
 }
+
+
+#event-signup {
+    display: none;
+}
+#contact-us {
+    display: none;
+}
+#apply-now {
+    display: none;
+}
+#employers {
+    display: none;
+}
+
 /* ****************************************************** */
 /* ****************************************************** */
 /*                                                        */
@@ -932,6 +952,6 @@ input[type=submit]:hover {
         grid-column: 5;
     }
 
-    
+
 
 }

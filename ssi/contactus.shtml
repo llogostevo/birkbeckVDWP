@@ -2,53 +2,219 @@
     <div class="form-container">
             <form action="/action_page.php">
                 <select name="form-menu" id="form-menu">
-                    <option value="apply-now">Apply Now</option>
                     <option value="Contact-Us">General Inquiry</option>
+                    <option value="apply-now">Apply Now</option>
                     <option value="event-signup">Sign up for Event</option>
                     <option value="employers">Help as an Employer</option>
                 </select>
 <!-- consistent details that would go at top of each form -->
                 <div class="all-form-details">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required />
-                    
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    
-                    <label for="email_addr">Email Address <span>*</span></label>
-                    <input type="email" required id="email_addr" />
-                    <label for="email_addr_confirm">Confirm Email Address <span>*</span></label>
-                    <input type="email" required id="email_addr_confirm" />
+                    <fieldset>
+                       <legend>Contact Details</legend>
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name.." required />
+
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                            <label for="email_addr">Email Address <span>*</span></label>
+                            <input type="email" required id="email_addr">
+                            <label for="email_addr_confirm">Confirm Email Address <span>*</span></label>
+                            <input type="email" required id="email_addr_confirm">
+                            
+                            <label for="contact-number">Phone Number</label>
+                            <input type="tel" id="contact-number">
+                    </fieldset>
                 </div>
 
 <!-- Apply Now                -->
-                <div class="apply-now">
-                
+                <div id="apply-now">
+                   <fieldset>
+                          <legend>Education Details</legend>
+                           <fieldset>
+                               <legend>Qualifications</legend>
+                                
+                                <label for="maths-result">Maths</label>
+                                <input list="maths-result">
+                                    <datalist id="maths-result">
+                                      <option value="A*">
+                                      <option value="A">
+                                      <option value="B">
+                                      <option value="C">
+                                      <option value="D or below">
+                                    </datalist>
+                                    
+                                <label for="eng-lit-result">English Literature</label>
+                                <input list="eng-lit-result">
+                                    <datalist id="eng-lit-result">
+                                      <option value="A*">
+                                      <option value="A">
+                                      <option value="B">
+                                      <option value="C">
+                                      <option value="D or below">
+                                    </datalist>
+                             
+                                <label for="eng-lang-result">English Language</label>
+                                <input list="eng-lang-result">
+                                    <datalist id="eng-lang-result">
+                                      <option value="A*">
+                                      <option value="A">
+                                      <option value="B">
+                                      <option value="C">
+                                      <option value="D or below">
+                                    </datalist>
+                                
+                                
+                                <fieldset>
+                                   <legend>Which type of Science did you do?</legend>
+                                        <input type = "radio" name = "science" id = "combined-science" value = "combined" checked = "checked">
+                                        <label for = "combined science">Combined Science</label>
+                                        <input type = "radio" name = "science" id = "seperate-science" value = "seperate">
+                                        <label for = "seperate-science">Seperate Science</label>
+
+                                         <div id="combined-science">
+                                            <label for="combined-science-result">Combined Science</label>
+                                            <input list="combined-science-result">
+                                                <datalist id="combined-science-result">
+                                                  <option value="AA or above">
+                                                  <option value="AB">
+                                                  <option value="BB">
+                                                  <option value="BC">
+                                                  <option value="CC">
+                                                  <option value="CD or below">
+                                                </datalist>
+                                            </div>
+                                            <div id="seperate-science">
+                                                <label for="physics-result">Physics</label>
+                                                <input list="physics-result">
+                                                    <datalist id="physics-result">
+                                                      <option value="A*">
+                                                      <option value="A">
+                                                      <option value="B">
+                                                      <option value="C">
+                                                      <option value="D or below">
+                                                    </datalist>
+
+                                                <label for="biology-result">Biology</label>
+                                                <input list="biology-result">
+                                                    <datalist id="biology-result">
+                                                      <option value="A*">
+                                                      <option value="A">
+                                                      <option value="B">
+                                                      <option value="C">
+                                                      <option value="D or below">
+                                                    </datalist>
+
+                                                <label for="chemistry-result">Chemistry</label>
+                                                <input list="chemistry-result">
+                                                    <datalist id="chemistry-result">
+                                                      <option value="A*">
+                                                      <option value="A">
+                                                      <option value="B">
+                                                      <option value="C">
+                                                      <option value="D or below">
+                                                    </datalist>
+                                            </div>>
+                                 </fieldset>
+                                 
+                                <fieldset>
+                                   <legend>Have you studied ICT or Computing at GCSE/Vocational?</legend>
+                                        <input type = "radio" name = "ICT-Comp" id = "ICT" value = "ICT" >
+                                        <label for = "ICT">ICT</label>
+                                        <input type = "radio" name = "ICT-Comp" id = "Computing" value = "Computing">
+                                        <label for = "Computing">Computing</label>
+                                        <input type = "radio" name = "ICT-Comp" id = "no-comp" value = "none">
+                                        <label for = "no-comp">I didn't study either</label>
+                                    <fieldset class="ICT">
+                                            <legend>ICT</legend>
+                                            <label for="ICT-result">Result</label>
+                                            <input list="ICT-result">
+                                                <datalist id="chemistry-result">
+                                                  <option value="L2 Dist*">
+                                                  <option value="L2 Merit">
+                                                  <option value="L2 Pass">
+                                                  <option value="L1">
+                                                </datalist>
+                                            </fieldset>  
+                                    <fieldset class="Computing">
+                                            <legend>Computing</legend>
+                                            <label for="computing-result">Result</label>
+                                            <input list="computing-result">
+                                                <datalist id="computing-result">
+                                                  <option value="A*">
+                                                  <option value="A">
+                                                  <option value="B">
+                                                  <option value="C">
+                                                  <option value="D or below">
+                                                </datalist>
+                                            </fieldset>  
+                                    
+                                </fieldset>
+                                
+                                
+                                <fieldset>
+                                   <legend>Other information</legend>
+                                        <label for="subject">Any other qualifications you would like to tell us about?</label>
+                                        <textarea id="subject" name="subject" placeholder="Other qualifications....?" style="height:100px"></textarea>
+
+                                        <label for="personal-statement">Please write a short personal statement explaning why you want to join us</label>
+                                        <textarea id="personal-statement" name="personal-statement" placeholder="I want to join Silicon Hack because..." style="height:100px"></textarea>
+                                        
+                                        <label for="DOB">Please enter your DOB</label>
+                                        <input type="date" name="DOB" id="DOB" min="2002-09-01" max="2001-09-01">
+                               </fieldset>                             
+                            </fieldset>
+                    </fieldset>
+              
                 </div>    
 <!-- General Inquiry -->
-                <div class="Contact-Us">
-                
-                </div>
+<!--                <div id="Contact-Us">-->
+<!-- No further details at present, here for maintainability  -->
+<!--                </div>-->
 <!-- Sign up for event -->
-                <div class="event-signup">
+                <div id="event-signup">
+                    <fieldset>
+                        <legend>Event Choice</legend>
                 
-                
-                <label for="date">Date <span>*</span></label>
-                <input type="date"id="date" min="1" max="4" step="1" />
-                
-                <label for="qty">Number of People <span>*</span></label>
-                <input type="number"id="qty" value="1" min="1" max="4" step="1" />
+                        <label for="event-choice">Date <span>*</span></label>
+                        <select id="event-choice">
+                                <optgroup label="Taster Days">
+                                    <option>March 13th Taster 7pm</option>
+                                    <option>April 25th Taster 7pm</option>    
+                                </optgroup>
+                                <optgroup label="Open Evenings">
+                                    <option>July 14th Open Evening 7pm</option>
+                                    <option>July 21st Open Evening 7pm</option>    
+                                </optgroup>
+                                <optgroup label="Hackathons">
+                                    <option>Jun 23rd Hackathon 9am to 12pm</option>
+                                    <option>Jun 24th Hackathon 9am to 12pm</option>    
+                                </optgroup>
+                                <optgroup label="other">
+                                <!--    <option>none</option>-->
+                                </optgroup> 
+                        </select>
+                        <label for="qty">Number of People <span>*</span></label>
+                        <input type="number"id="qty" value="1" min="1" max="4" step="1" />
+                    </fieldset>
                 </div>
 <!-- Employer             -->
-                <div class="employers">
-                <progress id="p" max=100>0% </progress>
- 
-<meter min=0 max=20 value=12 optimum=10>12cm </meter>
+                <div id="employers">
+                    <fieldset>
+                        <legend>Employer Details</legend>
+
+                        <label for="date">Date <span>*</span></label>
+                        <input type="date"id="date" min="1" max="4" step="1" />
+
+                        <label for="qty">Number of People <span>*</span></label>
+                        <input type="number"id="qty" value="1" min="1" max="4" step="1" />
+                    </fieldset>
+                
                 </div>
                 
 <div class="all-form-details">
-    <label for="subject">Any other details you would like to write to us?</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <label for="subject">Please feel free to leave us a message</label>
+    <textarea id="subject" name="subject" placeholder="Feel free to reach out.." style="height:200px"></textarea>
 </div>
                 
                 <input type="submit" value="Submit">
