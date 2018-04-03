@@ -33,9 +33,44 @@
                                   
 <!--    START OF THE MAIN CONTENT OF PAGE       -->
 <!-- ######################################################################################################### -->
+  
+<section class="wrapper">
+  <div>
+      <h1>What will you learn?</h1>
+      <p>Here you will learn both the soft skills to be a success in the tech sector and also gain some of the technical skills required.</p>
+      <p>You will study towards two courses:</p>
+      <ul>
+          <li>L3 Digital Media Cambridge Technical - 1 A level Equivalent</li>
+          <li>L3 IT Cambridge Technical - 2 A level Equivalent</li>
 
-
-
+      </ul>
+      <p>You can use the skills gained in the qualifications and your time at our sixth form to either apply for university, apprentichesips or go straight into the work place. Check out the specifications of the units you will study below.</p>
+  </div>
+   <div id="digital-media" class="flex-columns">
+    <h2>Digital Media Cambridge Technicals</h1>
+    
+    <a class="curriculum" href="http://www.ocr.org.uk/Images/270918-unit-01-media-products-and-audiences.pdf">unit 01 media products and audiences </a>
+    <a class="curriculum" href="http://www.ocr.org.uk/Images/270919-unit-02-pre-production-and-planning.pdf">unit 02 pre-production and planning</a>
+    <a class="curriculum" href="http://www.ocr.org.uk/Images/270920-unit-03-create-a-media-product.pdf">unit 03 create a media product</a>
+    <a class="curriculum" href="http://www.ocr.org.uk/Images/270923-unit-06-social-media-and-globalisation.pdf">unit 06 social media and globalisation</a>
+    <a class="curriculum" href="http://www.ocr.org.uk/Images/270940-unit-23-create-a-personal-media-profile.pdf">unit 23 create a personal media profile</a>
+    <a class="curriculum" href="http://www.ocr.org.uk/Images/270938-unit-21-plan-and-deliver-a-pitch-for-a-media-product.pdf">unit 21 plan and-deliver a pitch for a media product</a>
+    </div>
+<div id="IT" class="flex-columns">
+    <h2>IT Cambridge Technicals</h1>
+    <p></p>
+    <a class="curriculum" href="http://www.ocr.org.uk/Images/267350-unit-01-fundamentals-of-it.pdf">unit 01 fundamentals of it</a>
+    <a class="curriculum" href="http://www.ocr.org.uk/Images/267351-unit-02-global-information.pdf">unit 02 global information</a>
+    <a class="curriculum" href="http://www.ocr.org.uk/Images/267352-unit-03-cyber-security.pdf">unit 03 cyber security</a>
+    <a class="curriculum" href="http://www.ocr.org.uk/Images/267355-unit-06-application-design.pdf">unit 06 application-design</a>
+    <a class="curriculum" href="http://www.ocr.org.uk/Images/267358-unit-08-project-management.pdf">unit 08 project-management</a>
+    <a class="curriculum" href="http://www.ocr.org.uk/Images/267360-unit-09-product-development.pdf">unit 09 product-development</a>
+    <a class="curriculum" href="http://www.ocr.org.uk/Images/267367-unit-15-games-design-and-prototyping.pdf">unit 15 games design and prototyping</a>
+    <a class="curriculum" href="http://www.ocr.org.uk/Images/267469-unit-17-internet-of-everything.pdf">unit 17 internet of everything</a>
+    <a class="curriculum" href="http://www.ocr.org.uk/Images/267474-unit-21-web-design-prototyping.pdf">unit 21 web design prototyping</a>
+    
+</div>
+</section>
 
 
 <!-- ######################################################################################################### -->

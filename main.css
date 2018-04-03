@@ -119,14 +119,12 @@ h1 {
 /* *********** Sitewide Positioning **************** */
 /*************************************************** */
 
-/*
 .flex-columns {
     display: flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
 }
-*/
 
 /*
 .centre-item {
@@ -609,16 +607,16 @@ input[type=submit]:hover {
 }
 
 
-#event-signup {
+#event-signup-form {
     display: none;
 }
-#contact-us {
+#contact-us-form {
     display: none;
 }
-#apply-now {
+#apply-now-form {
     display: none;
 }
-#employers {
+#employers-form {
     display: none;
 }
 
@@ -697,7 +695,34 @@ input[type=submit]:hover {
 }
 */
 
+/* ****************************************************** */
+/* ****************************************************** */
+/*                                                        */
+/* **************** Curriculum Styling *******************  */
+/*                                                        */
+/* ****************************************************** */
+/* ****************************************************** */
 
+
+.curriculum {
+    background-image:linear-gradient(-45deg, #218686, #004b4b); 
+    /* top left to bottom right dark green to slightly lighter green */
+    background-color: #006060;/* if linear-gradient doesn't work */
+    color: white; /* font */
+    padding: 10px;
+    border-radius:5px;
+    text-decoration: none; /* remove browser default */
+    display: block; /* force other content to a new line */
+    font-variant-caps: titling-caps;
+    width: 50%;
+    margin: 10px;
+    text-align: center;
+}
+
+/* signifer when hover button */
+.curriculum:hover {
+    text-decoration: underline;
+}
 
 /* ******************************************************* */
 /* ******************************************************* */

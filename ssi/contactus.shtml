@@ -2,10 +2,10 @@
     <div class="form-container">
             <form action="/action_page.php">
                 <select name="form-menu" id="form-menu">
-                    <option value="Contact-Us">General Inquiry</option>
-                    <option value="apply-now">Apply Now</option>
-                    <option value="event-signup">Sign up for Event</option>
-                    <option value="employers">Help as an Employer</option>
+                    <option value="Contact-Us-form">General Inquiry</option>
+                    <option value="apply-now-form">Apply Now</option>
+                    <option value="event-signup-form">Sign up for Event</option>
+                    <option value="employers-form">Help as an Employer</option>
                 </select>
 <!-- consistent details that would go at top of each form -->
                 <div class="all-form-details">
@@ -28,7 +28,7 @@
                 </div>
 
 <!-- Apply Now                -->
-                <div id="apply-now">
+                <div id="apply-now-form">
                    <fieldset>
                           <legend>Education Details</legend>
                            <fieldset>
@@ -114,7 +114,7 @@
                                                       <option value="C">
                                                       <option value="D or below">
                                                     </datalist>
-                                            </div>>
+                                            </div>
                                  </fieldset>
                                  
                                 <fieldset>
@@ -168,11 +168,11 @@
               
                 </div>    
 <!-- General Inquiry -->
-<!--                <div id="Contact-Us">-->
+<!--                <div id="Contact-Us-form">-->
 <!-- No further details at present, here for maintainability  -->
 <!--                </div>-->
 <!-- Sign up for event -->
-                <div id="event-signup">
+                <div id="event-signup-form">
                     <fieldset>
                         <legend>Event Choice</legend>
                 
@@ -199,7 +199,7 @@
                     </fieldset>
                 </div>
 <!-- Employer             -->
-                <div id="employers">
+                <div id="employers-form">
                     <fieldset>
                         <legend>Employer Details</legend>
 

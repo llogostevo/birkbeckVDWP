@@ -133,6 +133,6 @@
 <!--#include virtual="ssi/footer.shtml" -->
 <script src= "js/showform.js"></script>
 <script src= "js/confirmemail.js"></script>
-<script src="/js/staff-toggle.js"></script>
+<script src="js/staff-toggle.js"></script>
 </body>
 </html>
