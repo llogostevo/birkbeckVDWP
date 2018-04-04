@@ -1,6 +1,6 @@
 
-
-//the form changes as the function is changed
+// ////////////////////// SHOW FORMS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+//the form changes as the selection is changed for the type of contact form
 $("#form-menu").change(function () {
             var choice = $( "#form-menu option:selected" ).val();
             if(choice=="apply-now-form")
@@ -37,3 +37,5 @@ $("#form-menu").change(function () {
                 $("#employers-form").show();
             }
         });
+
+

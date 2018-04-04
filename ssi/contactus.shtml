@@ -67,12 +67,12 @@
                                 
                                 <fieldset>
                                    <legend>Which type of Science did you do?</legend>
-                                        <input type = "radio" name = "science" id = "combined-science" value = "combined" checked = "checked">
-                                        <label for = "combined science">Combined Science</label>
-                                        <input type = "radio" name = "science" id = "seperate-science" value = "seperate">
-                                        <label for = "seperate-science">Seperate Science</label>
+                                        <input type = "radio" name = "radios" id = "combinedscience" value = "combinedscience" checked = "checked">
+                                        <label for = "combinedscience">Combined Science</label>
+                                        <input type = "radio" name = "radios" id = "seperatescience" value = "seperatescience">
+                                        <label for = "seperatescience">Seperate Science</label>
 
-                                         <div id="combined-science">
+                                         <div id="combinedscienceresults">
                                             <label for="combined-science-result">Combined Science</label>
                                             <input list="combined-science-result">
                                                 <datalist id="combined-science-result">
@@ -84,7 +84,7 @@
                                                   <option value="CD or below">
                                                 </datalist>
                                             </div>
-                                            <div id="seperate-science">
+                                            <div id="seperatescienceresults">
                                                 <label for="physics-result">Physics</label>
                                                 <input list="physics-result">
                                                     <datalist id="physics-result">
@@ -119,24 +119,31 @@
                                  
                                 <fieldset>
                                    <legend>Have you studied ICT or Computing at GCSE/Vocational?</legend>
-                                        <input type = "radio" name = "ICT-Comp" id = "ICT" value = "ICT" >
+                                        <input type = "radio" name = "ictradios" id = "ICT" value = "ICT">
                                         <label for = "ICT">ICT</label>
-                                        <input type = "radio" name = "ICT-Comp" id = "Computing" value = "Computing">
+                                        
+                                        <input type = "radio" name = "ictradios" id = "Computing" value = "Computing">
                                         <label for = "Computing">Computing</label>
-                                        <input type = "radio" name = "ICT-Comp" id = "no-comp" value = "none">
-                                        <label for = "no-comp">I didn't study either</label>
-                                    <fieldset class="ICT">
+                                        
+                                        <input type = "radio" name = "ictradios" id = "noict" value = "noict" checked="checked">
+                                        <label for = "noict">I didn't study either</label>
+                                   
+                                    
+                                    <div id="ICTgrades">
+                                        <fieldset >
                                             <legend>ICT</legend>
                                             <label for="ICT-result">Result</label>
                                             <input list="ICT-result">
-                                                <datalist id="chemistry-result">
+                                                <datalist id="ICT-result">
                                                   <option value="L2 Dist*">
                                                   <option value="L2 Merit">
                                                   <option value="L2 Pass">
                                                   <option value="L1">
                                                 </datalist>
-                                            </fieldset>  
-                                    <fieldset class="Computing">
+                                            </fieldset>
+                                    </div> 
+                                    <div id="Computinggrades">
+                                    <fieldset >
                                             <legend>Computing</legend>
                                             <label for="computing-result">Result</label>
                                             <input list="computing-result">
@@ -148,7 +155,7 @@
                                                   <option value="D or below">
                                                 </datalist>
                                             </fieldset>  
-                                    
+                                    </div>
                                 </fieldset>
                                 
                                 
