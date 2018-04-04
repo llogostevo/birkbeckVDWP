@@ -17,7 +17,7 @@
         
         <nav id="apply-nav">
             <ul>
-                <li><a class="call-to-action-button" role="button" href="#">Apply Now</a></li>
+                <li><a class="call-to-action-button" role="button" href="about_us.shtml#general-contact">Apply Now</a></li>
             </ul>
         </nav>
            

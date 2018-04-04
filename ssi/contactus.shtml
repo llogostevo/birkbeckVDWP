@@ -1,12 +1,14 @@
 <section id="general-contact">
-    <div class="form-container">
+    <div class="form-container" class="wrapper">
             <form action="/action_page.php">
+                <div class="select">
                 <select name="form-menu" id="form-menu">
                     <option value="Contact-Us-form">General Inquiry</option>
                     <option value="apply-now-form">Apply Now</option>
                     <option value="event-signup-form">Sign up for Event</option>
                     <option value="employers-form">Help as an Employer</option>
                 </select>
+                </div>
 <!-- consistent details that would go at top of each form -->
                 <div class="all-form-details">
                     <fieldset>
@@ -183,8 +185,9 @@
                     <fieldset>
                         <legend>Event Choice</legend>
                 
-                        <label for="event-choice">Date <span>*</span></label>
-                        <select id="event-choice">
+                        <label for="event-choice">Choose the Event you wish to attend</label>
+                        <!-- When changed it will call the displayEvent function -->
+                        <select id="event-choice" onchange="displayEvent()">
                                 <optgroup label="Taster Days">
                                     <option>March 13th Taster 7pm</option>
                                     <option>April 25th Taster 7pm</option>    
@@ -201,7 +204,8 @@
                                 <!--    <option>none</option>-->
                                 </optgroup> 
                         </select>
-                        <label for="qty">Number of People <span>*</span></label>
+                        <div id="event-details"> </div>
+                        <label for="qty">How many people are coming?</label>
                         <input type="number"id="qty" value="1" min="1" max="4" step="1" />
                     </fieldset>
                 </div>

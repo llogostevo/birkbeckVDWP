@@ -34,7 +34,7 @@
 <!--    START OF THE MAIN CONTENT OF PAGE       -->
 <!-- ######################################################################################################### -->
 
-<section id=#more-about-us>
+<section id="more-about-us">
     <div>
        <h1>Who Are We?</h1>
 
@@ -68,13 +68,11 @@
 </section>
 
 
-<section id=#our-staff>
-    <div>
+<section id="our-staff" class="wrapper">
+    <div id="our-staff-header">
        <h1>Our Staff</h1>
        <p>We have a strong team who have all achieved some form of University Qualification in Computer Science. Click on their faces to reveal some more...</p>
     </div>
-    
-    <div id="staff">
        <!-- all images are property of the school -->
         <div class="staff-image" id="stevens-image">
              <img src="images/staff/lloyd.png" alt="Mr Stevens">
@@ -107,11 +105,10 @@
            <h2>Mr Tong - HoY 10</h2>
             <p id="tong-text">Another Computer Science graduate this time from King's College London, Mr Tong is a self confessed geek who has a love for both teaching and computing. Outside of school, Mr Tong is a keen online gamer. He has even built his own gaming PC! He is not only a geeky gamer but a very active and outdoorsy person; his favourite sports include football and swimming. Oh one more thing...don't challenge him to a dance off!</p>
            </div>
-        </div>
     </div>   
 </section>
 
-<section #id="map" class="wrapper">
+<section id="map" class="wrapper">
    <div>
        <h1>Where Are We?</h1>
 
@@ -136,5 +133,7 @@
 <script src= "js/showictform.js"></script>
 <script src= "js/confirmemail.js"></script>
 <script src="js/staff-toggle.js"></script>
+<script src="js/display-event.js"></script>
+
 </body>
 </html>

@@ -34,8 +34,54 @@
 <!-- ######################################################################################################### -->
 <!--    START OF THE MAIN CONTENT OF PAGE       -->
 
+<section id="news" class="wrapper">
+    
+</section>
 
-
+<section id="events" class="wrapper">
+        <div id="events-table">
+            <table>
+              <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Time</th>
+              </tr>
+              <tr>
+                <td>Taster</td>
+                <td>March 13th</td>
+                <td>7pm</td>
+              </tr>
+              <tr>
+                <td>Taster</td>
+                <td>April 25th</td>
+                <td>7pm</td>
+              </tr>
+              <tr>
+                <td>Open Evening</td>
+                <td>July 14th</td>
+                <td>7pm</td>
+              </tr>
+              <tr>
+                <td>Open Evening</td>
+                <td>July 21st</td>
+                <td>7pm</td>
+              </tr>
+              <tr>
+                <td>Hackathon</td>
+                <td>Jun 23rd</td>
+                <td>9am to 12pm</td>
+              </tr>
+              <tr>
+                <td>Hackathon</td>
+                <td>Jun 24th</td>
+                <td>9am to 12pm</td>
+              </tr>
+        </table>
+    </div>
+        <div>
+            <a class="call-to-action-button" href="about_us.shtml#general-contact">Sign Up For an Event</a>
+        </div>
+</section>
 
 <!-- END OF THE CONTENT OF PAGE -->
 <!-- ######################################################################################################### -->

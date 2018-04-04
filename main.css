@@ -640,7 +640,7 @@ input[type=submit]:hover {
 /* ****************************************************** */
 /* ****************************************************** */
 /*                                                        */
-/* **************** About Us Styling *******************  */
+/* **************** ABOUT US PAGE *******************  */
 /*                                                        */
 /* ****************************************************** */
 /* ****************************************************** */
@@ -649,35 +649,6 @@ input[type=submit]:hover {
 /* staff section about us page */
 /* *************************** */
 
-/* setup grid for staff section */
-/*
-#staff {
-    
-    display: grid;
-    grid-template-columns: repeat(5, 1fr));
-    grid-gap: 20px;  space between grid boxes 
-}
-*/
-
-/* set the staff heading to 4 columns across */
-#staff h1, #staff-intro {
-    grid-column:1 / 4;
-}
-
-/* remove margin and padding from staff heading */
-#staff h1 {
-    margin-top:0;
-    padding-top:0;
-}
-
-/* positioning and size of the content in the grid */
-/*
-.staff-image {
-    display:grid;
-    grid-template-rows: 205px 40px;
-    grid-gap: 20px;
-}
-*/
 
 /* style the staff images */
 .staff-image img {
@@ -688,12 +659,63 @@ input[type=submit]:hover {
     margin: 0 auto; /* position centre of the div */
 }
 
-/* position centre of the div */
+    /* position the header across the page, all columns */
+   #our-staff-header {
+        grid-column: 1 / span 12;
+        grid-row: 1;
+    }
+
+    /* position each of the images on the next row */
+    #stevens-image {
+        grid-column: 1 / span 12;
+        grid-row: 2;
+    }
+
+    #vega-image {
+        grid-column: 1 / span 12;
+        grid-row: 3;
+}
+
+    #lau-image {
+        grid-column: 1 / span 12;
+        grid-row: 4;
+}
+
+    #lassami-image {
+        grid-column: 1 / span 12;
+        grid-row: 5;
+}
+    
+    #tong-image {
+        grid-column: 1 / span 12;
+        grid-row: 6;
+}
+
+/* *************************** */
+/* Contact Form Styling        */
+/* *************************** */
+
 /*
-.staff-text {
-    margin: 0 auto;
+#general-contact .wrapper {
+    
 }
 */
+
+select {
+    background-image:linear-gradient(-45deg, #218686, #004b4b); 
+    /* top left to bottom right dark green to slightly lighter green */
+    background-color: #006060;/* if linear-gradient doesn't work */    
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    height: 40px;
+    width: 200px;
+    display: block;
+    margin: 10px auto;
+    padding: 50px;
+    color: white;
+    
+}
 
 /* ****************************************************** */
 /* ****************************************************** */
@@ -702,7 +724,6 @@ input[type=submit]:hover {
 /*                                                        */
 /* ****************************************************** */
 /* ****************************************************** */
-
 
 .curriculum {
     background-image:linear-gradient(-45deg, #218686, #004b4b); 
@@ -723,6 +744,62 @@ input[type=submit]:hover {
 .curriculum:hover {
     text-decoration: underline;
 }
+
+/* ***************************************************** */
+/* ***************************************************** */
+/*                     NEWS AND EVENTS PAGE              */
+/* ***************************************************** */
+/* ***************************************************** */
+
+#events {
+    grid-column: col-start 1 / span 12;
+    grid-row:auto;
+}
+/* events table styling*/
+.wrapper #events-table {
+    grid-column: col-start 1 / span 12;
+    grid-row:1;
+}
+
+#events-table {
+    color: #006060; /* font */
+    padding: 10px;
+    border-radius:5px;
+    font-variant-caps: titling-caps;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #006060;
+    border-radius: 10px;
+    max-width: calc(100% - 2em);
+    margin: 1em auto;
+    text-align: center;
+    vertical-align: middle;
+    
+    }
+
+#events-table tr:hover:not(th) {
+        background-color:#a4d9f5;
+        
+    }
+#events-table th {
+        text-decoration: underline;
+        background-color: #006060;
+        font-weight: 300;
+        color: white;
+        padding: 5px 50px
+            ;
+    }
+
+#events-table table {
+        margin:0 auto;
+    }
+
+/*
+#events-table tr {
+        margin: 40px;
+    }
+*/
+
 
 /* ******************************************************* */
 /* ******************************************************* */
@@ -804,7 +881,50 @@ input[type=submit]:hover {
         width: 100%;
     }
 
+/* ***************************************************** */
+/* ***************************************************** */
+/*                     ABOUT US Page                        */
+/* ***************************************************** */
+/* ***************************************************** */
+
+
+
+/* position the header across the page, all 6 columns */
+   #our-staff-header {
+        grid-row: 1;
+        grid-column: 2 / span 10;
+
+    }
+
+    /* position each of the icons on the same row next to each other */
+    #stevens-image {
+        grid-row: 2;
+        grid-column: 2 / span 5;
+    }
+
+    #vega-image {
+        grid-row: 2;
+        grid-column: 7 / span 5;
+    }
+
+    #lau-image {
+        grid-row: 3;
+        grid-column: 2 / span 5;
+    }
+
+    #lassami-image {
+        grid-row: 3;
+        grid-column: 7 / span 5;
+    }
+
+    #tong-image {
+        grid-row: 4;
+        grid-column: 3 / span 8;
+    }
+
+
 }
+
 
 
 /* ****************************  */
@@ -898,9 +1018,12 @@ input[type=submit]:hover {
         justify-content: space-around;
     }
 
+    
+    
+
 /* ***************************************************** */
 /* ***************************************************** */
-/*                     Main News                         */
+/*                    HOME PAGE                         */
 /* ***************************************************** */
 /* ***************************************************** */
 
@@ -910,7 +1033,7 @@ input[type=submit]:hover {
     }    
     
 /* ***************************************************** */
-/*      What is Silicon Hack - comp-education section    */
+/*      Home Page - What is Silicon Hack - comp-education section    */
 /* ***************************************************** */
 
     /* layout page with a column border from right and left */
@@ -935,7 +1058,7 @@ input[type=submit]:hover {
 }
 /* ***************************************************** */
 /* ***************************************************** */
-/*                     Contact Section                   */
+/*        Home Page - Contact Button Section              */
 /* ***************************************************** */
 /* ***************************************************** */
    
@@ -945,11 +1068,20 @@ input[type=submit]:hover {
     }  
 
     /* position the header across the page, all 6 columns */
+    
+    .five-col-section-header {
+        grid-row: 1;
+        grid-column: 1 / 6;
+
+    }
+    
+/*
     #contact-header {
         grid-row: 1;
         grid-column: 1 / 6;
 
     }
+*/
 
     /* position each of the icons on the same row next to each other */
     #apply-now {
@@ -978,5 +1110,31 @@ input[type=submit]:hover {
     }
 
 
+    
+/* ***************************************************** */
+/* ***************************************************** */
+/*                     ABOUT US Page                        */
+/* ***************************************************** */
+/* ***************************************************** */
+    
+
+/* *************************** */
+/* Contact Form Styling        */
+/* *************************** */
+
+#general-contact .wrapper {
+       grid-column: col-start 2 / span 10;
+    
+    }
+    
+/* *************************** */
+/* Staff Section Styling       */
+/* *************************** */
+/* a border of 1 grid column either side of the contact section */    
+    #our-staff, #more-about-us {
+        grid-column: col-start 2 / span 10;
+    }  
+    
+    
 
 }
