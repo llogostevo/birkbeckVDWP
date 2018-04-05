@@ -1,4 +1,18 @@
 
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/5ac4fdb1d7591465c709312c/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+
 <body>  
       
 <div class="wrapper">
@@ -7,6 +21,7 @@
                    <ul>
                        <li><a href="login.html">Login</a></li>
                    </ul>
+<!--              <div class="g-signin2" data-onsuccess="onSignIn"></div>-->
                </nav>
             <div id="banner">
                    <a href="../index.shtml">

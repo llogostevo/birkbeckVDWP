@@ -22,7 +22,7 @@
                     </a> 
                 </div>
                 <div id="live-chat" class="centre-item">
-                     <a href="http://www.bbc.co.uk" class="svg">
+                     <a href="javascript:void(Tawk_API.toggle())" class="svg">
                     <img src="images/icons/png/033-chat.png">
                     <p>Live Chat</p>
                     </a> 

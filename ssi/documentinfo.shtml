@@ -11,3 +11,5 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- icon in browser tab -->
     <link rel="shortcut icon" type="image/x-icon" href="logoicon.ico">
+    <meta name="google-signin-client_id" content="403060254271-3nqc23060g89rtsvccb716fl4o0aghi9.apps.googleusercontent.com
+">

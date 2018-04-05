@@ -35,10 +35,78 @@
 <!--    START OF THE MAIN CONTENT OF PAGE       -->
 
 <section id="news" class="wrapper">
+    <div id="news-header">
+    <h1>Check Out Our Latest News</h1>
+    </div>
+   
+    <div id="salesforce" class="wrapper">
+        <h1>Salesforce</h1>
+              <div class="description">
+                <h2>We had a fantastic day out at Salesforce, right up at the top of heron tower.</h2>
+                <blockquote><p>With fantastic views of all of the city we learnt about cloud computing, the way teams were made up in salesforce, and of course we had a fantastic lunch spread out for us with as much chocolate as we could eat. </p></blockquote>
+                 <cite class="student-name">A Student</cite>
+
+              </div>
+              <div class="news-image">
+                  <img src="images/news_images/adult-beanie-brainstorming-7367.jpg">
+              </div>
+    </div>
     
+    <div id="google" class="wrapper">
+        <h1>Google Trip</h1>
+        <div class="description">
+                <h2>It was Google! Need I say more?!?</h2>
+            <blockquote><p>An amazing trip with some exciting talks and insights as to how the world of Google works. We learnt about  how they are moving into AI with deep mind. We also had a go on the famous google slide :)</p></blockquote>
+            <cite class="student-name">A Student</cite>
+              </div>
+              <div class="news-image">
+                  <img src="images/news_images/adult-beanie-brainstorming-7367.jpg">
+              </div>
+    </div>
+    <div id="curve" class="wrapper">
+        <h1>Curve Trip</h1>
+        <div class="description">
+                <h2>Curve showed us how they are ahead of the Curve</h2>
+            <blockquote><p>We learnt about their new App and how they are slowly changing the dynamic of payment through card. An exciting day that got us seeing what it really is like to be in a startup.</p></blockquote>
+                           <cite class="student-name">A Student</cite>
+
+              </div>
+              <div class="news-image">
+                  <img src="images/news_images/adult-beanie-brainstorming-7367.jpg">
+              </div>
+    </div>
+    <div id="inspire" class="wrapper">
+        <h1>Inspire Mentoring</h1>
+        <div class="description">
+            <h2>Mentors came to the school in March to support the students</h2>
+                <blockquote><p>We welcomed mentors from Google, Curve, Salesforce and several freelancers. They worked with students on Job opportunities and prospects of getting into the tech sector.</p></blockquote>
+                            <cite class="student-name">A Student</cite>
+
+              </div>
+              <div class="news-image">
+                  <img src="images/news_images/adult-beanie-brainstorming-7367.jpg">
+              </div>
+    </div>
+    <div id="nla" class="wrapper">
+        <h1>NLA Trip</h1>
+        <div class="description">
+                <h2>Our trip to NLA really was hands on</h2>
+                <blockquote><p>The students worked with experts designing 3d models using Google Sketch up and were then able to visualise their model within the London landscape.</p></blockquote>
+                <cite class="student-name">A Student</cite>
+
+              </div>
+        <div class="news-image">
+                  <img src="images/news_images/apartment-architectural-design-architecture-323780.jpg">
+              </div>
+    </div>
+
 </section>
 
+<!--
 <section id="events" class="wrapper">
+       <div id="event-header">
+            <h1>Come to an Event</h1>
+        </div>
         <div id="events-table">
             <table>
               <tr>
@@ -82,6 +150,7 @@
             <a class="call-to-action-button" href="about_us.shtml#general-contact">Sign Up For an Event</a>
         </div>
 </section>
+-->
 
 <!-- END OF THE CONTENT OF PAGE -->
 <!-- ######################################################################################################### -->
