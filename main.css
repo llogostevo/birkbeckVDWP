@@ -92,12 +92,12 @@ h1 {
 
 /* setup grid layout */
 .wrapper {
-  margin: 0 auto;
-  display: grid;
-/* col-start can be used as first line to make code more readable */
-  grid-template-columns: repeat(12, [col-start] 1fr);
-/* gap between grid items */
-  grid-gap: 20px;
+      margin: 0 auto;
+      display: grid;
+    /* col-start can be used as first line to make code more readable */
+      grid-template-columns: repeat(12, [col-start] 1fr);
+    /* gap between grid items */
+      grid-gap: 20px;
 }
 
 /* intialise all grid items to span the columns */
@@ -771,7 +771,7 @@ input[type=submit]:hover {
 blockquote {
     font-style: italic;
 }
-*/
+
 /* ***************************************************** */
 /* ***************************************************** */
 /*                     NEWS AND EVENTS PAGE              */
@@ -1080,19 +1080,20 @@ blockquote {
 #digital-media, #IT {
     grid-column: 1 / span 12;
 }
+    
+    
 }
 
 /* ****************************  */
 /* ****************************  */
-/*  MEDIA QUERY FOR 1000PX SITE   */
+/*  MEDIA QUERY FOR 1000PX SITE  */
 /* ****************************  */
 /* ****************************  */
 
-}
 @media (min-width: 1000px) {
 
 /* hide certain content, display content on desktop */
-
+    
     .content-desktop {
     display: inline;
     }

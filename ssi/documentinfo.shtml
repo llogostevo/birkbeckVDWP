@@ -6,7 +6,7 @@
    <!-- set the character set as unicode 8  -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     <!-- link the CSS stylesheet  -->
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="main.css">
     <!-- link the google font stylesheet  -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- icon in browser tab -->

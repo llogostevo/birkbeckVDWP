@@ -21,10 +21,9 @@ s0.parentNode.insertBefore(s1,s0);
                    <ul>
                        <li><a href="login.html">Login</a></li>
                    </ul>
-<!--              <div class="g-signin2" data-onsuccess="onSignIn"></div>-->
                </nav>
             <div id="banner">
-                   <a href="../index.shtml">
+                   <a href="index.shtml">
                     <h1 id="logo">s<span class="greenletter">i</span>l<span class="greenletter">i</span>c<span class="greenletter">o</span>n {hack}</h1></a>
             </div>
         </header>
