@@ -768,9 +768,6 @@ input[type=submit]:hover {
     grid-row:auto;
 }
 
-blockquote {
-    font-style: italic;
-}
 
 /* ***************************************************** */
 /* ***************************************************** */
@@ -782,11 +779,13 @@ blockquote {
     grid-column: col-start 1 / span 12;
     grid-row:1;
     text-align: left;
-    font-size: 5em;
+}
+
+#news-header h1, #event-header h1 {
+    font-size: 3em;
 }
 
 #news img {
-    border-radius: 1px;
     width: 100%;
     height: auto;
 }
@@ -794,76 +793,147 @@ blockquote {
 #salesforce {
     grid-column: col-start 1 / span 12;
     grid-row: auto;
-    background-color: black;
-    /* gradient over image to provide contrast of foreground text */
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(images/news_images/architecture-buildings-city-373965.jpg);
-    background-size:cover; /* ensure it covers container */
-    background-position: top; /* starts at top */
-    color: white; /* font */
-    text-align: center; /* centre all text */
+    color: #006060; /* font */
 
 }
 
 #google {
-    grid-column: col-start 1 / span 12;
+     grid-column: col-start 1 / span 12;
     grid-row: auto;
-    background-color: black;
-    /* gradient over image to provide contrast of foreground text */
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(images/news_images/app-earbuds-earphones-39592.jpg);
-    background-size:cover; /* ensure it covers container */
-    background-position: top; /* starts at top */
-    color: white; /* font */
-    text-align: center; /* centre all text */
+    color: #006060; /* font */
 }
 
 #curve {
     grid-column: col-start 1 / span 12;
     grid-row: auto;
-    background-color: black;
-    /* gradient over image to provide contrast of foreground text */
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(images/news_images/adult-beanie-brainstorming-7367.jpg);
-    background-size:cover; /* ensure it covers container */
-    background-position: top; /* starts at top */
-    color: white; /* font */
-    text-align: center; /* centre all text */
-
+    color: #006060; /* font */
 }
 
 #inspire {
     grid-column: col-start 1 / span 12;
     grid-row: auto;
-    background-color: black;
-    /* gradient over image to provide contrast of foreground text */
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(images/news_images/adolescent-adult-blur-933964.jpg);
-    background-size:cover; /* ensure it covers container */
-    background-position: top; /* starts at top */
-    color: white; /* font */
-    text-align: center; /* centre all text */
+    color: #006060; /* font */
 
 }
 
 #nla {
     grid-column: col-start 1 / span 12;
     grid-row: auto;
-    background-color: black;
-    /* gradient over image to provide contrast of foreground text */
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url(images/news_images/architect-architectural-design-architecture-595847.jpg);
-    background-size:cover; /* ensure it covers container */
-    background-position: top; /* starts at top */
-    color: white; /* font */
-    text-align: center; /* centre all text */
+    color: #006060; /* font */
 
 }
+
+/* STYLE HEADING SECTIONS WITH IMAGES */
 
 #salesforce h1 {
     grid-column: col-start 1 / span 12;
     grid-row: 1;
+    background-color: black;
+    /* gradient over image to provide contrast of foreground text */
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)), url(images/news_images/architecture-buildings-city-373965.jpg);
+    background-size:cover; /* ensure it covers container */
+    background-position: center; /* starts at top */
+    color: white; /* font */
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
-    #salesforce description { 
-        grid-column: col-start 3 / span 6;
-        grid-row: 3;
+#google h1 {
+    grid-column: col-start 1 / span 12;
+    grid-row: auto;
+    background-color: black;
+    /* gradient over image to provide contrast of foreground text */
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url(images/news_images/app-earbuds-earphones-39592.jpg);
+    background-size:cover; /* ensure it covers container */
+    background-position: center; /* starts at top */
+    color: white; /* font */
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
+
+#curve h1 {
+    grid-column: col-start 1 / span 12;
+    grid-row: auto;
+    background-color: black;
+    /* gradient over image to provide contrast of foreground text */
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)), url(images/news_images/adult-beanie-brainstorming-7367.jpg);
+    background-size:cover; /* ensure it covers container */
+    background-position: center; /* starts at top */
+    color: white; /* font */
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#inspire h1 {
+    grid-column: col-start 1 / span 12;
+    grid-row: auto;
+    background-color: black;
+    /* gradient over image to provide contrast of foreground text */
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url(images/news_images/adolescent-adult-blur-933964.jpg);
+    background-size:cover;
+    background-position: center; /* starts at top */
+    color: white; /* font */
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#nla h1 {
+    grid-column: col-start 1 / span 12;
+    grid-row: auto;
+    background-color: black;
+    /* gradient over image to provide contrast of foreground text */
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)), url(images/news_images/architectural-design-architecture-blueprint-239886.jpg);
+    background-size:cover; /* ensure it covers container */
+    background-position: center; /* starts at top */
+    color: white; /* font */
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .description blockquote {
+    font-style: italic;
+    margin: 40px 10px;
+}
+
+.student-name {
+    margin: 0 10px;
+}
+
+.description {
+    text-align: left;
+}
+
+.news-image {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 20px; 
+    }
+    
+    .news-image-1{
+        grid-column: 1 / span 2;
+        grid-row:auto;
+    }
+    
+    .news-image-2 {
+        grid-column: 1 / span 2;
+        grid-row:auto;
+    }
 
 
 /* ////////// */
@@ -939,16 +1009,44 @@ blockquote {
 /* ****************************  */
 /* ****************************  */
 @media (min-width: 700px) {
+/*
     #news .wrapper .description {
         grid-column: 1 / span 7;
         grid-row: 2;
     }
     
+*/
+/*
     #news .wrapper .news-image {
         grid-column:  9 / span 3;
          grid-row: 2;
         
     }
+*/
+
+    
+/* ***************************************************  */
+/* ***************************************************  */
+/* *********************** NEWS PAGE  **************** */
+/* ***************************************************  */
+/* ***************************************************  */ 
+
+    
+    .news-image-1{
+        grid-column: 1 / span 1;
+        grid-row: 1;
+    }
+    
+    .news-image-2 {
+        grid-column: 2 /span 1;
+        grid-row: 1;
+    }
+        
+    
+}
+
+@media (min-width: 800px) {
+    
     
 }
 
@@ -1080,8 +1178,7 @@ blockquote {
 #digital-media, #IT {
     grid-column: 1 / span 12;
 }
-    
-    
+        
 }
 
 /* ****************************  */
@@ -1299,5 +1396,13 @@ blockquote {
 /* ***************************************************** */
 
  
+    
+/* ***************************************************  */
+/* ***************************************************  */
+/* *********************** NEWS PAGE  **************** */
+/* ***************************************************  */
+/* ***************************************************  */ 
+
+    
 
 }
