@@ -16,7 +16,7 @@
         
         <nav id="apply-nav">
             <ul>
-                <li><a class="call-to-action-button" role="button" href="#">Apply Now</a></li>
+                <li><a class="call-to-action-button" role="button" href="about_us.shtml#general-contact">Apply Now</a></li>
             </ul>
         </nav>
            
@@ -71,7 +71,8 @@
 <section id="our-staff" class="wrapper">
     <div id="our-staff-header">
        <h1>Our Staff</h1>
-       <p>We have a strong team who have all achieved some form of University Qualification in Computer Science. Click on their faces to reveal some more...</p>
+       <p>We have a strong team who have all achieved some form of University Qualification in Computer Science.</p>
+       <p>Click on their faces to reveal some more...</p>
     </div>
        <!-- all images are property of the school -->
         <div class="staff-image" id="stevens-image">
@@ -112,10 +113,12 @@
    <div>
        <h1>Where Are We?</h1>
 
-       <p>We are based right at the heart of Tech City.Located next door to the world famous Silicon Roundabout we are in a prime location in and around the tech sector. Plus there are some good take-aways around here also ;) Why not contact us to arrange a visit?</p>
+       <p>We are based right at the heart of Tech City.Located next door to the world famous Silicon Roundabout we are in a prime location in and around the tech sector. Plus there are some good take-aways around here also</p>
+       
+       <p>Why not contact us to arrange a visit?</p>
 
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.340448971678!2d-0.0879529845538814!3d51.525315217214654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761caf7fc3b1a3%3A0xa694993aa28565fa!2sCentral+Foundation+Boys%E2%80%99+School!5e0!3m2!1sen!2suk!4v1522704499211" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.340448971678!2d-0.0879529845538814!3d51.525315217214654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761caf7fc3b1a3%3A0xa694993aa28565fa!2sCentral+Foundation+Boys%E2%80%99+School!5e0!3m2!1sen!2suk!4v1522704499211" allowfullscreen></iframe>
         
     </div>
 </section>

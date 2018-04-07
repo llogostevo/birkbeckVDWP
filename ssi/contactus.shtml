@@ -1,4 +1,5 @@
 <section id="general-contact">
+    <h1>Contact Us</h1>
     <div class="form-container" class="wrapper">
             <form action="/action_page.php">
                 <div class="select">
@@ -14,7 +15,7 @@
                     <fieldset>
                        <legend>Contact Details</legend>
                             <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name.." required />
+                            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 
                             <label for="lname">Last Name</label>
                             <input type="text" id="lname" name="lastname" placeholder="Your last name..">
@@ -69,12 +70,17 @@
                                 
                                 <fieldset>
                                    <legend>Which type of Science did you do?</legend>
-                                        <input type = "radio" name = "radios" id = "combinedscience" value = "combinedscience" checked = "checked">
-                                        <label for = "combinedscience">Combined Science</label>
-                                        <input type = "radio" name = "radios" id = "seperatescience" value = "seperatescience">
-                                        <label for = "seperatescience">Seperate Science</label>
-
+                                        <div class="form-block">
+                                            <input type = "radio" name = "radios" id = "combinedscience" value = "combinedscience" checked = "checked">
+                                            <label for = "combinedscience">Combined Science</label>
+                                        </div>
+                                        <div class="form-block">
+                                            <input type = "radio" name = "radios" id = "seperatescience" value = "seperatescience">
+                                            <label for = "seperatescience">Seperate Science</label>
+                                        </div>
+                                        
                                          <div id="combinedscienceresults">
+                                           <fieldset>
                                             <label for="combined-science-result">Combined Science</label>
                                             <input list="combined-science-result">
                                                 <datalist id="combined-science-result">
@@ -85,8 +91,10 @@
                                                   <option value="CC">
                                                   <option value="CD or below">
                                                 </datalist>
+                                            </fieldset>
                                             </div>
                                             <div id="seperatescienceresults">
+                                           <fieldset>
                                                 <label for="physics-result">Physics</label>
                                                 <input list="physics-result">
                                                     <datalist id="physics-result">
@@ -116,20 +124,24 @@
                                                       <option value="C">
                                                       <option value="D or below">
                                                     </datalist>
+                                                </fieldset>
                                             </div>
                                  </fieldset>
                                  
                                 <fieldset>
                                    <legend>Have you studied ICT or Computing at GCSE/Vocational?</legend>
+                                        <div class="form-block">
                                         <input type = "radio" name = "ictradios" id = "ICT" value = "ICT">
                                         <label for = "ICT">ICT</label>
-                                        
+                                    </div>
+                                        <div class="form-block">
                                         <input type = "radio" name = "ictradios" id = "Computing" value = "Computing">
                                         <label for = "Computing">Computing</label>
-                                        
+                                    </div>
+                                        <div class="form-block">
                                         <input type = "radio" name = "ictradios" id = "noict" value = "noict" checked="checked">
                                         <label for = "noict">I didn't study either</label>
-                                   
+                                    </div>
                                     
                                     <div id="ICTgrades">
                                         <fieldset >
@@ -164,10 +176,10 @@
                                 <fieldset>
                                    <legend>Other information</legend>
                                         <label for="subject">Any other qualifications you would like to tell us about?</label>
-                                        <textarea id="subject" name="subject" placeholder="Other qualifications....?" style="height:100px"></textarea>
+                                        <textarea id="subject" name="subject" placeholder="Other qualifications....?"></textarea>
 
                                         <label for="personal-statement">Please write a short personal statement explaning why you want to join us</label>
-                                        <textarea id="personal-statement" name="personal-statement" placeholder="I want to join Silicon Hack because..." style="height:100px"></textarea>
+                                        <textarea id="personal-statement" name="personal-statement" placeholder="I want to join Silicon Hack because..." ></textarea>
                                         
                                         <label for="DOB">Please enter your DOB</label>
                                         <input type="date" name="DOB" id="DOB" min="2002-09-01" max="2001-09-01">
@@ -189,24 +201,21 @@
                         <!-- When changed it will call the displayEvent function -->
                         <select id="event-choice" onchange="displayEvent()">
                                 <optgroup label="Taster Days">
-                                    <option>March 13th Taster 7pm</option>
-                                    <option>April 25th Taster 7pm</option>    
+                                    <option>March 13th Taster 7pm</option>   
                                 </optgroup>
                                 <optgroup label="Open Evenings">
-                                    <option>July 14th Open Evening 7pm</option>
-                                    <option>July 21st Open Evening 7pm</option>    
+                                    <option>July 14th Open Evening 7pm</option>   
                                 </optgroup>
                                 <optgroup label="Hackathons">
-                                    <option>Jun 23rd Hackathon 9am to 12pm</option>
-                                    <option>Jun 24th Hackathon 9am to 12pm</option>    
+                                    <option>Jun 23rd Hackathon 9am to 12pm</option> 
                                 </optgroup>
                                 <optgroup label="other">
-                                <!--    <option>none</option>-->
+                                    <option>Jul 20th Secret Event 8am to 6pm</option>
                                 </optgroup> 
                         </select>
-                        <div id="event-details"> </div>
+                        <div id="form-event-details">No Event Selected - Choose an Event</div>
                         <label for="qty">How many people are coming?</label>
-                        <input type="number"id="qty" value="1" min="1" max="4" step="1" />
+                        <input type="number" id="qty" value="1" min="1" max="4" step="1" />
                     </fieldset>
                 </div>
 <!-- Employer             -->
@@ -214,18 +223,45 @@
                     <fieldset>
                         <legend>Employer Details</legend>
 
-                        <label for="date">Date <span>*</span></label>
-                        <input type="date"id="date" min="1" max="4" step="1" />
+                        <label for="company">Company</label>
+                        <input type="text" id="company">
 
-                        <label for="qty">Number of People <span>*</span></label>
-                        <input type="number"id="qty" value="1" min="1" max="4" step="1" />
+                        <label for="sector">Sector</label>
+                        <input list="sector">
+                            <datalist id="sector">
+                              <option value="Web Development">
+                              <option value="App Development">
+                              <option value="Gaming">
+                              <option value="Graphic Design">
+                            </datalist>
+                        <fieldset>
+                           <div class="form-block">
+                                <label for="mentoring">Mentoring</label>
+                                <input type="checkbox" id="mentoring">
+                            </div>
+                            <div class="form-block">
+                                <label for="curriculum-planning">Curriculum Planning and Guidance</label>
+                                <input type="checkbox" id="curriculum-planning">
+                            </div>
+                            <div class="form-block">
+                                <label for="lesson-support">Lesson Support</label>
+                                <input type="checkbox" id="lesson-support">
+                            </div>
+                            <div class="form-block">
+                                <label for="worplace-visit">Workplace Visits</label>
+                                <input type="checkbox" id="workplace-visit">
+                            </div>
+                            <div class="form-block">
+                                <label for="work-placement">Work Placements</label>
+                                <input type="checkbox" id="work-placement">
+                            </div>
+                        </fieldset>
                     </fieldset>
-                
                 </div>
                 
 <div class="all-form-details">
-    <label for="subject">Please feel free to leave us a message</label>
-    <textarea id="subject" name="subject" placeholder="Feel free to reach out.." style="height:200px"></textarea>
+    <label for="subject">Leave us a message</label>
+    <textarea id="subject" name="subject" placeholder="Feel free to leave us a message"></textarea>
 </div>
                 
                 <input type="submit" value="Submit">

@@ -59,7 +59,16 @@ body {
 /*    site wide font colour to match logo */
     color: #004b4b;
     text-align: center;
-    max-width: 1700px;   
+    max-width: 1700px;
+    line-height: 2.0;
+}
+
+p {
+    text-align: left;
+}
+
+ul li:not(nav):not(footer) {
+    text-align: left;
 }
 
 h1 { 
@@ -136,13 +145,6 @@ h1 {
 
 /* ***************** Hamburger Navigation *************************************** */
 /* ****************************************************************************** */
-
-/*
-#burger-button {
-    width: 50px;
-    height: 50px;
-}
-*/
 
 #burger-button img {
     width: 60px;
@@ -269,7 +271,6 @@ footer ul {
         flex-direction:column;
         justify-content: center;
         align-content: center;
-        padding: 0;
 }
 
 /* slightly smaller text for footer navigation */
@@ -281,6 +282,7 @@ footer ul li a{
     /* remove browser default */
     text-decoration: none;
     color: #54595e;
+    padding: 0 10px;
 }
 
 /* signifer for footer links hover */
@@ -569,7 +571,9 @@ iframe {
 /* ****************************************************** */
 /* ****************************************************** */
 
-
+    .form-container {
+        margin-top: 40px;
+    }
 
 /* ****************************************************** */
 /* ****************************************************** */
@@ -595,6 +599,10 @@ iframe {
 /*                                                        */
 /* ****************************************************** */
 /* ****************************************************** */
+
+#more-about-us ul li {
+    text-align: left;
+}
 
 /* *************************** */
 /* staff section about us page */
@@ -646,11 +654,11 @@ iframe {
 /* Contact Form Styling        */
 /* *************************** */
 
-/*
-#general-contact .wrapper {
-    
+#form-event-details {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 20px 0;
 }
-*/
 
 select {
 /*    background-image:linear-gradient(-45deg, #218686, #004b4b); */
@@ -660,7 +668,7 @@ select {
     border: 1px solid #ccc;
     font-size: 30px;
     height: 40px;
-    width: 400px;
+    width: 50%;
     display: block;
     margin: 10px auto;
     color: black;
@@ -668,7 +676,7 @@ select {
     
 }
 /* selector looks for all input elements with the designated types*/
-input[type=text], input[type=tel], input[type=email], input[list], textarea {
+input[type=text], input[type=tel], input[type=email], input[type=number], input[type=date], input[list], textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -679,6 +687,10 @@ input[type=text], input[type=tel], input[type=email], input[list], textarea {
     resize: vertical;
 }
 
+.form-block {
+    display: block;
+    text-align: left;
+}
 
 
 /* styled in same way as call to action button */
@@ -718,6 +730,19 @@ input[type=submit]:hover {
 }
 #employers-form {
     display: none;
+}
+
+text-area {
+    height: 10vh;
+}
+
+/* MAP STYLING */
+
+iframe {
+    width: 80%;
+    height: 60vh;
+    border-radius: 5px;
+
 }
 
 /* ****************************************************** */
@@ -768,6 +793,9 @@ input[type=submit]:hover {
     grid-row:auto;
 }
 
+#what-learn ul li {
+    text-align: left;
+}
 
 /* ***************************************************** */
 /* ***************************************************** */
@@ -775,6 +803,7 @@ input[type=submit]:hover {
 /* ***************************************************** */
 /* ***************************************************** */
 
+/*NEWS AND EVENTS  SECTION */
 #news-header, #event-header {
     grid-column: col-start 1 / span 12;
     grid-row:1;
@@ -785,45 +814,24 @@ input[type=submit]:hover {
     font-size: 3em;
 }
 
-#news img {
+#news img, .event-image img {
     width: 100%;
     height: auto;
 }
 
-#salesforce {
+#salesforce, #nla, #google, #curve, #inspire , #NLA, #other-event, #hackathon, #open-evening, #taster  {
     grid-column: col-start 1 / span 12;
     grid-row: auto;
     color: #006060; /* font */
 
 }
 
-#google {
-     grid-column: col-start 1 / span 12;
-    grid-row: auto;
-    color: #006060; /* font */
+.description {
+    text-align: left;
 }
 
-#curve {
-    grid-column: col-start 1 / span 12;
-    grid-row: auto;
-    color: #006060; /* font */
-}
 
-#inspire {
-    grid-column: col-start 1 / span 12;
-    grid-row: auto;
-    color: #006060; /* font */
-
-}
-
-#nla {
-    grid-column: col-start 1 / span 12;
-    grid-row: auto;
-    color: #006060; /* font */
-
-}
-
-/* STYLE HEADING SECTIONS WITH IMAGES */
+/* NEWS SECTION */
 
 #salesforce h1 {
     grid-column: col-start 1 / span 12;
@@ -914,9 +922,6 @@ input[type=submit]:hover {
     margin: 0 10px;
 }
 
-.description {
-    text-align: left;
-}
 
 .news-image {
         display: grid;
@@ -935,57 +940,117 @@ input[type=submit]:hover {
         grid-row:auto;
     }
 
+/* EVENT SECTION */
 
-/* ////////// */
-/* ////////// */
-/* ////////// */
-/* ////////// */ 
-/* ////////// */
-/* ////////// */
-/* ////////// */
-/* THIS NEEDS FIXING SO THAT TABLE SHOWS SUITABLY IN MOBILE VIEW */
+.event-details strong{
+    font-weight:900;
+     
+}
+
+#open-evening h1 {
+    grid-column: col-start 1 / span 12;
+    grid-row: auto;
+    background-color: black;
+    /* gradient over image to provide contrast of foreground text */
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)), url(images/news_images/black-and-white-black-and-white-connection-615479.jpg);
+    background-size:cover; /* ensure it covers container */
+    background-position: center; /* starts at top */
+    color: white; /* font */
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#taster h1 {
+    grid-column: col-start 1 / span 12;
+    grid-row: 1;
+    background-color: black;
+    /* gradient over image to provide contrast of foreground text */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(images/events_images/audience-auditorium-bible-301988.jpg);
+    background-size:cover; /* ensure it covers container */
+    background-position: center; /* starts at top */
+    color: white; /* font */
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#hackathon h1 {
+    grid-column: col-start 1 / span 12;
+    grid-row: auto;
+    background-color: black;
+    /* gradient over image to provide contrast of foreground text */
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url(images/events_images/adult-apple-device-business-340152.jpg);
+    background-size:cover; /* ensure it covers container */
+    background-position: center; /* starts at top */
+    color: white; /* font */
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#open-evening h1 {
+    grid-column: col-start 1 / span 12;
+    grid-row: auto;
+    background-color: black;
+    /* gradient over image to provide contrast of foreground text */
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4)), url(images/events_images/black-and-white-black-and-white-connection-615479.jpg);
+    background-size:cover; /* ensure it covers container */
+    background-position: center; /* starts at top */
+    color: white; /* font */
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#other-event h1 {
+    grid-column: col-start 1 / span 12;
+    grid-row: auto;
+    background-color: black;
+    /* gradient over image to provide contrast of foreground text */
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url(images/events_images/amusement-park-children-europa-park-34524.jpg);
+    background-size:cover;
+    background-position: center; /* starts at top */
+    color: white; /* font */
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
 #events {
     grid-column: col-start 1 / span 12;
     grid-row:auto;
 }
-/* events table styling*/
-.wrapper #events-table {
-    grid-column: col-start 1 / span 12;
-    grid-row:2;
+
+   
+    #events .wrapper .description,  #events .wrapper .event-details {
+        text-align: left;
+    }
+
+
+/* ****************************************************** */
+/* ****************************************************** */
+/*                                                        */
+/* **************** EMPLOYER ENGAGEMENT ****************  */
+/*                                                        */
+/* ****************************************************** */
+/* ****************************************************** */
+
+#join-us ul li {
+    text-align: left;
 }
 
-#events-table {
-    color: #006060; /* font */
-    padding: 10px;
-    border-radius:5px;
-    font-variant-caps: titling-caps;
-    margin: 10px;
-    text-align: center;
-    border: 1px solid #006060;
-    border-radius: 10px;
-    max-width: calc(100% - 2em);
-    margin: 1em auto;
-    text-align: center;
-    vertical-align: middle;
-    
-    }
-
-#events-table tr:hover:not(th) {
-        background-color:#a4d9f5;
-        
-    }
-#events-table th {
-        text-decoration: underline;
-        background-color: #006060;
-        font-weight: 300;
-        color: white;
-        padding: 5px 50px
-            ;
-    }
-
-#events-table table {
-        margin:0 auto;
-    }
 
 
 /* ******************************************************* */
@@ -1009,21 +1074,6 @@ input[type=submit]:hover {
 /* ****************************  */
 /* ****************************  */
 @media (min-width: 700px) {
-/*
-    #news .wrapper .description {
-        grid-column: 1 / span 7;
-        grid-row: 2;
-    }
-    
-*/
-/*
-    #news .wrapper .news-image {
-        grid-column:  9 / span 3;
-         grid-row: 2;
-        
-    }
-*/
-
     
 /* ***************************************************  */
 /* ***************************************************  */
@@ -1041,7 +1091,8 @@ input[type=submit]:hover {
         grid-column: 2 /span 1;
         grid-row: 1;
     }
-        
+    
+
     
 }
 
@@ -1059,6 +1110,8 @@ input[type=submit]:hover {
 
 @media (min-width: 900px) {
  
+    
+
  /* display content on tablet landscape /small desktop, hide other content*/
    
    .content-desktop {
@@ -1092,7 +1145,7 @@ input[type=submit]:hover {
     #apply-nav {
         grid-row:3;
     }
-    
+
 /* ***************************************************** */
 /*      What is Silicon Hack - comp-education section    */
 /* ***************************************************** */
@@ -1178,7 +1231,21 @@ input[type=submit]:hover {
 #digital-media, #IT {
     grid-column: 1 / span 12;
 }
-        
+  
+    
+/* ***************************************************  */
+/* ***************************************************  */
+/* *********************** NEWS PAGE  **************** */
+/* ***************************************************  */
+/* ***************************************************  */
+    
+    
+#news img, .event-image {
+    width: 80%;
+    height: auto;
+}
+    
+    
 }
 
 /* ****************************  */
@@ -1380,6 +1447,8 @@ input[type=submit]:hover {
        grid-column: col-start 2 / span 10;
     
     }
+
+
     
 /* *************************** */
 /* Staff Section Styling       */
@@ -1388,21 +1457,52 @@ input[type=submit]:hover {
     #our-staff, #more-about-us {
         grid-column: col-start 2 / span 10;
     }  
+    
+ /* *************************** */
+/*  Map Section Styling       */
+/* *************************** */   
 
+    iframe {
+        margin-top: 30px;
+    }
+    
 /* ***************************************************** */
 /* ***************************************************** */
 /*                     CURRICULUM PAGE                   */
 /* ***************************************************** */
 /* ***************************************************** */
 
- 
+ #what-learn, #map  {
+       grid-column: 2 / span 10; 
+    }
     
 /* ***************************************************  */
 /* ***************************************************  */
 /* *********************** NEWS PAGE  **************** */
 /* ***************************************************  */
 /* ***************************************************  */ 
+#news img {
+    width: 60%;
+    height: auto;
+}
 
+    #event-header, #news-header, .event-header, #news .description   {
+       grid-column: 2 / span 10; 
+    }
+    
+    
+#events .wrapper .description {
+    grid-column: 1 / span 12;
+    grid-row:2;
+}
+#events .wrapper .description {
+    grid-column: 2 / span 5;
+    grid-row:3;
+}
+#events .wrapper .event-details {
+    grid-column: 7 / span 6;
+    grid-row:3;
+}
     
 
 }

@@ -17,7 +17,7 @@
         
         <nav id="apply-nav">
             <ul>
-                <li><a class="call-to-action-button" role="button" href="#">Apply Now</a></li>
+                <li><a class="call-to-action-button" role="button" href="about_us.shtml#general-contact">Apply Now</a></li>
             </ul>
         </nav>
            
@@ -26,7 +26,7 @@
             <div class="flex-columns">
                 <div><h1>News and Events</h1></div>
                 <strong>We went To Google!!</strong>
-                <div class="content-desktop"><em>Our year 12s were thouroughly entertained</em></div>
+                <div class="content-desktop"><em>Our year 12s were thoroughly entertained</em></div>
                 <a class="call-to-action-button" href="news_events.shtml#google">Find Out More</a>
             </div>
             </section>
@@ -37,14 +37,14 @@
 <section id="news" class="wrapper">
     <div id="news-header">
     <h1>Check Out Our Latest News</h1>
-    <p>Each month we have an activity at Silicon Hack. Our students get some great experiences, as you will see below.</p>
+    <p>Each month we have an activity at Silicon Hack. Our students get some great experiences, as you will see below. These experiences are all part of the learning process at Silicon Hack. Whether that be getting first hand advice from industry experts or seeing how a real life tech company works each activity is designed to give our students an understanding of the world of tech.</p>
     </div>
    
     <div id="salesforce" class="wrapper">
         <h1 class="news-header">Salesforce Trip</h1>
               <div class="description">
                 <h2>Use the Salesforce</h2>
-                <blockquote><p>Right up at the top of heron tower, with fantastic views of all of the city. We learnt about cloud computing, the way teams were made up in salesforce and of course we had a fantastic lunch spread out for us with as much chocolate as we could eat.</p></blockquote>
+                <blockquote><p>&quot;Right up at the top of heron tower, with fantastic views of all of the city. We learnt about cloud computing, the way teams were made up in salesforce and of course we had a fantastic lunch spread out for us with as much chocolate as we could eat.&quot;</p></blockquote>
                  <cite class="student-name">A Student</cite>
 
               </div>
@@ -62,7 +62,7 @@
         <h1 class="news-header">Google Trip</h1>
         <div class="description">
                 <h2>Hey Google!</h2>
-            <blockquote><p>Need I say more?!? An amazing trip with some exciting talks and insights as to how the world of Google works. We learnt about  how they are moving into AI with deep mind. We also had a go on the famous google slide :)</p></blockquote>
+            <blockquote><p>&quot;Need I say more?!? An amazing trip with some exciting talks and insights as to how the world of Google works. We learnt about  how they are moving into AI with deep mind. We also had a go on the famous google slide &#9786; &quot;</p></blockquote>
             <cite class="student-name">A Student</cite>
               </div>
             <div class="news-image">
@@ -78,7 +78,7 @@
         <h1 class="news-header">Curve Trip</h1>
         <div class="description">
                 <h2>Ahead of the Curve</h2>
-            <blockquote><p>We learnt about their new App and how they are slowly changing the dynamic of payment through card. An exciting day that got us seeing what it really is like to be in a startup.</p></blockquote>
+            <blockquote><p>&quot;We learnt about their new App and how they are slowly changing the dynamic of payment through card. An exciting day that got us seeing what it really is like to be in a startup.&quot;</p></blockquote>
                            <cite class="student-name">A Student</cite>
 
               </div>
@@ -95,7 +95,7 @@
         <h1 class="news-header">Inspire Mentoring</h1>
         <div class="description">
             <h2>Mentors in March</h2>
-                <blockquote><p>We welcomed mentors from Google, Curve, Salesforce and several freelancers. They worked with us on job opportunities and prospects of getting into the tech sector. It was great to meet people form the real world of tech and learn about what they do in their day to day jobs</p></blockquote>
+                <blockquote><p>&quot;We welcomed mentors from Google, Curve, Salesforce and several freelancers. They worked with us on job opportunities and prospects of getting into the tech sector. It was great to meet people form the real world of tech and learn about what they do in their day to day jobs&quot;</p></blockquote>
                             <cite class="student-name">A Student</cite>
 
               </div>
@@ -130,53 +130,92 @@
 </section>
 
 <section id="events" class="wrapper">
+      
        <div id="event-header">
-            <h1>Come to an Event</h1>
+            <h1 >Come to an Event</h1>
             <p>Each term we hold a number of events that you could attend to get an idea of what we offer.</p>
             <p>Check out the events below and then sign up through the form on the About Us page</p>
-        </div>
-        <div id="events-table">
-            <table>
-              <tr>
-                <th>Event</th>
-                <th>Date</th>
-                <th>Time</th>
-              </tr>
-              <tr>
-                <td>Taster</td>
-                <td>March 13th</td>
-                <td>7pm</td>
-              </tr>
-              <tr>
-                <td>Taster</td>
-                <td>April 25th</td>
-                <td>7pm</td>
-              </tr>
-              <tr>
-                <td>Open Evening</td>
-                <td>July 14th</td>
-                <td>7pm</td>
-              </tr>
-              <tr>
-                <td>Open Evening</td>
-                <td>July 21st</td>
-                <td>7pm</td>
-              </tr>
-              <tr>
-                <td>Hackathon</td>
-                <td>Jun 23rd</td>
-                <td>9am to 12pm</td>
-              </tr>
-              <tr>
-                <td>Hackathon</td>
-                <td>Jun 24th</td>
-                <td>9am to 12pm</td>
-              </tr>
-        </table>
     </div>
-        <div>
-            <a class="call-to-action-button" href="about_us.shtml#general-contact">Sign Up For an Event</a>
-        </div>
+
+<div id="taster" class="wrapper">
+        <h1 class="event-header">Taster</h1>
+            
+                <h2>Do what we do</h2>
+                <div class="description">
+                <p>Come and see what we do at one of our taster days. Get a real feel for the type of teaching and learning you will experience and whether it is the right choice for you</p>
+                
+              </div>
+              <div class="event-details">
+                  <ul>
+                      <li><strong>Date: </strong>13/03/2018</li>
+                      <li><strong>Time: </strong>7pm to 9pm</li>
+                      <li><strong>Location: </strong>CFBS, Cowper Street</li>
+                      <li><strong>Cost: </strong>Free</li>
+                  </ul>
+              </div>
+
+            <div class="event-signup">
+                <a class="call-to-action-button" href="about_us.shtml#general-contact">Sign Up</a>
+            </div>
+       </div>
+    
+        <div id="open-evening" class="wrapper">
+           <h1 class="event-header">Open Evening</h1>
+        
+                <h2>Open for Chat</h2>
+                <div class="description">
+                <p>At our open evenings you can see the learning spaces and chat with our current staff and students. You will also be able to look at some of their showcased work and discuss with all parties about whether this might be the right place for you.</p>
+              </div>
+              <div class="event-details">
+                  <ul>
+                      <li><strong>Date: </strong>14/07/18</li>
+                      <li><strong>Time: </strong>7pm to 9pm</li>
+                      <li><strong>Location: </strong>CFBS, Cowper Street</li>
+                      <li><strong>Cost: </strong>Free</li>
+                  </ul>
+              </div>
+             <div class="event-signup">
+                <a class="call-to-action-button" href="about_us.shtml#general-contact">Sign Up</a>
+            </div>
+       </div>
+        <div id="hackathon" class="wrapper">
+           <h1 class="event-header">Silicon Hackathon</h1>
+        
+                <h2>Hack Away</h2>
+                <div class="description">
+                <p>We hold regular hackathons with our current students, why not join in. You will get some real insight into how the teaching and learning takes place</p>
+              </div>
+               <div class="event-details">
+                  <ul>
+                      <li><strong>Date: </strong>23/06/18</li>
+                      <li><strong>Time: </strong>9am to 12pm</li>
+                      <li><strong>Location: </strong>CFBS, Cowper Street</li>
+                      <li><strong>Cost: </strong>Free</li>
+                  </ul>
+              </div>
+             <div class="event-signup">
+                <a class="call-to-action-button" href="about_us.shtml#general-contact">Sign Up</a>
+            </div>
+       </div>
+        <div id="other-event" class="wrapper">
+           <h1 class="news-header">Other</h1>
+        
+                <h2>What Is This??</h2>
+                <div class="description">
+                <p>Keep an eye out here for other one off events we might be holding. In the past we have opened up for talks with industry mentors and even invited prospective students on a "getting to know us" trip. What will we provide this year? Who knows... Well we do, but right now its a secret.... &#9786;</p>
+              </div>
+               <div class="event-details">
+                  <ul>
+                      <li><strong>Date: </strong>20/07/18</li>
+                      <li><strong>Time: </strong>8am to 6pm</li>
+                      <li><strong>Location: </strong>Meet @ CFBS</li>
+                      <li><strong>Cost: </strong>Free</li>
+                  </ul>
+              </div>
+             <div class="event-signup">
+                <a class="call-to-action-button" href="about_us.shtml#general-contact">Sign Up</a>
+            </div>
+       </div>
 </section>
 
 <!-- END OF THE CONTENT OF PAGE -->

@@ -5,7 +5,7 @@
 <!--       THE MENU AND BUTTONS    -->
            <nav id="main-nav">
             <ul>
-                <li><a href="index.html" >Home</a></li>
+                <li><a href="index.shtml" >Home</a></li>
                 <li><a href="news_events.shtml">News &amp; Events</a></li>
                 <li><a href="#" id="active">Curriculum</a></li>
                 <li><a href="employer_engagement.shtml">Employer Engagement</a></li>
@@ -16,7 +16,7 @@
         
         <nav id="apply-nav">
             <ul>
-                <li><a class="call-to-action-button" role="button" href="#">Apply Now</a></li>
+                <li><a class="call-to-action-button" role="button" href="about_us.shtml#general-contact">Apply Now</a></li>
             </ul>
         </nav>
            
@@ -35,7 +35,7 @@
 <!-- ######################################################################################################### -->
   
 <section class="wrapper">
-  <div>
+  <div id="what-learn">
       <h1>What will you learn?</h1>
       <p>Here you will learn both the soft skills to be a success in the tech sector and also gain some of the technical skills required.</p>
       <p>You will study towards two courses:</p>
@@ -44,7 +44,9 @@
           <li>L3 IT Cambridge Technical - 2 A level Equivalent</li>
 
       </ul>
-      <p>You can use the skills gained in the qualifications and your time at our sixth form to either apply for university, apprentichesips or go straight into the work place. Check out the specifications of the units you will study below.</p>
+      <p>You can use the skills gained in the qualifications and your time at our sixth form to either apply for university, apprentichesips or go straight into the work place. </p>
+      <p>Check out the specifications of the units you will study below.</p>
+      <em>Please Note, this will open an external link in a PDF format</em>
   </div>
    <div id="digital-media" class="wrapper">
     <h2>Digital Media Cambridge Technicals</h2>
