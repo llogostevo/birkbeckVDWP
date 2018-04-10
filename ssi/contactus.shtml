@@ -1,10 +1,17 @@
 <section id="general-contact">
     <h1>Contact Us</h1>
     <div class="form-container" class="wrapper">
-            <form action="/action_page.php">
+               <form action="http://lsteve07.vdwp1718.bbkweb.org/php/formmail.php" method="post">
+               
+                   <!-- PHP Form - contact fields -->
+                    <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
+                    <input type="hidden" name="recipients" value="stevens.lloyd@gmail.com" />
+                    <input type="hidden" name="subject" value="Silicon Hack: Contact" />  
+                <!-- -------------- -->
                 <div class="select">
+                <label for="form-menu" >Check the purpose of your contact:</label>
                 <select name="form-menu" id="form-menu">
-                    <option value="Contact-Us-form">General Inquiry</option>
+                    <option value="Contact-Us-form">General Enquiry</option>
                     <option value="apply-now-form">Apply Now</option>
                     <option value="event-signup-form">Sign up for Event</option>
                     <option value="employers-form">Help as an Employer</option>
@@ -14,19 +21,19 @@
                 <div class="all-form-details">
                     <fieldset>
                        <legend>Contact Details</legend>
-                            <label for="fname">First Name</label>
-                            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                            <label for="fname">First Name <span>*</span></label>
+                            <input type="text" id="fname" name="realname" placeholder="Your name.." required>
 
-                            <label for="lname">Last Name</label>
+                            <label for="lname">Last Name <span>*</span></label>
                             <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-                            <label for="email_addr">Email Address <span>*</span></label>
-                            <input type="email" required id="email_addr">
+                            <label for="email">Email<span>*</span></label>
+                            <input type="email" name="email" required id="email">
                             <label for="email_addr_confirm">Confirm Email Address <span>*</span></label>
                             <input type="email" required id="email_addr_confirm">
                             
                             <label for="contact-number">Phone Number</label>
-                            <input type="tel" id="contact-number">
+                            <input type="tel" id="contact-number" name="contact-number">
                     </fieldset>
                 </div>
 
@@ -38,8 +45,8 @@
                                <legend>Qualifications</legend>
                                 
                                 <label for="maths-result">Maths</label>
-                                <input list="maths-result">
-                                    <datalist id="maths-result">
+                                <input id="maths-result" list="maths-result" name="maths-result">
+                                    <datalist>
                                       <option value="A*">
                                       <option value="A">
                                       <option value="B">
@@ -48,8 +55,8 @@
                                     </datalist>
                                     
                                 <label for="eng-lit-result">English Literature</label>
-                                <input list="eng-lit-result">
-                                    <datalist id="eng-lit-result">
+                                <input id="eng-lit-result" list="eng-lit-result"  name="eng-lit-result">
+                                    <datalist>
                                       <option value="A*">
                                       <option value="A">
                                       <option value="B">
@@ -58,8 +65,8 @@
                                     </datalist>
                              
                                 <label for="eng-lang-result">English Language</label>
-                                <input list="eng-lang-result">
-                                    <datalist id="eng-lang-result">
+                                <input id="eng-lang-result" list="eng-lang-result" name="eng-lang-result">
+                                    <datalist>
                                       <option value="A*">
                                       <option value="A">
                                       <option value="B">
@@ -82,8 +89,8 @@
                                          <div id="combinedscienceresults">
                                            <fieldset>
                                             <label for="combined-science-result">Combined Science</label>
-                                            <input list="combined-science-result">
-                                                <datalist id="combined-science-result">
+                                            <input id="combined-science-result" list="combined-science-result" name="combined-science-result">
+                                                <datalist>
                                                   <option value="AA or above">
                                                   <option value="AB">
                                                   <option value="BB">
@@ -96,8 +103,8 @@
                                             <div id="seperatescienceresults">
                                            <fieldset>
                                                 <label for="physics-result">Physics</label>
-                                                <input list="physics-result">
-                                                    <datalist id="physics-result">
+                                                <input id="physics-result" list="physics-result" name="physics-result">
+                                                    <datalist>
                                                       <option value="A*">
                                                       <option value="A">
                                                       <option value="B">
@@ -106,8 +113,8 @@
                                                     </datalist>
 
                                                 <label for="biology-result">Biology</label>
-                                                <input list="biology-result">
-                                                    <datalist id="biology-result">
+                                                <input id="biology-result" list="biology-result" name="biology-result">
+                                                    <datalist>
                                                       <option value="A*">
                                                       <option value="A">
                                                       <option value="B">
@@ -116,8 +123,8 @@
                                                     </datalist>
 
                                                 <label for="chemistry-result">Chemistry</label>
-                                                <input list="chemistry-result">
-                                                    <datalist id="chemistry-result">
+                                                <input id="chemistry-result" list="chemistry-result" name="chemistry-result">
+                                                    <datalist>
                                                       <option value="A*">
                                                       <option value="A">
                                                       <option value="B">
@@ -132,7 +139,7 @@
                                    <legend>Have you studied ICT or Computing at GCSE/Vocational?</legend>
                                         <div class="form-block">
                                         <input type = "radio" name = "ictradios" id = "ICT" value = "ICT">
-                                        <label for = "ICT">ICT</label>
+                                        <label for = "ICT" >ICT</label>
                                     </div>
                                         <div class="form-block">
                                         <input type = "radio" name = "ictradios" id = "Computing" value = "Computing">
@@ -147,7 +154,7 @@
                                         <fieldset >
                                             <legend>ICT</legend>
                                             <label for="ICT-result">Result</label>
-                                            <input list="ICT-result">
+                                            <input list="ICT-result" name="ICT-result">
                                                 <datalist id="ICT-result">
                                                   <option value="L2 Dist*">
                                                   <option value="L2 Merit">
@@ -161,7 +168,7 @@
                                             <legend>Computing</legend>
                                             <label for="computing-result">Result</label>
                                             <input list="computing-result">
-                                                <datalist id="computing-result">
+                                                <datalist id="computing-result" name="computing-result">
                                                   <option value="A*">
                                                   <option value="A">
                                                   <option value="B">
@@ -175,8 +182,8 @@
                                 
                                 <fieldset>
                                    <legend>Other information</legend>
-                                        <label for="subject">Any other qualifications you would like to tell us about?</label>
-                                        <textarea id="subject" name="subject" placeholder="Other qualifications....?"></textarea>
+                                        <label for="subject-quals">Any other qualifications you would like to tell us about?</label>
+                                        <textarea id="subject-quals" name="subject-quals" placeholder="Other qualifications....?"></textarea>
 
                                         <label for="personal-statement">Please write a short personal statement explaning why you want to join us</label>
                                         <textarea id="personal-statement" name="personal-statement" placeholder="I want to join Silicon Hack because..." ></textarea>
@@ -197,9 +204,10 @@
                     <fieldset>
                         <legend>Event Choice</legend>
                 
-                        <label for="event-choice">Choose the Event you wish to attend</label>
+                        <label for="event-choice">Choose the Event you wish to attend:</label>
                         <!-- When changed it will call the displayEvent function -->
-                        <select id="event-choice" onchange="displayEvent()">
+                        <select id="event-choice" name="event-choice" onchange="displayEvent()">
+                                <option>None Selected</option>
                                 <optgroup label="Taster Days">
                                     <option>March 13th Taster 7pm</option>   
                                 </optgroup>
@@ -213,9 +221,9 @@
                                     <option>Jul 20th Secret Event 8am to 6pm</option>
                                 </optgroup> 
                         </select>
-                        <div id="form-event-details">No Event Selected - Choose an Event</div>
+                        <div id="form-event-details">None Selected</div>
                         <label for="qty">How many people are coming?</label>
-                        <input type="number" id="qty" value="1" min="1" max="4" step="1" />
+                        <input name="qty" type="number" id="qty" value="1" min="1" max="4" step="1" />
                     </fieldset>
                 </div>
 <!-- Employer             -->
@@ -224,11 +232,11 @@
                         <legend>Employer Details</legend>
 
                         <label for="company">Company</label>
-                        <input type="text" id="company">
+                        <input type="text" id="company" name="company">
 
                         <label for="sector">Sector</label>
                         <input list="sector">
-                            <datalist id="sector">
+                            <datalist id="sector" name="sector">
                               <option value="Web Development">
                               <option value="App Development">
                               <option value="Gaming">
@@ -237,34 +245,34 @@
                         <fieldset>
                            <div class="form-block">
                                 <label for="mentoring">Mentoring</label>
-                                <input type="checkbox" id="mentoring">
+                                <input type="checkbox" id="mentoring" name="mentoring">
                             </div>
                             <div class="form-block">
                                 <label for="curriculum-planning">Curriculum Planning and Guidance</label>
-                                <input type="checkbox" id="curriculum-planning">
+                                <input type="checkbox" id="curriculum-planning" name="mentoring">
                             </div>
                             <div class="form-block">
                                 <label for="lesson-support">Lesson Support</label>
-                                <input type="checkbox" id="lesson-support">
+                                <input type="checkbox" id="lesson-support" name="mentoring">
                             </div>
                             <div class="form-block">
-                                <label for="worplace-visit">Workplace Visits</label>
-                                <input type="checkbox" id="workplace-visit">
+                                <label for="workplace-visit">Workplace Visits</label>
+                                <input type="checkbox" id="workplace-visit" name="mentoring">
                             </div>
                             <div class="form-block">
                                 <label for="work-placement">Work Placements</label>
-                                <input type="checkbox" id="work-placement">
+                                <input type="checkbox" id="work-placement" name="mentoring">
                             </div>
                         </fieldset>
                     </fieldset>
                 </div>
                 
 <div class="all-form-details">
-    <label for="subject">Leave us a message</label>
-    <textarea id="subject" name="subject" placeholder="Feel free to leave us a message"></textarea>
+    <label for="message">Leave us a message</label>
+    <textarea id="message" name="message" placeholder="Feel free to leave us a message"></textarea>
 </div>
                 
-                <input type="submit" value="Submit">
+                <input id="submit" type="submit" value="Submit">
               </form>
         </div>
 </section>

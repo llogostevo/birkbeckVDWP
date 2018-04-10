@@ -1,5 +1,5 @@
 <!--#include virtual="/ssi/documentinfo.shtml" -->
-<title>Silicon Hack | Site Map</title>
+<title>Site Map | Silicon Hack</title>
 </head>
 
 <!--#include virtual="/ssi/header.shtml" -->
@@ -17,7 +17,7 @@
         
         <nav id="apply-nav">
             <ul>
-                <li><a class="call-to-action-button" role="button" href="#">Apply Now</a></li>
+                <li><a class="call-to-action-button" role="button" href="about_us.shtml#general-contact">Apply Now</a></li>
             </ul>
         </nav>
            
@@ -37,15 +37,12 @@
 <div id="sitemap">
 		<h1>9 pages</h1>
         <ul>
-            <li><a href="http://lsteve07.wdux1718.bbkweb.org/index.shtml" title="Silicon Hack | Home Page">Silicon Hack | Home Page</a></li>
-            <li><a href="http://lsteve07.wdux1718.bbkweb.org/news_events.shtml" title="Silicon Hack | News &amp; Events">Silicon Hack | News & Events</a></li>
-            <li><a href="http://lsteve07.wdux1718.bbkweb.org/curriculum.shtml" title="Silicon Hack | Curriculum">Silicon Hack | Curriculum</a></li>
-            <li><a href="http://lsteve07.wdux1718.bbkweb.org/employer_engagement.shtml" title="Silicon Hack | Employer Engagement">Silicon Hack | Employer Engagement</a></li>
-            <li><a href="http://lsteve07.wdux1718.bbkweb.org/about_us.shtml" title="Silicon Hack | About Us">Silicon Hack | About Us</a></li>
-            <li><a href="http://lsteve07.wdux1718.bbkweb.org/sitemap.shtml" title="Silicon Hack | Site Map">Silicon Hack | Site Map</a></li>
-            <li><a href="http://lsteve07.wdux1718.bbkweb.org/sitemap.shtml" title="Silicon Hack | Site Map">Silicon Hack | PAGE??</a></li>
-            <li><a href="http://lsteve07.wdux1718.bbkweb.org/sitemap.shtml" title="Silicon Hack | Site Map">Silicon Hack | PAGE??</a></li>
-            <li><a href="http://lsteve07.wdux1718.bbkweb.org/sitemap.shtml" title="Silicon Hack | Site Map">Silicon Hack | PAGE??</a></li>
+            <li><a href="http://lsteve07.wdux1718.bbkweb.org/index.shtml" title="Home Page | Silicon Hack">Home Page | Silicon Hack</a></li>
+            <li><a href="http://lsteve07.wdux1718.bbkweb.org/news_events.shtml" title="News &amp;amp; Events | Silicon Hack">News &amp; Events | Silicon Hack</a></li>
+            <li><a href="http://lsteve07.wdux1718.bbkweb.org/curriculum.shtml" title="Curriculum | Silicon Hack">Curriculum | Silicon Hack</a></li>
+            <li><a href="http://lsteve07.wdux1718.bbkweb.org/employer_engagement.shtml" title="Employer Engagement | Silicon Hack">Employer Engagement | Silicon Hack</a></li>
+            <li><a href="http://lsteve07.wdux1718.bbkweb.org/about_us.shtml" title="About Us | Silicon Hack">About Us | Silicon Hack</a></li>
+             <li><a href="http://lsteve07.wdux1718.bbkweb.org/sitemap.shtml" title="Site Map | Silicon Hack">Site Map | Silicon Hack</a></li>
         </ul>
 		<!--
 Please note:

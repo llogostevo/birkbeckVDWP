@@ -1,5 +1,5 @@
 <!--#include virtual="ssi/documentinfo.shtml" -->
-<title>Silicon Hack | Home Page</title>
+<title>Home Page | Silicon Hack</title>
 </head>
 
 <!--#include virtual="ssi/header.shtml" -->
@@ -28,7 +28,7 @@
                 <div><h1>Silicon Hack</h1></div>
                 <strong>No Ordinary School Provision</strong>
                 <div class="content-desktop"><em>Here you will learn how to thrive in the Tech Industry</em></div>
-                <a class="call-to-action-button" href="#comp-education">Find Out More</a>
+                <a class="call-to-action-button" href="#comp-education" role="button">Find Out More</a>
             </div>
             </section>
 
@@ -47,6 +47,10 @@
 
                     <p>Students will achieve qualifications to provide progression 
                     into the workplace or university</p>
+                    
+                    <p>We offer a vocational pathway where students learn both the technical and soft skills required to move onto a pathway in the IT sector</p>
+                    
+                    <p>Students work on projects throughout the year to get an understanding of how the real world of tech works</p>
                 </div>
 
                     <div id="central-logo">
@@ -60,7 +64,7 @@
 
                 <!-- take to the about us page for more detail -->
                 <div>
-                    <a class="call-to-action-button" href="about_us.html">More about us</a>
+                    <a class="call-to-action-button" href="about_us.html" role="button">More about us</a>
                 </div>
        </section>
        

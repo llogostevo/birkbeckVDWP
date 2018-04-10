@@ -1,5 +1,5 @@
 <!--#include virtual="/ssi/documentinfo.shtml" -->
-<title>Silicon Hack | News & Events</title>
+<title>News &amp; Events | Silicon Hack</title>
 </head>
 <!--#include virtual="/ssi/header.shtml" -->
 
@@ -27,7 +27,7 @@
                 <div><h1>News and Events</h1></div>
                 <strong>We went To Google!!</strong>
                 <div class="content-desktop"><em>Our year 12s were thoroughly entertained</em></div>
-                <a class="call-to-action-button" href="news_events.shtml#google">Find Out More</a>
+                <a class="call-to-action-button" href="news_events.shtml#google" role="button">Find Out More</a>
             </div>
             </section>
             
@@ -50,10 +50,10 @@
               </div>
             <div class="news-image">
                 <div class="news-image-1">
-                  <img src="images/news_images/close-up-composition-cup-908295.jpg">
+                  <img src="images/news_images/close-up-composition-cup-908295.jpg" alt="sketchbook with ideas">
               </div>
               <div class="news-image-2">
-                      <img src="images/news_images/architecture-buildings-city-373965.jpg">
+                      <img src="images/news_images/architecture-buildings-city-373965.jpg" alt="looking up at skyscrapers that dissapear in clouds">
                   </div>
             </div>
     </div>
@@ -67,10 +67,10 @@
               </div>
             <div class="news-image">
                 <div class="news-image-1">
-                  <img src="images/news_images/analyst-analytics-blur-106344.jpg">
+                  <img src="images/news_images/analyst-analytics-blur-106344.jpg" alt="tablet with analysis document open including some charts">
               </div>
               <div class="news-image-2">
-                      <img src="images/news_images/app-earbuds-earphones-39592.jpg">
+                      <img src="images/news_images/app-earbuds-earphones-39592.jpg" "apple device with earphones and a google app open">
                   </div>
                 </div>
     </div>
@@ -84,10 +84,10 @@
               </div>
             <div class="news-image">
               <div class="news-image-1">
-                  <img src="images/news_images/agenda-concept-development-7376.jpg">
+                  <img src="images/news_images/agenda-concept-development-7376.jpg" alt="whiteboard with planning and post it notes on">
               </div>
               <div class="news-image-2">
-                      <img src="images/news_images/adult-beanie-brainstorming-7367.jpg">
+                      <img src="images/news_images/adult-beanie-brainstorming-7367.jpg" alt="young male working on a whiteboard creating a flow diagram">
                   </div>
                 </div>
     </div>
@@ -101,10 +101,10 @@
               </div>
              <div class="news-image">
                  <div class="news-image-1">
-                      <img src="images/news_images/adult-black-and-white-break-440581.jpg">
+                      <img src="images/news_images/adult-black-and-white-break-440581.jpg" alt="young adult male stretching on a computer">
                   </div>
                   <div class="news-image-2">
-                      <img src="images/news_images/adolescent-adult-blur-933964.jpg">
+                      <img src="images/news_images/adolescent-adult-blur-933964.jpg" alt="young adoslescent group of two males and female working on an activity on a desk">
                   </div>
             </div>
               
@@ -119,10 +119,10 @@
               </div>
             <div class="news-image">
                 <div class="news-image-1">
-                  <img src="images/news_images/apartment-architectural-design-architecture-323780.jpg">
+                  <img src="images/news_images/apartment-architectural-design-architecture-323780.jpg" alt="modern architecutral house">
               </div>
               <div class="news-image-2">
-                      <img src="images/news_images/architectural-design-architecture-blueprint-239886.jpg">
+                      <img src="images/news_images/architectural-design-architecture-blueprint-239886.jpg" alt="ruler with pen lieing on top of an architects sketch of a house">
             </div>
             </div>
     </div>
@@ -155,7 +155,7 @@
               </div>
 
             <div class="event-signup">
-                <a class="call-to-action-button" href="about_us.shtml#general-contact">Sign Up</a>
+                <a class="call-to-action-button" href="about_us.shtml#general-contact" role="button">Sign Up</a>
             </div>
        </div>
     
@@ -175,7 +175,7 @@
                   </ul>
               </div>
              <div class="event-signup">
-                <a class="call-to-action-button" href="about_us.shtml#general-contact">Sign Up</a>
+                <a class="call-to-action-button" href="about_us.shtml#general-contact" role="button">Sign Up</a>
             </div>
        </div>
         <div id="hackathon" class="wrapper">
@@ -213,7 +213,7 @@
                   </ul>
               </div>
              <div class="event-signup">
-                <a class="call-to-action-button" href="about_us.shtml#general-contact">Sign Up</a>
+                <a class="call-to-action-button" href="about_us.shtml#general-contact" role="button">Sign Up</a>
             </div>
        </div>
 </section>

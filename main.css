@@ -67,12 +67,19 @@ p {
     text-align: left;
 }
 
-ul li:not(nav):not(footer) {
+/* ensure all bullets appear left aligned on all views, fixes quirk in chrome centred bullets. */
+ul li {
     text-align: left;
+}
+
+/* centre navigation of burger menu and the sitemap */
+nav ul li, footer ul li {
+    text-align: center;
 }
 
 h1 { 
 /* size of the font on each device, relative em value   */
+/*    */
     font-size: 3rem;
     margin: 0px;
 }
@@ -252,7 +259,7 @@ nav ul {
              font-family: 'Courier New', Courier, monospace;
                 /* reduce thickness of font */
                 font-weight: lighter;
-                font-size: 5rem;
+                font-size: 3rem;
                 /* make sure link is only over the text */
                 
         }
@@ -1047,10 +1054,24 @@ iframe {
 /* ****************************************************** */
 /* ****************************************************** */
 
+.employer-header {
+    grid-column: col-start 1 / span 12;
+    grid-row: 1;
+    background-color: black;
+    /* gradient over image to provide contrast of foreground text */
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url(images/employer_images/coaching-coders-coding-7374.jpg);
+    background-size:cover; /* ensure it covers container */
+    background-position: center; /* starts at top */
+    color: white; /* font */
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #join-us ul li {
     text-align: left;
 }
-
 
 
 /* ******************************************************* */
@@ -1092,8 +1113,21 @@ iframe {
         grid-row: 1;
     }
     
-
+/* ***************************************************** */
+/* ***************************************************** */
+/*                     ABOUT US Page                        */
+/* ***************************************************** */
+/* ***************************************************** */
     
+    /***** Form Styling ******/
+    
+    form {
+        text-align: left;
+    }
+    
+    label {
+        padding-left: 10px;
+    }
 }
 
 @media (min-width: 800px) {
@@ -1133,6 +1167,14 @@ iframe {
     #main-nav {
         display:block;
     }
+    
+    
+/* set logo styling */
+        #logo {
+    /* increase the size of logo for the desktops and tablets over 900px */
+                font-size: 5rem;                
+        }
+
 /* ********************************* */
     
 /* Positioning of site navigation as row */
@@ -1503,6 +1545,18 @@ iframe {
     grid-column: 7 / span 6;
     grid-row:3;
 }
-    
+
+/* ****************************************************** */
+/* ****************************************************** */
+/*                                                        */
+/* **************** EMPLOYER ENGAGEMENT PAGE ***********  */
+/*                                                        */
+/* ****************************************************** */
+/* ****************************************************** */
+
+.employers-section, .come-join, #industry-links, #inspire {
+    grid-column: col-start 2 / span 10;
+}
+  
 
 }

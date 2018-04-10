@@ -1,5 +1,5 @@
 <!--#include virtual="/ssi/documentinfo.shtml" -->
-<title>Silicon Hack | Employer Engagement</title>
+<title>Employer Engagement | Silicon Hack</title>
 </head>
 
 <!--#include virtual="/ssi/header.shtml" -->
@@ -35,24 +35,31 @@
 <!--    START OF THE MAIN CONTENT OF PAGE       -->
 <!-- ######################################################################################################### -->
 
-<section id=#employers>
-    <div>
-       <h1>Our Employers</h1>
+<section id="employers-section" class="wrapper">
+    <div id="industry-links">
+       <h1>Industry Links</h1>
 
-       <p>We have links with a variety of companies in the local area who support our young people in various ways. Please check out how they support below</p>
+       <p>We have links with a variety of companies and industry experts in the local area. Each of whom support our young people to find the right path for them, whether that be a pathway to university or apprenticeship, into tech or into another field. Our aim is always to ensure each of our students know that the pathway they choose once they leave is the right pathway for them.</p>
     </div>
     
-    <div id="#inspire">
-       <h2>Inspire</h2>
-        <p>Inspire have supported setting up vocational links with a variety of companies and supported the planning of workplace visits and mentoring workshops</p>
+    <div id="inspire">
+       <h2>Inspire!</h2>
+        <p>Inspire! and Silicon Hack have a long standing relationship. Inpsire! are a registered charity established in 2004 who offer services as an Education Business Partnership working in Hackney, Camden and Islington.</p>
+        <p>In the early days Inspire and CFBS won a small funding bid that has helped to support the setting up of vocational links with a variety of companies through workplace visits and mentoring workshops</p>
+        <p>Our work doesn't stop here though, to ensure that Silicon Hack is sustainable we need to keep building links to employers to ensure our students have every possible chance to be a success with their futures.</p>
     </div>
 </section>
 
 <section id="join-us" class="wrapper">
-   <div>
-       <h1>Join Us</h1>
+    <div class="employer-header">
+        <h1>Make a Difference</h1>
+    </div>
+    <div class="come-join">
+       <h2>Come Join Us</h2>
 
-       <p>We are always looking for employers to support us in the a variety of ways:</p>
+       <p>We are always looking for employers to engage with us and more importantly the students. The curriculum model is such that students are required to learn in a predominantly project based approach. To support this we actively encourage contact with real life employers and real life projects.</p> 
+       
+       <p>Our current employers help us and the students in a variety of ways:</p>
 
        <ul>
            <li>Mentoring</li>
@@ -61,7 +68,10 @@
            <li>Workplace Visits</li>
            <li>Work Placements</li>
        </ul>
-
+        <p>We have employers who link with us for one or two sessions a year and also employers who support us on a monthly basis. The support can be directly with the children or to support our staff in ensuring the provision is as close to the industry standard as possible.</p>
+        
+        <p>If you are interested in supporting the future generation get into a career in tech then please don't be afraid to get in touch. Even if you are not sure how you might be able to help, please let us know and we can arrange to discuss. As always we are extremly grateful for any support that you can offer.</p>
+        
         <a class="call-to-action-button" role="button" href="about_us.shtml#general-contact">Offer your support</a>
     </div>
 </section>

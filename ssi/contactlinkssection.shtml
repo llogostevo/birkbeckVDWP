@@ -3,33 +3,33 @@
             <div id="contact-header" class="five-col-section-header">
                 <h1  class="centre-item">Are you interested?</h1>
             </div>
-                <div id="apply-now" class="centre-item">
+                <div id="apply-now" class="centre-item" role="button">
                     <a href="about_us.shtml#general-contact" class="svg">
-                    <img src="images/icons/png/010-contract.png">
+                    <img src="images/icons/png/010-contract.png" alt="apply now form">
                     <p>Apply Now</p>
                     </a>   
                 </div>                  
-                <div id="contact-us" class="centre-item">
+                <div id="contact-us" class="centre-item" role="button">
                     <a href="about_us.shtml#general-contact" class="svg">
-                    <img src="images/icons/png/021-email_v2.png">
+                    <img src="images/icons/png/021-email_v2.png" alt="contact us form">
                     <p>Contact Us</p>
                     </a> 
                 </div>
-                <div id="event-signup" class="centre-item">
+                <div id="event-signup" class="centre-item" role="button">
                    <a href="about_us.shtml#general-contact" class="svg">
-                    <img src="images/icons/png/035-calendar.png">
+                    <img src="images/icons/png/035-calendar.png" alt="event sign up form">
                     <p>Event Sign Up</p>
                     </a> 
                 </div>
-                <div id="live-chat" class="centre-item">
+                <div id="live-chat" class="centre-item" role="button">
                      <a href="javascript:void(Tawk_API.toggle())" class="svg">
-                    <img src="images/icons/png/033-chat.png">
+                    <img src="images/icons/png/033-chat.png" alt="open chat">
                     <p>Live Chat</p>
                     </a> 
                 </div>
-                <div id="employers" class="centre-item">
+                <div id="employers" class="centre-item" role="button">
                     <a href="about_us.shtml#general-contact" class="svg">
-                    <img src="images/icons/png/employer_v2.png" alt="Employer Sign Up">
+                    <img src="images/icons/png/employer_v2.png" alt="Employer Sign Up form">
                     <p>Employer Sign Up</p>
                     </a> 
     
