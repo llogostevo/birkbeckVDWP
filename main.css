@@ -3,14 +3,14 @@
 /* ******************************************************************* */
 
 /* selects all elements where parent is wrapper, used for testing purposes only to colour grid and borders */
-.wrapper > * {
 /*
+.wrapper > * {
         border: 2px solid #f08c00;
         background-color: #ffec99;
         border-radius: 5px;
-*/
         padding: 5px;
     }
+*/
 
 
 /* ****************************************************************************** */
@@ -51,21 +51,23 @@
 
 body {
 /*    top and bottom margin of 5px */
-/*    auto makes equal left and right margins */
-/*    margin: 5px auto;*/
-    border:0;
+    border: 0;
     /* google font */
     font-family: 'Montserrat', sans-serif;
 /*    site wide font colour to match logo */
     color: #004b4b;
     text-align: center;
-    max-width: 1700px;
+    /*  chosen to match photoshops web most common template for mockups  */
+    max-width: 1366px;
+    margin: 0 auto;
     line-height: 2.0;
 }
 
 p {
     text-align: left;
+    padding: 0 20px 0 20px;
 }
+
 
 /* ensure all bullets appear left aligned on all views, fixes quirk in chrome centred bullets. */
 ul li {
@@ -133,6 +135,10 @@ h1 {
         grid-template-rows: auto;
     }
 
+#contact p {
+    text-align: center;
+}
+
 
 /* *********** Sitewide Positioning **************** */
 /*************************************************** */
@@ -156,6 +162,7 @@ h1 {
 #burger-button img {
     width: 60px;
     height: 50px;
+    padding-left: 20px;
 }
 
 #burger-container {
@@ -407,7 +414,7 @@ nav ul li a:hover {
     /* fall back in gradient and image doesn't work */
     background-color: black;
     /* gradient over image to provide contrast of foreground text */
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(images/intro/oldstreetroundabout.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url(images/intro/oldstreetroundabout.jpg);
     background-size:cover; /* ensure it covers container */
     background-position: top; /* starts at top */
     color: white; /* font */
@@ -814,7 +821,7 @@ iframe {
 #news-header, #event-header {
     grid-column: col-start 1 / span 12;
     grid-row:1;
-    text-align: left;
+/*    text-align: left;*/
 }
 
 #news-header h1, #event-header h1 {
@@ -826,16 +833,18 @@ iframe {
     height: auto;
 }
 
-#salesforce, #nla, #google, #curve, #inspire , #NLA, #other-event, #hackathon, #open-evening, #taster  {
+#salesforce, #nla, #google, #curve, #inspire-news , #NLA, #other-event, #hackathon, #open-evening, #taster  {
     grid-column: col-start 1 / span 12;
     grid-row: auto;
     color: #006060; /* font */
 
 }
 
+/*
 .description {
     text-align: left;
 }
+*/
 
 
 /* NEWS SECTION */
@@ -889,7 +898,7 @@ iframe {
 
 }
 
-#inspire h1 {
+#inspire-news h1 {
     grid-column: col-start 1 / span 12;
     grid-row: auto;
     background-color: black;
@@ -1041,9 +1050,11 @@ iframe {
 }
 
    
+/*
     #events .wrapper .description,  #events .wrapper .event-details {
         text-align: left;
     }
+*/
 
 
 /* ****************************************************** */
@@ -1262,6 +1273,7 @@ iframe {
     width: 100%;
 }
 
+/*    split page into two vertically */
 .col-1 {
     grid-column: 1 / span 6;
 }
@@ -1489,6 +1501,8 @@ iframe {
        grid-column: col-start 2 / span 10;
     
     }
+
+    
 
 
     

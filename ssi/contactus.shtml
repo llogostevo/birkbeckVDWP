@@ -6,7 +6,10 @@
                    <!-- PHP Form - contact fields -->
                     <input type="hidden" name="env_report" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER" />
                     <input type="hidden" name="recipients" value="stevens.lloyd@gmail.com" />
-                    <input type="hidden" name="subject" value="Silicon Hack: Contact" />  
+                    <input type="hidden" name="subject" value="Silicon Hack: Contact" />
+                    <!-- PHP Form - redirect fields -->
+                    <input type="hidden" name="good_url" value="http://lsteve07.vdwp1718.bbkweb.org/thanks.shtml" />
+                    <input type="hidden" name="bad_url" value="http://lsteve07.vdwp1718.bbkweb.org/error.shtml" />
                 <!-- -------------- -->
                 <div class="select">
                 <label for="form-menu" >Check the purpose of your contact:</label>

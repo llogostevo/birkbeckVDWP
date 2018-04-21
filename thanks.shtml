@@ -1,0 +1,47 @@
+<!--#include virtual="ssi/documentinfo.shtml" -->
+<title>Thanks | Silicon Hack</title>
+</head>
+
+<!--#include virtual="ssi/header.shtml" -->
+<!--       THE MENU AND BUTTONS    -->
+           <nav id="main-nav">
+            <ul>
+                <li><a href="#" id="active">Home</a></li>
+                <li><a href="news_events.shtml">News &amp; Events</a></li>
+                <li><a href="curriculum.shtml">Curriculum</a></li>
+                <li><a href="employer_engagement.shtml">Employer Engagement</a></li>
+                <li><a href="about_us.shtml">About Us</a></li>
+                
+            </ul>
+        </nav>
+        
+        <nav id="apply-nav">
+            <ul>
+                <li><a class="call-to-action-button" role="button" href="about_us.shtml#general-contact">Apply Now</a></li>
+            </ul>
+        </nav>
+           
+           
+<!--    PAGE INTRO IMAGE AND TAG LINES       -->
+            
+<section id="about-intro" class="page-intro"> <!-- section to intro the site, this is not styled as a grid -->
+            <div class="flex-columns">
+                <div><h1>Thank You</h1></div>
+                <strong>We will be in touch soon</strong>
+                <a class="call-to-action-button" href="index.shtml">Return to Home</a>
+            </div>
+            </section>
+<!-- ######################################################################################################### -->           
+<!--    START OF THE MAIN CONTENT OF PAGE       -->           
+<!--  NO CONTENT APART FROM THE CONTACT BUTTONS IF ANOTHER CONTACT IS WANTED -->
+
+<!--#include virtual="ssi/contactlinkssection.shtml" -->
+
+<!-- End of Page Content -->
+<!-- ######################################################################################################### -->
+
+<!--#include virtual="ssi/footer.shtml" -->
+
+
+</body>
+</html>
