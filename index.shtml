@@ -1,8 +1,8 @@
-<!--#include virtual="ssi/documentinfo.shtml" -->
+#include virtual="ssi/documentinfo.shtml"
 <title>Home Page | Silicon Hack</title>
 </head>
 
-<!--#include virtual="ssi/header.shtml" -->
+#include virtual="ssi/header.shtml"
 <!--       THE MENU AND BUTTONS    -->
            <nav id="main-nav">
             <ul>
